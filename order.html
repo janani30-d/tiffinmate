@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | TiffinMate</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONT — INTER
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         DASHBOARD CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css"
+    >
+    <link
+        rel="stylesheet"
+        href="css/res-dashboard.css"
+    >
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+<div class="dashboard-app">
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="dashboard-sidebar"
+        id="dashboardSidebar"
+        aria-label="Customer Dashboard Sidebar"
+    >
+
+
+        <!-- =================================================
+             SIDEBAR HEADER
+        ================================================== -->
+
+        <div class="dashboard-sidebar-header">
+
+            <a
+                href="index.html"
+                class="dashboard-logo"
+                aria-label="TiffinMate Home"
+            >
+
+                <img
+                    src="images/logo.png"
+                    alt="TiffinMate"
+                    class="dashboard-logo-image"
+                >
+
+            </a>
+
+
+            <!-- SIDEBAR CLOSE BUTTON
+                 Visible on tablet/mobile -->
+
+            <button
+                type="button"
+                class="dashboard-sidebar-close"
+                id="dashboardSidebarClose"
+                aria-label="Close menu"
+                title="Close menu"
+            >
+
+                <i
+                    class="fa-solid fa-xmark"
+                    aria-hidden="true"
+                ></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             SIDEBAR NAVIGATION
+        ================================================== -->
+
+        <nav
+            class="dashboard-navigation"
+            aria-label="Customer Dashboard Navigation"
+        >
+
+
+            <span class="dashboard-nav-label">
+                MAIN MENU
+            </span>
+
+
+            <!-- DASHBOARD -->
+
+            <a
+                href="dashboard.html"
+                class="dashboard-nav-item"
+                aria-current="page"
+            >
+
+                <i
+                    class="fa-solid fa-table-cells-large dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <!-- FIND A CHEF -->
+
+            <a
+                href="find-achef.html"
+                class="dashboard-nav-item"
+            >
+
+                <i
+                    class="fa-solid fa-user-tie dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    Find a Chef
+                </span>
+
+            </a>
+
+
+            <!-- MY CHEFS -->
+
+            <a
+                href="my-chefs.html"
+                class="dashboard-nav-item"
+            >
+
+                <i
+                    class="fa-solid fa-users dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    My Chefs
+                </span>
+
+            </a>
+
+
+            <!-- MY ORDERS -->
+
+            <a
+                href="order.html"
+                class="dashboard-nav-item active"
+            >
+
+                <i
+                    class="fa-solid fa-bag-shopping dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    My Orders
+                </span>
+
+                <span class="dashboard-nav-count">
+                    3
+                </span>
+
+            </a>
+
+
+            <!-- TIFFIN PLANS -->
+
+            <a
+                href="tiffin-plan.html"
+                class="dashboard-nav-item"
+            >
+
+                <i
+                    class="fa-solid fa-calendar-check dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    Tiffin Plans
+                </span>
+
+            </a>
+
+
+            <!-- ORDER HISTORY -->
+
+            <a
+                href="order-history.html"
+                class="dashboard-nav-item"
+            >
+
+                <i
+                    class="fa-solid fa-clock-rotate-left dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    Order History
+                </span>
+
+            </a>
+
+
+            
+
+        </nav>
+
+
+        <!-- =================================================
+             SIDEBAR BOTTOM
+        ================================================== -->
+
+        <div class="dashboard-sidebar-bottom">
+
+            <button
+                type="button"
+                class="dashboard-logout-button"
+                id="dashboardLogoutButton"
+            >
+
+                <i
+                    class="fa-solid fa-right-from-bracket"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         SIDEBAR OVERLAY
+         Tablet / Mobile
+    ====================================================== -->
+
+    <div
+        class="dashboard-sidebar-overlay"
+        id="dashboardSidebarOverlay"
+    ></div>
+
+
+
+    <!-- =====================================================
+         MAIN AREA
+    ====================================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- =================================================
+             TOP HEADER
+        ================================================== -->
+
+        <header class="dashboard-topbar">
+
+
+            <!-- =============================================
+                 LEFT SIDE
+            ============================================== -->
+
+            <div class="dashboard-topbar-left">
+
+
+                <!-- HAMBURGER -->
+
+                <button
+                    type="button"
+                    class="dashboard-menu-toggle"
+                    id="dashboardMenuToggle"
+                    aria-label="Open menu"
+                    aria-controls="dashboardSidebar"
+                    aria-expanded="false"
+                    title="Open menu"
+                >
+
+                    <i
+                        class="fa-solid fa-bars"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <!-- PAGE TITLE -->
+
+                <div class="dashboard-page-heading">
+
+                    <span class="dashboard-page-eyebrow">
+                        CUSTOMER DASHBOARD
+                    </span>
+
+                    <h1 class="dashboard-page-title">
+                        Dashboard
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 HEADER ACTIONS
+            ============================================== -->
+
+            <div class="dashboard-topbar-actions">
+
+
+                <!-- DARK MODE -->
+
+                <button
+                    type="button"
+                    class="dashboard-topbar-button"
+                    id="dashboardDarkModeToggle"
+                    aria-label="Toggle dark mode"
+                    title="Toggle dark mode"
+                >
+
+                    <i
+                        class="fa-solid fa-moon dashboard-moon-icon"
+                        aria-hidden="true"
+                    ></i>
+
+                    <i
+                        class="fa-solid fa-sun dashboard-sun-icon"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <!-- RTL -->
+
+                <button
+                    type="button"
+                    class="dashboard-topbar-button"
+                    id="dashboardRtlToggle"
+                    aria-label="Toggle RTL"
+                    title="Toggle RTL"
+                >
+
+                    <i
+                        class="fa-solid fa-right-left"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <!-- NOTIFICATIONS -->
+
+                <button
+                    type="button"
+                    class="dashboard-topbar-button dashboard-notification-button"
+                    id="dashboardNotificationButton"
+                    aria-label="Notifications"
+                    title="Notifications"
+                >
+
+                    <i
+                        class="fa-regular fa-bell"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span class="dashboard-notification-badge">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button
+                    type="button"
+                    class="dashboard-topbar-button"
+                    id="dashboardSettingsButton"
+                    aria-label="Settings"
+                    title="Settings"
+                >
+
+                    <i
+                        class="fa-solid fa-gear"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <!-- PROFILE -->
+
+                <button
+                    type="button"
+                    class="dashboard-profile-button"
+                    id="dashboardProfileButton"
+                    aria-label="Open profile"
+                    title="Profile"
+                >
+
+                    <span class="dashboard-profile-avatar">
+                        J
+                    </span>
+
+                    <span class="dashboard-profile-details">
+
+                        <strong class="dashboard-profile-name">
+                            Janani
+                        </strong>
+
+                        <small class="dashboard-profile-role">
+                            Customer
+                        </small>
+
+                    </span>
+
+                    <i
+                        class="fa-solid fa-chevron-down dashboard-profile-arrow"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             DASHBOARD CONTENT
+        ================================================== -->
+
+        <div class="dashboard-content">
+<!-- =========================================================
+     DASHBOARD — MY ORDERS
+     SECTION 1: PAGE HEADER
+========================================================= -->
+
+<section
+    class="dashboard-my-orders-page-header"
+    id="dashboardMyOrdersHeader"
+>
+
+    <div class="dashboard-my-orders-header-container">
+
+        <div class="dashboard-my-orders-header-content">
+
+            <span class="dashboard-my-orders-eyebrow">
+                MY ORDERS
+            </span>
+
+            <h1 class="dashboard-my-orders-title">
+                Your Orders
+            </h1>
+
+            <p class="dashboard-my-orders-description">
+                Manage your active and upcoming tiffin orders,
+                track deliveries, and view your order details.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             HEADER ACTION
+        ================================================== -->
+
+        <div class="dashboard-my-orders-header-action">
+
+            <a
+                href="find-chef.html"
+                class="dashboard-my-orders-new-order-button"
+            >
+                <i class="fa-solid fa-plus"></i>
+                <span>Place New Order</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!=========================================================
+   DASHBOARD — MY ORDERS
+   SECTION 2: ORDER SUMMARY
+========================================================= !>
+
+<section
+    class="dashboard-my-orders-summary-section"
+    id="dashboardMyOrdersSummary"
+>
+
+    <div class="dashboard-my-orders-summary-container">
+
+        <!-- =================================================
+             SECTION HEADER
+        ================================================== -->
+
+        <div class="dashboard-my-orders-summary-header">
+
+            <span class="dashboard-my-orders-summary-eyebrow">
+                ORDER OVERVIEW
+            </span>
+
+            <h2 class="dashboard-my-orders-summary-title">
+                Your Order Summary
+            </h2>
+
+        </div>
+
+
+        <!-- =================================================
+             SUMMARY CARDS
+        ================================================== -->
+
+        <div class="dashboard-my-orders-summary-grid">
+
+
+            <!-- =================================================
+                 CARD 01 — ACTIVE ORDERS
+            ================================================== -->
+
+            <div class="dashboard-my-orders-summary-card">
+
+                <div class="dashboard-my-orders-summary-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+
+                <div class="dashboard-my-orders-summary-content">
+
+                    <span class="dashboard-my-orders-summary-label">
+                        Active Orders
+                    </span>
+
+                    <strong class="dashboard-my-orders-summary-value">
+                        1
+                    </strong>
+
+                    <span class="dashboard-my-orders-summary-note">
+                        Currently being prepared or delivered
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 CARD 02 — UPCOMING ORDERS
+            ================================================== -->
+
+            <div class="dashboard-my-orders-summary-card">
+
+                <div class="dashboard-my-orders-summary-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+
+                <div class="dashboard-my-orders-summary-content">
+
+                    <span class="dashboard-my-orders-summary-label">
+                        Upcoming Orders
+                    </span>
+
+                    <strong class="dashboard-my-orders-summary-value">
+                        2
+                    </strong>
+
+                    <span class="dashboard-my-orders-summary-note">
+                        Scheduled meals coming up
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 CARD 03 — TOTAL ORDERS
+            ================================================== -->
+
+            <div class="dashboard-my-orders-summary-card">
+
+                <div class="dashboard-my-orders-summary-icon">
+                    <i class="fa-solid fa-receipt"></i>
+                </div>
+
+                <div class="dashboard-my-orders-summary-content">
+
+                    <span class="dashboard-my-orders-summary-label">
+                        Total Orders
+                    </span>
+
+                    <strong class="dashboard-my-orders-summary-value">
+                        24
+                    </strong>
+
+                    <span class="dashboard-my-orders-summary-note">
+                        Orders placed with TiffinMate
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     DASHBOARD — MY ORDERS
+     SECTION 3: ACTIVE ORDERS & DELIVERY TRACKING
+========================================================= -->
+
+<section
+    class="dashboard-my-orders-active-section"
+    id="dashboardMyOrdersActive"
+>
+
+    <div class="dashboard-my-orders-active-container">
+
+        <!-- =================================================
+             SECTION HEADER
+        ================================================== -->
+
+        <div class="dashboard-my-orders-active-header">
+
+            <div class="dashboard-my-orders-active-heading">
+
+                <span class="dashboard-my-orders-active-eyebrow">
+                    ACTIVE ORDER
+                </span>
+
+                <h2 class="dashboard-my-orders-active-title">
+                    Track Your Delivery
+                </h2>
+
+                <p class="dashboard-my-orders-active-description">
+                    Follow your current homemade meal order from preparation
+                    to doorstep delivery.
+                </p>
+
+            </div>
+
+            <span class="dashboard-my-orders-active-status">
+                <i class="fa-solid fa-circle"></i>
+                Out for Delivery
+            </span>
+
+        </div>
+
+
+        <!-- =================================================
+             ACTIVE ORDER CARD
+        ================================================== -->
+
+        <article class="dashboard-my-orders-active-card">
+
+            <!-- =================================================
+                 ORDER INFORMATION
+            ================================================== -->
+
+            <div class="dashboard-my-orders-active-order-info">
+
+                <div class="dashboard-my-orders-active-meal">
+
+                    <div class="dashboard-my-orders-active-meal-image-wrap">
+
+                        <img
+                            src="images/meal-01.jpg"
+                            alt="Traditional South Indian Lunch"
+                            class="dashboard-my-orders-active-meal-image"
+                        >
+
+                    </div>
+
+                    <div class="dashboard-my-orders-active-meal-content">
+
+                        <span class="dashboard-my-orders-active-order-id">
+                            ORDER #TM24092601
+                        </span>
+
+                        <h3 class="dashboard-my-orders-active-meal-name">
+                            Traditional South Indian Lunch
+                        </h3>
+
+                        <p class="dashboard-my-orders-active-chef">
+                            <i class="fa-solid fa-user-tie"></i>
+                            Kavitha's Kitchen
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     ORDER DETAILS
+                ================================================== -->
+
+                <div class="dashboard-my-orders-active-details">
+
+                    <div class="dashboard-my-orders-active-detail">
+
+                        <span class="dashboard-my-orders-active-detail-label">
+                            Order Type
+                        </span>
+
+                        <strong>
+                            One-time Order
+                        </strong>
+
+                    </div>
+
+                    <div class="dashboard-my-orders-active-detail">
+
+                        <span class="dashboard-my-orders-active-detail-label">
+                            Delivery Time
+                        </span>
+
+                        <strong>
+                            Today, 11:30 AM
+                        </strong>
+
+                    </div>
+
+                    <div class="dashboard-my-orders-active-detail">
+
+                        <span class="dashboard-my-orders-active-detail-label">
+                            Total Amount
+                        </span>
+
+                        <strong>
+                            ₹149
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 DELIVERY PROGRESS
+            ================================================== -->
+
+            <div class="dashboard-my-orders-active-progress">
+
+                <div class="dashboard-my-orders-active-progress-header">
+
+                    <div>
+                        <span class="dashboard-my-orders-active-progress-label">
+                            DELIVERY STATUS
+                        </span>
+
+                        <strong>
+                            Your order is on the way
+                        </strong>
+                    </div>
+
+                    <span class="dashboard-my-orders-active-progress-time">
+                        Arriving soon
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-my-orders-active-progress-track">
+
+                    <div class="dashboard-my-orders-active-progress-line">
+
+                        <span
+                            class="dashboard-my-orders-active-progress-filled"
+                        ></span>
+
+                    </div>
+
+
+                    <!-- STEP 01 -->
+
+                    <div class="dashboard-my-orders-active-step is-complete">
+
+                        <span class="dashboard-my-orders-active-step-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <span class="dashboard-my-orders-active-step-label">
+                            Confirmed
+                        </span>
+
+                    </div>
+
+
+                    <!-- STEP 02 -->
+
+                    <div class="dashboard-my-orders-active-step is-complete">
+
+                        <span class="dashboard-my-orders-active-step-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <span class="dashboard-my-orders-active-step-label">
+                            Preparing
+                        </span>
+
+                    </div>
+
+
+                    <!-- STEP 03 -->
+
+                    <div class="dashboard-my-orders-active-step is-current">
+
+                        <span class="dashboard-my-orders-active-step-icon">
+                            <i class="fa-solid fa-motorcycle"></i>
+                        </span>
+
+                        <span class="dashboard-my-orders-active-step-label">
+                            Out for Delivery
+                        </span>
+
+                    </div>
+
+
+                    <!-- STEP 04 -->
+
+                    <div class="dashboard-my-orders-active-step">
+
+                        <span class="dashboard-my-orders-active-step-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+
+                        <span class="dashboard-my-orders-active-step-label">
+                            Delivered
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 ORDER ACTIONS
+            ================================================== -->
+
+            <div class="dashboard-my-orders-active-actions">
+
+                <a
+                    href="#"
+                    class="dashboard-my-orders-track-button"
+                >
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <span>Track Order</span>
+                </a>
+
+                <a
+                    href="order-details.html"
+                    class="dashboard-my-orders-details-button"
+                >
+                    <i class="fa-solid fa-receipt"></i>
+                    <span>View Details</span>
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     DASHBOARD — MY ORDERS
+     SECTION 4: UPCOMING ORDERS
+========================================================= -->
+
+<section
+    class="dashboard-my-orders-upcoming-section"
+    id="dashboardMyOrdersUpcoming"
+>
+
+    <div class="dashboard-my-orders-upcoming-container">
+
+        <!-- =================================================
+             SECTION HEADER
+        ================================================== -->
+
+        <div class="dashboard-my-orders-upcoming-header">
+
+            <div class="dashboard-my-orders-upcoming-heading">
+
+                <span class="dashboard-my-orders-upcoming-eyebrow">
+                    UPCOMING ORDERS
+                </span>
+
+                <h2 class="dashboard-my-orders-upcoming-title">
+                    Your Scheduled Meals
+                </h2>
+
+                <p class="dashboard-my-orders-upcoming-description">
+                    View your upcoming homemade meals and manage
+                    scheduled deliveries before they arrive.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             UPCOMING ORDERS LIST
+        ================================================== -->
+
+        <div class="dashboard-my-orders-upcoming-list">
+
+
+            <!-- =================================================
+                 UPCOMING ORDER 01
+            ================================================== -->
+
+            <article class="dashboard-my-orders-upcoming-card">
+
+                <div class="dashboard-my-orders-upcoming-main">
+
+                    <!-- MEAL IMAGE -->
+
+                    <div class="dashboard-my-orders-upcoming-image-wrap">
+
+                        <img
+                            src="images/meal-02.jpg"
+                            alt="Homestyle Vegetable Biryani"
+                            class="dashboard-my-orders-upcoming-image"
+                        >
+
+                    </div>
+
+
+                    <!-- MEAL INFORMATION -->
+
+                    <div class="dashboard-my-orders-upcoming-content">
+
+                        <span class="dashboard-my-orders-upcoming-order-id">
+                            ORDER #TM24092602
+                        </span>
+
+                        <h3 class="dashboard-my-orders-upcoming-meal-name">
+                            Homestyle Vegetable Biryani
+                        </h3>
+
+                        <p class="dashboard-my-orders-upcoming-chef">
+                            <i class="fa-solid fa-user-tie"></i>
+                            Asha's Homestyle
+                        </p>
+
+                        <span class="dashboard-my-orders-upcoming-type">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            One-time Order
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORDER DETAILS -->
+
+                <div class="dashboard-my-orders-upcoming-details">
+
+                    <div class="dashboard-my-orders-upcoming-detail">
+
+                        <span class="dashboard-my-orders-upcoming-detail-label">
+                            Delivery Date
+                        </span>
+
+                        <strong>
+                            Sep 24, 2026
+                        </strong>
+
+                    </div>
+
+                    <div class="dashboard-my-orders-upcoming-detail">
+
+                        <span class="dashboard-my-orders-upcoming-detail-label">
+                            Delivery Time
+                        </span>
+
+                        <strong>
+                            12:00 PM
+                        </strong>
+
+                    </div>
+
+                    <div class="dashboard-my-orders-upcoming-detail">
+
+                        <span class="dashboard-my-orders-upcoming-detail-label">
+                            Amount
+                        </span>
+
+                        <strong>
+                            ₹129
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STATUS + ACTIONS -->
+
+                <div class="dashboard-my-orders-upcoming-actions">
+
+                    <span class="dashboard-my-orders-upcoming-status">
+                        <i class="fa-solid fa-circle"></i>
+                        Scheduled
+                    </span>
+
+                    <a
+                        href="order-details.html"
+                        class="dashboard-my-orders-upcoming-details-button"
+                    >
+                        <i class="fa-solid fa-receipt"></i>
+                        <span>View Details</span>
+                    </a>
+
+                    <button
+                        type="button"
+                        class="dashboard-my-orders-upcoming-cancel-button"
+                    >
+                        <i class="fa-solid fa-xmark"></i>
+                        <span>Cancel</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 UPCOMING ORDER 02
+            ================================================== -->
+
+            <article class="dashboard-my-orders-upcoming-card">
+
+                <div class="dashboard-my-orders-upcoming-main">
+
+                    <!-- MEAL IMAGE -->
+
+                    <div class="dashboard-my-orders-upcoming-image-wrap">
+
+                        <img
+                            src="images/meal-04.jpg"
+                            alt="Soft Chapati and Paneer Curry"
+                            class="dashboard-my-orders-upcoming-image"
+                        >
+
+                    </div>
+
+
+                    <!-- MEAL INFORMATION -->
+
+                    <div class="dashboard-my-orders-upcoming-content">
+
+                        <span class="dashboard-my-orders-upcoming-order-id">
+                            ORDER #TM24092603
+                        </span>
+
+                        <h3 class="dashboard-my-orders-upcoming-meal-name">
+                            Soft Chapati &amp; Paneer Curry
+                        </h3>
+
+                        <p class="dashboard-my-orders-upcoming-chef">
+                            <i class="fa-solid fa-user-tie"></i>
+                            Kavitha's Kitchen
+                        </p>
+
+                        <span class="dashboard-my-orders-upcoming-type is-recurring">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Weekly Tiffin Plan
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORDER DETAILS -->
+
+                <div class="dashboard-my-orders-upcoming-details">
+
+                    <div class="dashboard-my-orders-upcoming-detail">
+
+                        <span class="dashboard-my-orders-upcoming-detail-label">
+                            Delivery Date
+                        </span>
+
+                        <strong>
+                            Sep 26, 2026
+                        </strong>
+
+                    </div>
+
+                    <div class="dashboard-my-orders-upcoming-detail">
+
+                        <span class="dashboard-my-orders-upcoming-detail-label">
+                            Delivery Time
+                        </span>
+
+                        <strong>
+                            12:30 PM
+                        </strong>
+
+                    </div>
+
+                    <div class="dashboard-my-orders-upcoming-detail">
+
+                        <span class="dashboard-my-orders-upcoming-detail-label">
+                            Amount
+                        </span>
+
+                        <strong>
+                            ₹139
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STATUS + ACTIONS -->
+
+                <div class="dashboard-my-orders-upcoming-actions">
+
+                    <span class="dashboard-my-orders-upcoming-status">
+                        <i class="fa-solid fa-circle"></i>
+                        Scheduled
+                    </span>
+
+                    <a
+                        href="order-details.html"
+                        class="dashboard-my-orders-upcoming-details-button"
+                    >
+                        <i class="fa-solid fa-receipt"></i>
+                        <span>View Details</span>
+                    </a>
+
+                    <button
+                        type="button"
+                        class="dashboard-my-orders-upcoming-cancel-button"
+                    >
+                        <i class="fa-solid fa-xmark"></i>
+                        <span>Cancel</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+             </div>
+
+    </main>
+
+</div>
+
+
+<!-- =========================================================
+     DASHBOARD JAVASCRIPT
+========================================================= -->
+<!=========================================================
+   DASHBOARD — LOGOUT CONFIRMATION POPUP
+   PART 1 — HTML
+========================================================= !>
+
+<div
+    class="dashboard-logout-modal"
+    id="dashboardLogoutModal"
+    aria-hidden="true"
+>
+
+    <!-- =====================================================
+         BACKDROP
+    ====================================================== -->
+
+    <div
+        class="dashboard-logout-modal-backdrop"
+        id="dashboardLogoutBackdrop"
+    ></div>
+
+
+    <!-- =====================================================
+         MODAL CARD
+    ====================================================== -->
+
+    <div
+        class="dashboard-logout-modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dashboardLogoutTitle"
+        aria-describedby="dashboardLogoutMessage"
+    >
+
+        <!-- =================================================
+             CLOSE BUTTON
+        ================================================== -->
+
+        <button
+            type="button"
+            class="dashboard-logout-modal-close"
+            id="dashboardLogoutClose"
+            aria-label="Close logout confirmation"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <!-- =================================================
+             LOGOUT ICON
+        ================================================== -->
+
+        <div class="dashboard-logout-modal-icon">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+
+
+        <!-- =================================================
+             CONTENT
+        ================================================== -->
+
+        <div class="dashboard-logout-modal-content">
+
+            <h2
+                class="dashboard-logout-modal-title"
+                id="dashboardLogoutTitle"
+            >
+                Logout?
+            </h2>
+
+            <p
+                class="dashboard-logout-modal-message"
+                id="dashboardLogoutMessage"
+            >
+                Are you sure you want to logout from your
+                TiffinMate account?
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             ACTION BUTTONS
+        ================================================== -->
+
+        <div class="dashboard-logout-modal-actions">
+
+            <!-- CANCEL -->
+            <button
+                type="button"
+                class="dashboard-logout-modal-cancel"
+                id="dashboardLogoutCancel"
+            >
+                No, Stay
+            </button>
+
+
+            <!-- CONFIRM LOGOUT -->
+            <button
+                type="button"
+                class="dashboard-logout-modal-confirm"
+                id="dashboardLogoutConfirm"
+            >
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Yes, Logout</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

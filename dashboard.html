@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | TiffinMate</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONT — INTER
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         DASHBOARD CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css"
+    >
+    <link
+        rel="stylesheet"
+        href="css/res-dashboard.css"
+    >
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+<div class="dashboard-app">
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="dashboard-sidebar"
+        id="dashboardSidebar"
+        aria-label="Customer Dashboard Sidebar"
+    >
+
+
+        <!-- =================================================
+             SIDEBAR HEADER
+        ================================================== -->
+
+        <div class="dashboard-sidebar-header">
+
+            <a
+                href="index.html"
+                class="dashboard-logo"
+                aria-label="TiffinMate Home"
+            >
+
+                <img
+                    src="images/logo.png"
+                    alt="TiffinMate"
+                    class="dashboard-logo-image"
+                >
+
+            </a>
+
+
+            <!-- SIDEBAR CLOSE BUTTON
+                 Visible on tablet/mobile -->
+
+            <button
+                type="button"
+                class="dashboard-sidebar-close"
+                id="dashboardSidebarClose"
+                aria-label="Close menu"
+                title="Close menu"
+            >
+
+                <i
+                    class="fa-solid fa-xmark"
+                    aria-hidden="true"
+                ></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             SIDEBAR NAVIGATION
+        ================================================== -->
+
+        <nav
+            class="dashboard-navigation"
+            aria-label="Customer Dashboard Navigation"
+        >
+
+
+            <span class="dashboard-nav-label">
+                MAIN MENU
+            </span>
+
+
+            <!-- DASHBOARD -->
+
+            <a
+                href="dashboard.html"
+                class="dashboard-nav-item active"
+                aria-current="page"
+            >
+
+                <i
+                    class="fa-solid fa-table-cells-large dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <!-- FIND A CHEF -->
+
+            <a
+                href="find-achef.html"
+                class="dashboard-nav-item"
+            >
+
+                <i
+                    class="fa-solid fa-user-tie dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    Find a Chef
+                </span>
+
+            </a>
+
+
+            <!-- MY CHEFS -->
+
+            <a
+                href="my-chefs.html"
+                class="dashboard-nav-item"
+            >
+
+                <i
+                    class="fa-solid fa-users dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    My Chefs
+                </span>
+
+            </a>
+
+
+            <!-- MY ORDERS -->
+
+            <a
+                href="order.html"
+                class="dashboard-nav-item"
+            >
+
+                <i
+                    class="fa-solid fa-bag-shopping dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    My Orders
+                </span>
+
+                <span class="dashboard-nav-count">
+                    3
+                </span>
+
+            </a>
+
+
+            <!-- TIFFIN PLANS -->
+
+            <a
+                href="tiffin-plan.html"
+                class="dashboard-nav-item"
+            >
+
+                <i
+                    class="fa-solid fa-calendar-check dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    Tiffin Plans
+                </span>
+
+            </a>
+
+
+            <!-- ORDER HISTORY -->
+
+            <a
+                href="order-history.html"
+                class="dashboard-nav-item"
+            >
+
+                <i
+                    class="fa-solid fa-clock-rotate-left dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    Order History
+                </span>
+
+            </a>
+
+
+            
+        </nav>
+
+
+        <!-- =================================================
+             SIDEBAR BOTTOM
+        ================================================== -->
+
+        <div class="dashboard-sidebar-bottom">
+
+            <button
+                type="button"
+                class="dashboard-logout-button"
+                id="dashboardLogoutButton"
+            >
+
+                <i
+                    class="fa-solid fa-right-from-bracket"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         SIDEBAR OVERLAY
+         Tablet / Mobile
+    ====================================================== -->
+
+    <div
+        class="dashboard-sidebar-overlay"
+        id="dashboardSidebarOverlay"
+    ></div>
+
+
+
+    <!-- =====================================================
+         MAIN AREA
+    ====================================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- =================================================
+             TOP HEADER
+        ================================================== -->
+
+        <header class="dashboard-topbar">
+
+
+            <!-- =============================================
+                 LEFT SIDE
+            ============================================== -->
+
+            <div class="dashboard-topbar-left">
+
+
+                <!-- HAMBURGER -->
+
+                <button
+                    type="button"
+                    class="dashboard-menu-toggle"
+                    id="dashboardMenuToggle"
+                    aria-label="Open menu"
+                    aria-controls="dashboardSidebar"
+                    aria-expanded="false"
+                    title="Open menu"
+                >
+
+                    <i
+                        class="fa-solid fa-bars"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <!-- PAGE TITLE -->
+
+                <div class="dashboard-page-heading">
+
+                    <span class="dashboard-page-eyebrow">
+                        CUSTOMER DASHBOARD
+                    </span>
+
+                    <h1 class="dashboard-page-title">
+                        Dashboard
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 HEADER ACTIONS
+            ============================================== -->
+
+            <div class="dashboard-topbar-actions">
+
+
+                <!-- DARK MODE -->
+
+                <button
+                    type="button"
+                    class="dashboard-topbar-button"
+                    id="dashboardDarkModeToggle"
+                    aria-label="Toggle dark mode"
+                    title="Toggle dark mode"
+                >
+
+                    <i
+                        class="fa-solid fa-moon dashboard-moon-icon"
+                        aria-hidden="true"
+                    ></i>
+
+                    <i
+                        class="fa-solid fa-sun dashboard-sun-icon"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <!-- RTL -->
+
+                <button
+                    type="button"
+                    class="dashboard-topbar-button"
+                    id="dashboardRtlToggle"
+                    aria-label="Toggle RTL"
+                    title="Toggle RTL"
+                >
+
+                    <i
+                        class="fa-solid fa-right-left"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <!-- NOTIFICATIONS -->
+
+                <button
+                    type="button"
+                    class="dashboard-topbar-button dashboard-notification-button"
+                    id="dashboardNotificationButton"
+                    aria-label="Notifications"
+                    title="Notifications"
+                >
+
+                    <i
+                        class="fa-regular fa-bell"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span class="dashboard-notification-badge">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button
+                    type="button"
+                    class="dashboard-topbar-button"
+                    id="dashboardSettingsButton"
+                    aria-label="Settings"
+                    title="Settings"
+                >
+
+                    <i
+                        class="fa-solid fa-gear"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <!-- PROFILE -->
+
+                <button
+                    type="button"
+                    class="dashboard-profile-button"
+                    id="dashboardProfileButton"
+                    aria-label="Open profile"
+                    title="Profile"
+                >
+
+                    <span class="dashboard-profile-avatar">
+                        J
+                    </span>
+
+                    <span class="dashboard-profile-details">
+
+                        <strong class="dashboard-profile-name">
+                            Janani
+                        </strong>
+
+                        <small class="dashboard-profile-role">
+                            Customer
+                        </small>
+
+                    </span>
+
+                    <i
+                        class="fa-solid fa-chevron-down dashboard-profile-arrow"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             DASHBOARD CONTENT
+        ================================================== -->
+
+        <div class="dashboard-content">
+
+
+            <!-- =============================================
+                 SECTION 1 — DASHBOARD OVERVIEW
+            ============================================== -->
+
+            <section
+                class="dashboard-overview-section"
+                id="dashboardOverview"
+            >
+
+                <div class="dashboard-overview-container">
+
+
+                    <!-- =====================================
+                         WELCOME
+                    ====================================== -->
+
+                    <div class="dashboard-overview-welcome">
+
+                        <div class="dashboard-overview-welcome-content">
+
+                            <span class="dashboard-overview-eyebrow">
+                                YOUR TIFFINMATE DASHBOARD
+                            </span>
+
+                            <h2 class="dashboard-overview-title">
+                                Welcome back,
+                                <span>Janani!</span>
+                            </h2>
+
+                            <p class="dashboard-overview-description">
+                                Manage your homemade meals, orders,
+                                chefs and tiffin plans all in one place.
+                            </p>
+
+                        </div>
+
+
+                        <div class="dashboard-overview-welcome-icon">
+
+                            <i
+                                class="fa-solid fa-house"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =====================================
+                         SUMMARY CARDS
+                    ====================================== -->
+
+                    <div class="dashboard-summary-grid">
+
+
+                        <!-- ACTIVE ORDERS -->
+
+                        <article class="dashboard-summary-card">
+
+                            <div class="dashboard-summary-card-top">
+
+                                <div class="dashboard-summary-icon">
+
+                                    <i
+                                        class="fa-solid fa-bag-shopping"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </div>
+
+                                <span class="dashboard-summary-status">
+                                    Active
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-summary-content">
+
+                                <span class="dashboard-summary-label">
+                                    Active Orders
+                                </span>
+
+                                <strong class="dashboard-summary-value">
+                                    3
+                                </strong>
+
+                                <a
+                                    href="order.html"
+                                    class="dashboard-summary-link"
+                                >
+                                    View Orders
+
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- UPCOMING DELIVERY -->
+
+                        <article class="dashboard-summary-card">
+
+                            <div class="dashboard-summary-card-top">
+
+                                <div class="dashboard-summary-icon">
+
+                                    <i
+                                        class="fa-solid fa-truck"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </div>
+
+                                <span class="dashboard-summary-status">
+                                    Today
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-summary-content">
+
+                                <span class="dashboard-summary-label">
+                                    Upcoming Delivery
+                                </span>
+
+                                <strong class="dashboard-summary-value">
+                                    1
+                                </strong>
+
+                                <a
+                                    href="order.html"
+                                    class="dashboard-summary-link"
+                                >
+                                    Track Delivery
+
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- FAVORITE CHEFS -->
+
+                        <article class="dashboard-summary-card">
+
+                            <div class="dashboard-summary-card-top">
+
+                                <div class="dashboard-summary-icon">
+
+                                    <i
+                                        class="fa-regular fa-heart"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </div>
+
+                                <span class="dashboard-summary-status">
+                                    Saved
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-summary-content">
+
+                                <span class="dashboard-summary-label">
+                                    Favorite Chefs
+                                </span>
+
+                                <strong class="dashboard-summary-value">
+                                    5
+                                </strong>
+
+                                <a
+                                    href="favorites.html"
+                                    class="dashboard-summary-link"
+                                >
+                                    View Favorites
+
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- TIFFIN PLAN -->
+
+                        <article class="dashboard-summary-card">
+
+                            <div class="dashboard-summary-card-top">
+
+                                <div class="dashboard-summary-icon">
+
+                                    <i
+                                        class="fa-solid fa-calendar-check"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </div>
+
+                                <span class="dashboard-summary-status">
+                                    Active
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-summary-content">
+
+                                <span class="dashboard-summary-label">
+                                    Tiffin Plan
+                                </span>
+
+                                <strong class="dashboard-summary-value dashboard-summary-plan">
+                                    Weekly
+                                </strong>
+
+                                <a
+                                    href="tiffin-plans.html"
+                                    class="dashboard-summary-link"
+                                >
+                                    Manage Plan
+
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+
+                    <!-- =====================================
+                         CURRENT ORDER
+                    ====================================== -->
+
+                    <div class="dashboard-current-order">
+
+
+                        <div class="dashboard-current-order-header">
+
+                            <div>
+
+                                <span class="dashboard-current-order-eyebrow">
+                                    CURRENT ORDER
+                                </span>
+
+                                <h3 class="dashboard-current-order-title">
+                                    Your Meal Is On Its Way
+                                </h3>
+
+                            </div>
+
+
+                            <span class="dashboard-order-status">
+
+                                <i
+                                    class="fa-solid fa-circle"
+                                    aria-hidden="true"
+                                ></i>
+
+                                Out for Delivery
+
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="dashboard-current-order-body">
+
+
+                            <!-- ORDER DETAILS -->
+
+                            <div class="dashboard-current-order-info">
+
+                                <div class="dashboard-current-order-icon">
+
+                                    <i
+                                        class="fa-solid fa-bowl-food"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </div>
+
+
+                                <div class="dashboard-current-order-details">
+
+                                    <span class="dashboard-current-order-label">
+                                        TODAY'S MEAL
+                                    </span>
+
+                                    <h4>
+                                        Traditional South Indian Lunch
+                                    </h4>
+
+                                    <p>
+                                        From Anitha's Kitchen
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- DELIVERY PROGRESS -->
+
+                            <div class="dashboard-delivery-progress">
+
+                                <div class="dashboard-progress-line">
+
+
+                                    <span class="dashboard-progress-step active">
+
+                                        <i
+                                            class="fa-solid fa-check"
+                                            aria-hidden="true"
+                                        ></i>
+
+                                    </span>
+
+
+                                    <span class="dashboard-progress-connector active"></span>
+
+
+                                    <span class="dashboard-progress-step active">
+
+                                        <i
+                                            class="fa-solid fa-check"
+                                            aria-hidden="true"
+                                        ></i>
+
+                                    </span>
+
+
+                                    <span class="dashboard-progress-connector active"></span>
+
+
+                                    <span class="dashboard-progress-step current">
+
+                                        <i
+                                            class="fa-solid fa-truck"
+                                            aria-hidden="true"
+                                        ></i>
+
+                                    </span>
+
+
+                                    <span class="dashboard-progress-connector"></span>
+
+
+                                    <span class="dashboard-progress-step">
+
+                                        <i
+                                            class="fa-solid fa-house"
+                                            aria-hidden="true"
+                                        ></i>
+
+                                    </span>
+
+                                </div>
+
+
+                                <div class="dashboard-progress-labels">
+
+                                    <span>
+                                        Confirmed
+                                    </span>
+
+                                    <span>
+                                        Preparing
+                                    </span>
+
+                                    <span class="current">
+                                        On the Way
+                                    </span>
+
+                                    <span>
+                                        Delivered
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- DELIVERY ACTION -->
+
+                            <div class="dashboard-current-order-action">
+
+                                <span class="dashboard-delivery-time">
+
+                                    <i
+                                        class="fa-regular fa-clock"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                    Arriving by 1:15 PM
+
+                                </span>
+
+
+                                <a
+                                    href="order.html"
+                                    class="dashboard-current-order-button"
+                                >
+
+                                    Track Order
+
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- =========================================================
+     DASHBOARD SECTION 2 — BROWSE HOME CHEFS
+========================================================= -->
+
+<section
+    class="dashboard-chefs-section"
+    id="dashboardChefs"
+>
+
+    <div class="dashboard-chefs-container">
+
+
+        <!-- =================================================
+             SECTION HEADER
+        ================================================== -->
+
+        <div class="dashboard-section-header">
+
+            <div class="dashboard-section-heading">
+
+                <span class="dashboard-section-eyebrow">
+                    DISCOVER HOME CHEFS
+                </span>
+
+                <h2 class="dashboard-section-title">
+                    Find Your Home Chef
+                </h2>
+
+                <p class="dashboard-section-description">
+                    Explore trusted home chefs and discover
+                    homemade meals prepared just for you.
+                </p>
+
+            </div>
+
+
+            <a
+                href="find-chef.html"
+                class="dashboard-section-view-all"
+            >
+                View All Chefs
+
+                <i
+                    class="fa-solid fa-arrow-right"
+                    aria-hidden="true"
+                ></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CHEF CARDS
+        ================================================== -->
+
+        <div class="dashboard-chef-grid">
+
+
+            <!-- =================================================
+                 CHEF 01
+            ================================================== -->
+
+            <article class="dashboard-chef-card">
+
+
+                <div class="dashboard-chef-image-wrap">
+
+                    <img
+                        src="images/chef-01.jpg"
+                        alt="Kavitha's Kitchen"
+                        class="dashboard-chef-image"
+                        loading="lazy"
+                    >
+
+
+                    <span class="dashboard-chef-verified">
+                        <i
+                            class="fa-solid fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        Verified
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="dashboard-chef-favorite"
+                        aria-label="Add Kavitha's Kitchen to favorites"
+                        title="Add to favorites"
+                    >
+
+                        <i
+                            class="fa-regular fa-heart"
+                            aria-hidden="true"
+                        ></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="dashboard-chef-content">
+
+
+                    <div class="dashboard-chef-name-row">
+
+                        <h3 class="dashboard-chef-name">
+                            Kavitha's Kitchen
+                        </h3>
+
+                    </div>
+
+
+                    <span class="dashboard-chef-speciality">
+                        South Indian Specialist
+                    </span>
+
+
+                    <div class="dashboard-chef-meta">
+
+                        <span class="dashboard-chef-rating">
+
+                            <i
+                                class="fa-solid fa-star"
+                                aria-hidden="true"
+                            ></i>
+
+                            4.9
+
+                            <small>
+                                (142)
+                            </small>
+
+                        </span>
+
+
+                        <span class="dashboard-chef-location">
+
+                            <i
+                                class="fa-solid fa-location-dot"
+                                aria-hidden="true"
+                            ></i>
+
+                            Chennai
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-chef-footer">
+
+                        <div class="dashboard-chef-price">
+
+                            <span>
+                                From
+                            </span>
+
+                            <strong>
+                                ₹139
+                            </strong>
+
+                            <small>
+                                / meal
+                            </small>
+
+                        </div>
+
+
+                        <a
+                            href="chef-profile.html?chef=kavithas-kitchen"
+                            class="dashboard-chef-button"
+                        >
+                            View Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 CHEF 02
+            ================================================== -->
+
+            <article class="dashboard-chef-card">
+
+
+                <div class="dashboard-chef-image-wrap">
+
+                    <img
+                        src="images/chef-02.jpg"
+                        alt="Asha's Homestyle"
+                        class="dashboard-chef-image"
+                        loading="lazy"
+                    >
+
+
+                    <span class="dashboard-chef-verified">
+
+                        <i
+                            class="fa-solid fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        Verified
+
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="dashboard-chef-favorite"
+                        aria-label="Add Asha's Homestyle to favorites"
+                        title="Add to favorites"
+                    >
+
+                        <i
+                            class="fa-regular fa-heart"
+                            aria-hidden="true"
+                        ></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="dashboard-chef-content">
+
+
+                    <h3 class="dashboard-chef-name">
+                        Asha's Homestyle
+                    </h3>
+
+
+                    <span class="dashboard-chef-speciality">
+                        North Indian Specialist
+                    </span>
+
+
+                    <div class="dashboard-chef-meta">
+
+                        <span class="dashboard-chef-rating">
+
+                            <i
+                                class="fa-solid fa-star"
+                                aria-hidden="true"
+                            ></i>
+
+                            4.8
+
+                            <small>
+                                (118)
+                            </small>
+
+                        </span>
+
+
+                        <span class="dashboard-chef-location">
+
+                            <i
+                                class="fa-solid fa-location-dot"
+                                aria-hidden="true"
+                            ></i>
+
+                            Coimbatore
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-chef-footer">
+
+                        <div class="dashboard-chef-price">
+
+                            <span>
+                                From
+                            </span>
+
+                            <strong>
+                                ₹149
+                            </strong>
+
+                            <small>
+                                / meal
+                            </small>
+
+                        </div>
+
+
+                        <a
+                            href="chef-profile.html?chef=ashas-homestyle"
+                            class="dashboard-chef-button"
+                        >
+                            View Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 CHEF 03
+            ================================================== -->
+
+            <article class="dashboard-chef-card">
+
+
+                <div class="dashboard-chef-image-wrap">
+
+                    <img
+                        src="images/chef-03.jpg"
+                        alt="Nandhini's Kitchen"
+                        class="dashboard-chef-image"
+                        loading="lazy"
+                    >
+
+
+                    <span class="dashboard-chef-verified">
+
+                        <i
+                            class="fa-solid fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        Verified
+
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="dashboard-chef-favorite"
+                        aria-label="Add Nandhini's Kitchen to favorites"
+                        title="Add to favorites"
+                    >
+
+                        <i
+                            class="fa-regular fa-heart"
+                            aria-hidden="true"
+                        ></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="dashboard-chef-content">
+
+
+                    <h3 class="dashboard-chef-name">
+                        Nandhini's Kitchen
+                    </h3>
+
+
+                    <span class="dashboard-chef-speciality">
+                        Healthy Meal Specialist
+                    </span>
+
+
+                    <div class="dashboard-chef-meta">
+
+                        <span class="dashboard-chef-rating">
+
+                            <i
+                                class="fa-solid fa-star"
+                                aria-hidden="true"
+                            ></i>
+
+                            4.9
+
+                            <small>
+                                (136)
+                            </small>
+
+                        </span>
+
+
+                        <span class="dashboard-chef-location">
+
+                            <i
+                                class="fa-solid fa-location-dot"
+                                aria-hidden="true"
+                            ></i>
+
+                            Madurai
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-chef-footer">
+
+                        <div class="dashboard-chef-price">
+
+                            <span>
+                                From
+                            </span>
+
+                            <strong>
+                                ₹159
+                            </strong>
+
+                            <small>
+                                / meal
+                            </small>
+
+                        </div>
+
+
+                        <a
+                            href="chef-profile.html?chef=nandhinis-kitchen"
+                            class="dashboard-chef-button"
+                        >
+                            View Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 CHEF 04
+            ================================================== -->
+
+            <article class="dashboard-chef-card">
+
+
+                <div class="dashboard-chef-image-wrap">
+
+                    <img
+                        src="images/chef-04.jpg"
+                        alt="Revathi's Tiffin"
+                        class="dashboard-chef-image"
+                        loading="lazy"
+                    >
+
+
+                    <span class="dashboard-chef-verified">
+
+                        <i
+                            class="fa-solid fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        Verified
+
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="dashboard-chef-favorite"
+                        aria-label="Add Revathi's Tiffin to favorites"
+                        title="Add to favorites"
+                    >
+
+                        <i
+                            class="fa-regular fa-heart"
+                            aria-hidden="true"
+                        ></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="dashboard-chef-content">
+
+
+                    <h3 class="dashboard-chef-name">
+                        Revathi's Tiffin
+                    </h3>
+
+
+                    <span class="dashboard-chef-speciality">
+                        Indian Chinese Specialist
+                    </span>
+
+
+                    <div class="dashboard-chef-meta">
+
+                        <span class="dashboard-chef-rating">
+
+                            <i
+                                class="fa-solid fa-star"
+                                aria-hidden="true"
+                            ></i>
+
+                            4.8
+
+                            <small>
+                                (104)
+                            </small>
+
+                        </span>
+
+
+                        <span class="dashboard-chef-location">
+
+                            <i
+                                class="fa-solid fa-location-dot"
+                                aria-hidden="true"
+                            ></i>
+
+                            Trichy
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-chef-footer">
+
+                        <div class="dashboard-chef-price">
+
+                            <span>
+                                From
+                            </span>
+
+                            <strong>
+                                ₹129
+                            </strong>
+
+                            <small>
+                                / meal
+                            </small>
+
+                        </div>
+
+
+                        <a
+                            href="chef-profile.html?chef=revathis-tiffin"
+                            class="dashboard-chef-button"
+                        >
+                            View Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     DASHBOARD SECTION 3 — RECENT ORDERS
+========================================================= -->
+
+<section class="dashboard-orders-section" id="dashboardRecentOrders">
+
+    <div class="dashboard-orders-container">
+
+        <!-- =================================================
+             SECTION HEADER
+        ================================================== -->
+
+        <div class="dashboard-section-header">
+
+            <div class="dashboard-section-heading">
+
+                <span class="dashboard-section-eyebrow">
+                    ORDER ACTIVITY
+                </span>
+
+                <h2 class="dashboard-section-title">
+                    Recent Orders
+                </h2>
+
+                <p class="dashboard-section-description">
+                    Keep track of your latest homemade meals,
+                    order status, and delivery updates.
+                </p>
+
+            </div>
+
+            <a
+                href="order-history.html"
+                class="dashboard-section-view-all"
+            >
+                View All Orders
+
+                <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M5 12H19M13 6L19 12L13 18"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+
+            </a>
+
+        </div>
+
+
+        <!-- =================================================
+             RECENT ORDERS LIST
+        ================================================== -->
+
+        <div class="dashboard-orders-list">
+
+
+            <!-- =================================================
+                 ORDER 01
+            ================================================== -->
+
+            <article class="dashboard-order-card">
+
+                <div class="dashboard-order-main">
+
+                    <!-- ORDER IMAGE -->
+
+                    <div class="dashboard-order-image-wrap">
+
+                        <img
+                            src="images/meal-01.jpg"
+                            alt="Traditional South Indian Lunch"
+                            class="dashboard-order-image"
+                        >
+
+                    </div>
+
+
+                    <!-- ORDER INFORMATION -->
+
+                    <div class="dashboard-order-info">
+
+                        <div class="dashboard-order-top">
+
+                            <span class="dashboard-order-label">
+                                ORDER #TM1024
+                            </span>
+
+                            <span class="dashboard-order-status dashboard-order-status-progress">
+                                Out for Delivery
+                            </span>
+
+                        </div>
+
+                        <h3 class="dashboard-order-meal">
+                            Traditional South Indian Lunch
+                        </h3>
+
+                        <p class="dashboard-order-chef">
+                            From Anitha's Kitchen
+                        </p>
+
+                        <div class="dashboard-order-meta">
+
+                            <span class="dashboard-order-meta-item">
+
+                                <svg
+                                    width="15"
+                                    height="15"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M7 3V6M17 3V6M4 9H20M6 5H18C19.1 5 20 5.9 20 7V19C20 20.1 19.1 21 18 21H6C4.9 21 4 20.1 4 19V7C4 5.9 4.9 5 6 5Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+
+                                Today, 11:30 AM
+
+                            </span>
+
+                            <span class="dashboard-order-meta-item">
+
+                                <svg
+                                    width="15"
+                                    height="15"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M12 2V22M17 6.5C16.1 5.5 14.6 5 12.8 5C10.3 5 8.5 6.3 8.5 8.2C8.5 10.3 10.2 11.2 12.7 11.8C15.2 12.4 16.5 13.2 16.5 15.2C16.5 17.3 14.6 18.8 12 18.8C10 18.8 8.3 18.1 7.3 17"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+
+                                ₹149
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORDER ACTION -->
+
+                <div class="dashboard-order-action">
+
+                    <a
+                        href="order.html"
+                        class="dashboard-order-button"
+                    >
+                        Track Order
+
+                        <svg
+                            width="15"
+                            height="15"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M5 12H19M13 6L19 12L13 18"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 ORDER 02
+            ================================================== -->
+
+            <article class="dashboard-order-card">
+
+                <div class="dashboard-order-main">
+
+                    <!-- ORDER IMAGE -->
+
+                    <div class="dashboard-order-image-wrap">
+
+                        <img
+                            src="images/meal-02.jpg"
+                            alt="Homestyle Vegetable Biryani"
+                            class="dashboard-order-image"
+                        >
+
+                    </div>
+
+
+                    <!-- ORDER INFORMATION -->
+
+                    <div class="dashboard-order-info">
+
+                        <div class="dashboard-order-top">
+
+                            <span class="dashboard-order-label">
+                                ORDER #TM1021
+                            </span>
+
+                            <span class="dashboard-order-status dashboard-order-status-completed">
+                                Delivered
+                            </span>
+
+                        </div>
+
+                        <h3 class="dashboard-order-meal">
+                            Homestyle Vegetable Biryani
+                        </h3>
+
+                        <p class="dashboard-order-chef">
+                            From Meena's Homestyle
+                        </p>
+
+                        <div class="dashboard-order-meta">
+
+                            <span class="dashboard-order-meta-item">
+
+                                <svg
+                                    width="15"
+                                    height="15"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M7 3V6M17 3V6M4 9H20M6 5H18C19.1 5 20 5.9 20 7V19C20 20.1 19.1 21 18 21H6C4.9 21 4 20.1 4 19V7C4 5.9 4.9 5 6 5Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+
+                                Sep 20, 2026
+
+                            </span>
+
+                            <span class="dashboard-order-meta-item">
+
+                                <svg
+                                    width="15"
+                                    height="15"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M12 2V22M17 6.5C16.1 5.5 14.6 5 12.8 5C10.3 5 8.5 6.3 8.5 8.2C8.5 10.3 10.2 11.2 12.7 11.8C15.2 12.4 16.5 13.2 16.5 15.2C16.5 17.3 14.6 18.8 12 18.8C10 18.8 8.3 18.1 7.3 17"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+
+                                ₹129
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORDER ACTION -->
+
+                <div class="dashboard-order-action">
+
+                    <a
+                        href="order.html"
+                        class="dashboard-order-button dashboard-order-button-secondary"
+                    >
+                        View Order
+
+                        <svg
+                            width="15"
+                            height="15"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M5 12H19M13 6L19 12L13 18"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 ORDER 03
+            ================================================== -->
+
+            <article class="dashboard-order-card">
+
+                <div class="dashboard-order-main">
+
+                    <!-- ORDER IMAGE -->
+
+                    <div class="dashboard-order-image-wrap">
+
+                        <img
+                            src="images/meal-03.jpg"
+                            alt="Chettinad Chicken Meal"
+                            class="dashboard-order-image"
+                        >
+
+                    </div>
+
+
+                    <!-- ORDER INFORMATION -->
+
+                    <div class="dashboard-order-info">
+
+                        <div class="dashboard-order-top">
+
+                            <span class="dashboard-order-label">
+                                ORDER #TM1018
+                            </span>
+
+                            <span class="dashboard-order-status dashboard-order-status-completed">
+                                Delivered
+                            </span>
+
+                        </div>
+
+                        <h3 class="dashboard-order-meal">
+                            Chettinad Chicken Meal
+                        </h3>
+
+                        <p class="dashboard-order-chef">
+                            From Revathi's Tiffin
+                        </p>
+
+                        <div class="dashboard-order-meta">
+
+                            <span class="dashboard-order-meta-item">
+
+                                <svg
+                                    width="15"
+                                    height="15"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M7 3V6M17 3V6M4 9H20M6 5H18C19.1 5 20 5.9 20 7V19C20 20.1 19.1 21 18 21H6C4.9 21 4 20.1 4 19V7C4 5.9 4.9 5 6 5Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+
+                                Sep 17, 2026
+
+                            </span>
+
+                            <span class="dashboard-order-meta-item">
+
+                                <svg
+                                    width="15"
+                                    height="15"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M12 2V22M17 6.5C16.1 5.5 14.6 5 12.8 5C10.3 5 8.5 6.3 8.5 8.2C8.5 10.3 10.2 11.2 12.7 11.8C15.2 12.4 16.5 13.2 12 18.8C10 18.8 8.3 18.1 7.3 17"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+
+                                ₹179
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORDER ACTION -->
+
+                <div class="dashboard-order-action">
+
+                    <a
+                        href="order.html"
+                        class="dashboard-order-button dashboard-order-button-secondary"
+                    >
+                        View Order
+
+                        <svg
+                            width="15"
+                            height="15"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M5 12H19M13 6L19 12L13 18"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- =========================================================
+     DASHBOARD JAVASCRIPT
+========================================================= -->
+<! =========================================================
+   DASHBOARD — LOGOUT CONFIRMATION POPUP
+   PART 1 — HTML
+========================================================= !>
+
+<div
+    class="dashboard-logout-modal"
+    id="dashboardLogoutModal"
+    aria-hidden="true"
+>
+
+    <!-- =====================================================
+         BACKDROP
+    ====================================================== -->
+
+    <div
+        class="dashboard-logout-modal-backdrop"
+        id="dashboardLogoutBackdrop"
+    ></div>
+
+
+    <!-- =====================================================
+         MODAL CARD
+    ====================================================== -->
+
+    <div
+        class="dashboard-logout-modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dashboardLogoutTitle"
+        aria-describedby="dashboardLogoutMessage"
+    >
+
+        <!-- =================================================
+             CLOSE BUTTON
+        ================================================== -->
+
+        <button
+            type="button"
+            class="dashboard-logout-modal-close"
+            id="dashboardLogoutClose"
+            aria-label="Close logout confirmation"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <!-- =================================================
+             LOGOUT ICON
+        ================================================== -->
+
+        <div class="dashboard-logout-modal-icon">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+
+
+        <!-- =================================================
+             CONTENT
+        ================================================== -->
+
+        <div class="dashboard-logout-modal-content">
+
+            <h2
+                class="dashboard-logout-modal-title"
+                id="dashboardLogoutTitle"
+            >
+                Logout?
+            </h2>
+
+            <p
+                class="dashboard-logout-modal-message"
+                id="dashboardLogoutMessage"
+            >
+                Are you sure you want to logout from your
+                TiffinMate account?
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             ACTION BUTTONS
+        ================================================== -->
+
+        <div class="dashboard-logout-modal-actions">
+
+            <!-- CANCEL -->
+            <button
+                type="button"
+                class="dashboard-logout-modal-cancel"
+                id="dashboardLogoutCancel"
+            >
+                No, Stay
+            </button>
+
+
+            <!-- CONFIRM LOGOUT -->
+            <button
+                type="button"
+                class="dashboard-logout-modal-confirm"
+                id="dashboardLogoutConfirm"
+            >
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Yes, Logout</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

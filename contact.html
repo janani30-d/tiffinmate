@@ -1,0 +1,2382 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- =========================================================
+         META
+    ========================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="PaintCraft - Professional Painting & Home Renovation Services"
+    >
+
+    <meta
+        name="keywords"
+        content="painting, home renovation, interior painting, exterior painting, waterproofing"
+    >
+
+    <meta
+        name="author"
+        content="TiffinMate"
+    >
+
+    <title>TiffinMate | Homemade & tiffinitems</title>
+    <link
+    rel="icon"
+    type="image/png"
+    href="images/logo.png"
+>
+
+
+    <!-- =========================================================
+         GOOGLE FONT
+         Inter - Used Consistently Throughout Website
+    ========================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================================
+         FONT AWESOME
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =========================================================
+         MAIN CSS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+
+    <!-- =========================================================
+         RESPONSIVE CSS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+<!-- =========================================================
+     TIFFINMATE HEADER
+========================================================= -->
+<header class="site-header" id="siteHeader">
+
+    <div class="header-container">
+
+
+        <!-- =================================================
+             LOGO
+        ================================================== -->
+        <a
+            href="index.html"
+            class="site-logo"
+            aria-label="TiffinMate Home"
+        >
+            <img
+                src="images/logo.png"
+                alt="TiffinMate"
+                class="site-logo-image"
+            >
+        </a>
+
+
+        <!-- =================================================
+             DESKTOP / TABLET NAVIGATION WRAPPER
+             
+             On desktop:
+             Navigation + actions are visible.
+
+             On iPad Pro, iPad Mini, iPad and mobile:
+             This entire area is opened through hamburger.
+        ================================================== -->
+        <div class="header-menu" id="headerMenu">
+
+
+            <!-- =============================================
+                 CENTER NAVIGATION
+            ============================================== -->
+            <nav
+                class="main-navigation"
+                id="mainNavigation"
+                aria-label="Main Navigation"
+            >
+
+
+                <!-- =========================================
+                     HOME DROPDOWN
+                ========================================== -->
+                <div class="nav-dropdown">
+
+                    <button
+                        type="button"
+                        class="nav-link nav-dropdown-toggle"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                    >
+
+                        <span class="nav-link-text">
+                            Home
+                        </span>
+
+                        <svg
+                            class="dropdown-arrow"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M6 9l6 6 6-6"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+
+                    </button>
+
+
+                    <!-- HOME DROPDOWN MENU -->
+                    <div class="nav-dropdown-menu">
+
+                        <a
+                            href="index.html"
+                            class="dropdown-item"
+                        >
+                            Home 1
+                        </a>
+
+                        <a
+                            href="home2.html"
+                            class="dropdown-item"
+                        >
+                            Home 2
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                     FIND A CHEF
+                ========================================== -->
+                <a
+                    href="find-chef.html"
+                    class="nav-link"
+                >
+                    <span class="nav-link-text">
+                        Find a Chef
+                    </span>
+                </a>
+
+
+                <!-- =========================================
+                     HOW IT WORKS
+                ========================================== -->
+                <a
+                    href="how-it-works.html"
+                    class="nav-link"
+                >
+                    <span class="nav-link-text">
+                        How It Works
+                    </span>
+                </a>
+
+
+                <!-- =========================================
+                     TIFFIN PLANS
+                ========================================== -->
+                <a
+                    href="tiffin-plans.html"
+                    class="nav-link"
+                >
+                    <span class="nav-link-text">
+                        Tiffin Plans
+                    </span>
+                </a>
+
+
+                <!-- =========================================
+                     JOIN AS HOME CHEF
+                ========================================== -->
+                <a
+                    href="join-chef.html"
+                    class="nav-link"
+                >
+                    <span class="nav-link-text">
+                        Join as a Home Chef
+                    </span>
+                </a>
+
+
+                
+
+
+                <!-- =========================================
+                     CONTACT
+                ========================================== -->
+                <a
+                    href="contact.html"
+                    class="nav-link active"
+                >
+                    <span class="nav-link-text">
+                        Contact
+                    </span>
+                </a>
+
+            </nav>
+
+
+            <!-- =================================================
+                 RIGHT ACTIONS
+                 
+                 Desktop:
+                 RTL | Dark | Dashboard | Login
+
+                 Mobile / Tablet:
+                 These appear INSIDE hamburger menu.
+            ================================================== -->
+            <div class="header-actions">
+
+
+                <!-- =========================================
+                     RTL BUTTON
+                     ICON ONLY
+                ========================================== -->
+                <button
+    class="header-control rtl-control"
+    id="rtlToggle"
+    type="button"
+    aria-label="Switch to RTL"
+    title="Switch to RTL"
+>
+    <i class="fa-solid fa-right-left"></i>
+</button>
+
+                <!-- =========================================
+                     DARK MODE BUTTON
+                     ICON ONLY
+                ========================================== -->
+                <button
+                    type="button"
+                    class="header-control dark-control"
+                    id="darkModeToggle"
+                    aria-label="Toggle dark mode"
+                    title="Toggle dark mode"
+                >
+
+                    <svg
+                        class="control-icon"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M20.5 15.2A8.5 8.5 0 0 1 8.8 3.5
+                               8.5 8.5 0 1 0 20.5 15.2Z"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+
+                </button>
+
+
+                <!-- =========================================
+                     DASHBOARD BUTTON
+                ========================================== -->
+                <a
+                    href="dashboard.html"
+                    class="header-button dashboard-button"
+                >
+                    Dashboard
+                </a>
+
+
+                <!-- =========================================
+                     LOGIN BUTTON
+                ========================================== -->
+                <a
+                    href="login.html"
+                    class="header-button login-button"
+                >
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             HAMBURGER BUTTON
+
+             Visible on:
+             - iPad Pro
+             - iPad
+             - iPad Mini
+             - Mobile
+
+             Hidden on desktop.
+        ================================================== -->
+        <button
+            type="button"
+            class="mobile-menu-toggle"
+            id="mobileMenuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="headerMenu"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+</header>
+<!-- =========================================================
+     SECTION 1 — CONTACT HERO
+========================================================= -->
+
+<section class="contact-hero" id="contactHero">
+
+    <!-- =====================================================
+         HERO BACKGROUND
+    ====================================================== -->
+
+    <div class="contact-hero-bg">
+
+        <img
+            src="images/contact-hero.jpg"
+            alt="Homemade food prepared in a home kitchen"
+            class="contact-hero-bg-image"
+        >
+
+    </div>
+
+    <div class="contact-hero-overlay"></div>
+
+
+    <!-- =====================================================
+         HERO CONTAINER
+    ====================================================== -->
+
+    <div class="contact-hero-container">
+
+        <div class="contact-hero-content">
+
+
+            
+
+
+            <!-- =================================================
+                 EYEBROW
+            ================================================== -->
+
+            <span class="contact-hero-eyebrow">
+                GET IN TOUCH
+            </span>
+
+
+            <!-- =================================================
+                 TITLE
+            ================================================== -->
+
+            <h1 class="contact-hero-title">
+                We'd Love to
+                <span>Hear From You.</span>
+            </h1>
+
+
+            <!-- =================================================
+                 DESCRIPTION
+            ================================================== -->
+
+            <p class="contact-hero-description">
+                Have a question about TiffinMate, need help with
+                an order, or want to know more about becoming a
+                home chef? We're here to help.
+            </p>
+
+
+            <!-- =================================================
+                 HERO ACTIONS
+            ================================================== -->
+
+            <div class="contact-hero-actions">
+
+                <a
+                    href="#contactInformation"
+                    class="contact-hero-primary"
+                >
+                    <span>
+                        Contact Our Team
+                    </span>
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M5 12H19"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                        />
+
+                        <path
+                            d="M13 6L19 12L13 18"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+
+                </a>
+
+
+                <a
+                    href="#contactForm"
+                    class="contact-hero-secondary"
+                >
+                    <span>
+                        Send a Message
+                    </span>
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M4 5H20V17H4V5Z"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linejoin="round"
+                        />
+
+                        <path
+                            d="M4 6L12 12L20 6"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+
+                </a>
+
+            </div>
+
+
+            <!-- =================================================
+                 TRUST POINTS
+            ================================================== -->
+
+            <div class="contact-hero-trust">
+
+
+                <!-- TRUST ITEM 01 -->
+
+                <div class="contact-hero-trust-item">
+
+                    <span class="contact-hero-trust-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M4 5H20V17H4V5Z"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linejoin="round"
+                            />
+
+                            <path
+                                d="M4 6L12 12L20 6"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linejoin="round"
+                            />
+
+                        </svg>
+
+                    </span>
+
+                    <span>
+                        Quick Support
+                    </span>
+
+                </div>
+
+
+                <!-- TRUST ITEM 02 -->
+
+                <div class="contact-hero-trust-item">
+
+                    <span class="contact-hero-trust-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="9"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                            />
+
+                            <path
+                                d="M12 7V12L15 14"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+                        </svg>
+
+                    </span>
+
+                    <span>
+                        Helpful Responses
+                    </span>
+
+                </div>
+
+
+                <!-- TRUST ITEM 03 -->
+
+                <div class="contact-hero-trust-item">
+
+                    <span class="contact-hero-trust-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M12 3L19 6V11C19 15.5 16.1 19.3 12 21C7.9 19.3 5 15.5 5 11V6L12 3Z"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linejoin="round"
+                            />
+
+                            <path
+                                d="M9 12L11 14L15 10"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+                        </svg>
+
+                    </span>
+
+                    <span>
+                        Trusted Support
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     SECTION 2 — CONTACT INFORMATION
+========================================================= -->
+
+<section class="contact-information-section" id="contactInformation">
+
+    <div class="contact-information-container">
+
+
+        <!-- =================================================
+             SECTION INTRO
+        ================================================== -->
+
+        <div class="contact-information-intro">
+
+            <span class="contact-information-eyebrow">
+                CONTACT TIFFINMATE
+            </span>
+
+            <h2 class="contact-information-title">
+                We're Here to
+                <span>Help You.</span>
+            </h2>
+
+            <p class="contact-information-description">
+                Whether you need help with an order, want to learn
+                more about our home chefs, or simply have a question,
+                you can reach us through any of the options below.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             CONTACT INFORMATION GRID
+        ================================================== -->
+
+        <div class="contact-information-grid">
+
+
+            <!-- =================================================
+                 CARD 01 — CALL US
+            ================================================== -->
+
+            <article class="contact-information-card">
+
+                <div class="contact-information-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M6.5 3.5H9L11 8L8.5 9.5C9.6 11.9 12.1 14.4 14.5 15.5L16 13L20.5 15V17.5C20.5 19.2 19.2 20.5 17.5 20.5C9.8 20.5 3.5 14.2 3.5 6.5C3.5 4.8 4.8 3.5 6.5 3.5Z"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+
+                </div>
+
+                <div class="contact-information-content">
+
+                    <span class="contact-information-label">
+                        CALL US
+                    </span>
+
+                    <h3 class="contact-information-card-title">
+                        Talk to Our Team
+                    </h3>
+
+                    <p class="contact-information-card-text">
+                        Need quick assistance? Give our support
+                        team a call and we'll be happy to help.
+                    </p>
+
+                    <a
+                        href="tel:+918000000000"
+                        class="contact-information-link"
+                    >
+                        +91 80000 00000
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M5 12H19"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                            />
+
+                            <path
+                                d="M13 6L19 12L13 18"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 CARD 02 — EMAIL US
+            ================================================== -->
+
+            <article class="contact-information-card">
+
+                <div class="contact-information-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <rect
+                            x="3.5"
+                            y="5"
+                            width="17"
+                            height="14"
+                            rx="2"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                        />
+
+                        <path
+                            d="M4.5 7L12 12.5L19.5 7"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+
+                </div>
+
+                <div class="contact-information-content">
+
+                    <span class="contact-information-label">
+                        EMAIL US
+                    </span>
+
+                    <h3 class="contact-information-card-title">
+                        Send Us an Email
+                    </h3>
+
+                    <p class="contact-information-card-text">
+                        For questions, feedback, or support,
+                        send us a message and our team will respond.
+                    </p>
+
+                    <a
+                        href="mailto:hello@tiffinmate.com"
+                        class="contact-information-link"
+                    >
+                        hello@tiffinmate.com
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M5 12H19"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                            />
+
+                            <path
+                                d="M13 6L19 12L13 18"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 CARD 03 — VISIT US
+            ================================================== -->
+
+            <article class="contact-information-card">
+
+                <div class="contact-information-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M20 10C20 15.5 12 21 12 21C12 21 4 15.5 4 10C4 5.6 7.6 3 12 3C16.4 3 20 5.6 20 10Z"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linejoin="round"
+                        />
+
+                        <circle
+                            cx="12"
+                            cy="10"
+                            r="2.5"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                        />
+
+                    </svg>
+
+                </div>
+
+                <div class="contact-information-content">
+
+                    <span class="contact-information-label">
+                        VISIT US
+                    </span>
+
+                    <h3 class="contact-information-card-title">
+                        Our Location
+                    </h3>
+
+                    <p class="contact-information-card-text">
+                        Connect with the TiffinMate team from
+                        our home base in Chennai.
+                    </p>
+
+                    <a
+                        href="#contactLocation"
+                        class="contact-information-link"
+                    >
+                        Chennai, Tamil Nadu
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M5 12H19"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                            />
+
+                            <path
+                                d="M13 6L19 12L13 18"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 CARD 04 — SUPPORT HOURS
+            ================================================== -->
+
+            <article class="contact-information-card">
+
+                <div class="contact-information-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="8.5"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                        />
+
+                        <path
+                            d="M12 7V12L15.5 14"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+
+                    </svg>
+
+                </div>
+
+                <div class="contact-information-content">
+
+                    <span class="contact-information-label">
+                        SUPPORT HOURS
+                    </span>
+
+                    <h3 class="contact-information-card-title">
+                        When We're Available
+                    </h3>
+
+                    <p class="contact-information-card-text">
+                        Our support team is available to assist
+                        you during the following hours.
+                    </p>
+
+                    <div class="contact-information-hours">
+
+                        <strong>
+                            Monday – Saturday
+                        </strong>
+
+                        <span>
+                            9:00 AM – 6:00 PM
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- =================================================
+             BOTTOM HIGHLIGHT
+        ================================================== -->
+
+        <div class="contact-information-highlight">
+
+            <div class="contact-information-highlight-icon">
+
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M12 3L13.8 8.2L19 10L13.8 11.8L12 17L10.2 11.8L5 10L10.2 8.2L12 3Z"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linejoin="round"
+                    />
+
+                    <path
+                        d="M19 16L19.8 18.2L22 19L19.8 19.8L19 22L18.2 19.8L16 19L18.2 18.2L19 16Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linejoin="round"
+                    />
+
+                </svg>
+
+            </div>
+
+            <div class="contact-information-highlight-content">
+
+                <strong>
+                    Have something specific in mind?
+                </strong>
+
+                <span>
+                    Send us a message and we'll help you find the
+                    right answer.
+                </span>
+
+            </div>
+
+            <a
+                href="#contactForm"
+                class="contact-information-highlight-button"
+            >
+                Send a Message
+
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M5 12H19"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                    />
+
+                    <path
+                        d="M13 6L19 12L13 18"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                </svg>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     SECTION 3 — CONTACT FORM
+========================================================= -->
+
+<section class="contact-form-section" id="contactForm">
+
+    <div class="contact-form-container">
+
+
+        <!-- =================================================
+             SECTION INTRO
+        ================================================== -->
+
+        <div class="contact-form-intro">
+
+            <span class="contact-form-eyebrow">
+                SEND US A MESSAGE
+            </span>
+
+            <h2 class="contact-form-title">
+                Let's Start a
+                <span>Conversation.</span>
+            </h2>
+
+            <p class="contact-form-description">
+                Have a question, suggestion, or need help with
+                something? Fill out the form and our team will
+                get back to you.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             FORM LAYOUT
+        ================================================== -->
+
+        <div class="contact-form-layout">
+
+
+            <!-- =================================================
+                 LEFT — CONTACT MESSAGE
+            ================================================== -->
+
+            <div class="contact-form-info">
+
+
+                <div class="contact-form-info-header">
+
+                    <span class="contact-form-info-label">
+                        WE'RE LISTENING
+                    </span>
+
+                    <h3 class="contact-form-info-title">
+                        Tell Us How We Can Help.
+                    </h3>
+
+                    <p class="contact-form-info-description">
+                        Whether you're a customer looking for
+                        support or a home chef interested in
+                        joining TiffinMate, we're ready to hear
+                        from you.
+                    </p>
+
+                </div>
+
+
+                <!-- =================================================
+                     INFO POINT 01
+                ================================================== -->
+
+                <div class="contact-form-info-item">
+
+                    <span class="contact-form-info-item-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M4 5H20V17H4V5Z"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linejoin="round"
+                            />
+
+                            <path
+                                d="M4 6L12 12L20 6"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linejoin="round"
+                            />
+
+                            <path
+                                d="M8 21H16"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+
+                    </span>
+
+                    <div class="contact-form-info-item-content">
+
+                        <strong>
+                            Quick Support
+                        </strong>
+
+                        <span>
+                            Get help with orders, meals,
+                            accounts, or home chef questions.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     INFO POINT 02
+                ================================================== -->
+
+                <div class="contact-form-info-item">
+
+                    <span class="contact-form-info-item-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="9"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                            />
+
+                            <path
+                                d="M12 7V12L15 14"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+
+                    </span>
+
+                    <div class="contact-form-info-item-content">
+
+                        <strong>
+                            Helpful Responses
+                        </strong>
+
+                        <span>
+                            Tell us what you need and we'll
+                            guide you in the right direction.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     INFO POINT 03
+                ================================================== -->
+
+                <div class="contact-form-info-item">
+
+                    <span class="contact-form-info-item-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M12 3L19 6V11C19 15.5 16.1 19.3 12 21C7.9 19.3 5 15.5 5 11V6L12 3Z"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linejoin="round"
+                            />
+
+                            <path
+                                d="M9 12L11 14L15 10"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+
+                    </span>
+
+                    <div class="contact-form-info-item-content">
+
+                        <strong>
+                            Your Information Matters
+                        </strong>
+
+                        <span>
+                            We use the information you provide
+                            only to respond to your enquiry.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     RESPONSE NOTE
+                ================================================== -->
+
+                <div class="contact-form-response-note">
+
+                    <span class="contact-form-response-note-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M12 3V21"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                            />
+
+                            <path
+                                d="M5 7H19"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                            />
+
+                            <path
+                                d="M5 17H19"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Need a faster response?
+                        </strong>
+
+                        <span>
+                            You can also reach us directly by
+                            phone or email using the contact
+                            details above.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 RIGHT — CONTACT FORM
+            ================================================== -->
+
+            <div class="contact-form-card">
+
+                <div class="contact-form-card-header">
+
+                    <span class="contact-form-card-eyebrow">
+                        CONTACT FORM
+                    </span>
+
+                    <h3 class="contact-form-card-title">
+                        Send Your Message
+                    </h3>
+
+                    <p class="contact-form-card-description">
+                        Complete the details below and we'll
+                        get back to you as soon as possible.
+                    </p>
+
+                </div>
+
+
+                <!-- =================================================
+                     FORM
+                ================================================== -->
+
+                <form
+                    class="contact-form"
+                    id="tiffinmateContactForm"
+                    action="#"
+                    method="post"
+                    novalidate
+                >
+
+
+                    <!-- =================================================
+                         NAME + EMAIL
+                    ================================================== -->
+
+                    <div class="contact-form-row">
+
+                        <div class="contact-form-field">
+
+                            <label for="contactFullName">
+                                Full Name
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contactFullName"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="contact-form-field">
+
+                            <label for="contactEmail">
+                                Email Address
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="contactEmail"
+                                name="email"
+                                placeholder="Enter your email address"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         PHONE + SUBJECT
+                    ================================================== -->
+
+                    <div class="contact-form-row">
+
+                        <div class="contact-form-field">
+
+                            <label for="contactPhone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="contactPhone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                                autocomplete="tel"
+                            >
+
+                        </div>
+
+
+                        <div class="contact-form-field">
+
+                            <label for="contactSubject">
+                                Subject
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <select
+                                id="contactSubject"
+                                name="subject"
+                                required
+                            >
+
+                                <option value="" selected disabled>
+                                    Select a subject
+                                </option>
+
+                                <option value="order-support">
+                                    Order Support
+                                </option>
+
+                                <option value="meal-enquiry">
+                                    Meal Enquiry
+                                </option>
+
+                                <option value="home-chef">
+                                    Become a Home Chef
+                                </option>
+
+                                <option value="account-support">
+                                    Account Support
+                                </option>
+
+                                <option value="feedback">
+                                    Feedback
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         MESSAGE
+                    ================================================== -->
+
+                    <div class="contact-form-field contact-form-message-field">
+
+                        <label for="contactMessage">
+                            Your Message
+                            <span aria-hidden="true">*</span>
+                        </label>
+
+                        <textarea
+                            id="contactMessage"
+                            name="message"
+                            rows="6"
+                            placeholder="Tell us how we can help..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         PRIVACY CHECKBOX
+                    ================================================== -->
+
+                    <label
+                        class="contact-form-checkbox"
+                        for="contactPrivacyAgreement"
+                    >
+
+                        <input
+                            type="checkbox"
+                            id="contactPrivacyAgreement"
+                            name="privacyAgreement"
+                            required
+                        >
+
+                        <span class="contact-form-checkbox-box">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M5 12L10 17L19 7"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </span>
+
+                        <span class="contact-form-checkbox-text">
+                            I agree that TiffinMate may use my
+                            information to respond to my enquiry.
+                        </span>
+
+                    </label>
+
+
+                    <!-- =================================================
+                         SUBMIT
+                    ================================================== -->
+
+                    <button
+                        type="submit"
+                        class="contact-form-submit"
+                    >
+
+                        <span>
+                            Send Message
+                        </span>
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M4 12L20 4L15 20L11 13L4 12Z"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linejoin="round"
+                            />
+
+                            <path
+                                d="M11 13L20 4"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+
+                    </button>
+
+
+                    <!-- =================================================
+                         FORM NOTE
+                    ================================================== -->
+
+                    <p class="contact-form-note">
+                        We aim to respond to enquiries during our
+                        regular support hours.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     SECTION 4 — FIND US / LOCATION
+========================================================= -->
+
+<section class="contact-location-section" id="contactLocation">
+
+    <div class="contact-location-container">
+
+
+        <!-- =================================================
+             SECTION INTRO
+        ================================================== -->
+
+        <div class="contact-location-intro">
+
+            <span class="contact-location-eyebrow">
+                FIND US
+            </span>
+
+            <h2 class="contact-location-title">
+                We're Closer
+                <span>Than You Think.</span>
+            </h2>
+
+            <p class="contact-location-description">
+                TiffinMate connects you with trusted home chefs
+                and homemade food across local communities.
+                Our team is based in Chennai, Tamil Nadu.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             LOCATION LAYOUT
+        ================================================== -->
+
+        <div class="contact-location-layout">
+
+
+            <!-- =================================================
+                 LEFT — LOCATION DETAILS
+            ================================================== -->
+
+            <div class="contact-location-details">
+
+                <span class="contact-location-details-eyebrow">
+                    TIFFINMATE OFFICE
+                </span>
+
+                <h3 class="contact-location-details-title">
+                    Our Home Base
+                </h3>
+
+                <p class="contact-location-details-description">
+                    We're building a local food community from
+                    Chennai, connecting customers with home chefs
+                    who prepare food with care.
+                </p>
+
+
+                <!-- =================================================
+                     ADDRESS
+                ================================================== -->
+
+                <div class="contact-location-detail-item">
+
+                    <span class="contact-location-detail-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+
+                            <path
+                                d="M20 10C20 15.5 12 21 12 21C12 21 4 15.5 4 10C4 5.6 7.6 3 12 3C16.4 3 20 5.6 20 10Z"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linejoin="round"
+                            />
+
+                            <circle
+                                cx="12"
+                                cy="10"
+                                r="2.5"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                            />
+
+                        </svg>
+
+                    </span>
+
+                    <div class="contact-location-detail-content">
+
+                        <span>
+                            LOCATION
+                        </span>
+
+                        <strong>
+                            Chennai, Tamil Nadu, India
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PHONE
+                ================================================== -->
+
+                <div class="contact-location-detail-item">
+
+                    <span class="contact-location-detail-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+
+                            <path
+                                d="M6.5 3.5H9L11 8L8.5 9.5C9.6 11.9 12.1 14.4 14.5 15.5L16 13L20.5 15V17.5C20.5 19.2 19.2 20.5 17.5 20.5C9.8 20.5 3.5 14.2 3.5 6.5C3.5 4.8 4.8 3.5 6.5 3.5Z"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+                        </svg>
+
+                    </span>
+
+                    <div class="contact-location-detail-content">
+
+                        <span>
+                            PHONE
+                        </span>
+
+                        <strong>
+                            +91 80000 00000
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     EMAIL
+                ================================================== -->
+
+                <div class="contact-location-detail-item">
+
+                    <span class="contact-location-detail-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+
+                            <rect
+                                x="3.5"
+                                y="5"
+                                width="17"
+                                height="14"
+                                rx="2"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                            />
+
+                            <path
+                                d="M4.5 7L12 12.5L19.5 7"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+                        </svg>
+
+                    </span>
+
+                    <div class="contact-location-detail-content">
+
+                        <span>
+                            EMAIL
+                        </span>
+
+                        <strong>
+                            hello@tiffinmate.com
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     GET DIRECTIONS
+                ================================================== -->
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Chennai%2C%20Tamil%20Nadu%2C%20India"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-location-directions"
+                >
+
+                    <span>
+                        Get Directions
+                    </span>
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M5 12H19"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                        />
+
+                        <path
+                            d="M13 6L19 12L13 18"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+
+            <!-- =================================================
+                 RIGHT — GOOGLE MAP
+            ================================================== -->
+
+            <div class="contact-location-map">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Chennai%2C%20Tamil%20Nadu%2C%20India&output=embed"
+                    class="contact-google-map"
+                    title="TiffinMate location in Chennai, Tamil Nadu"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen
+                >
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     TIFFINMATE FOOTER
+     PART 1 — HTML
+========================================================= -->
+
+<footer class="site-footer" id="siteFooter">
+
+    <div class="footer-container">
+
+
+        <!-- =================================================
+             FOOTER MAIN
+        ================================================== -->
+
+        <div class="footer-main">
+
+
+            <!-- =================================================
+                 BRAND COLUMN
+            ================================================== -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="footer-logo"
+                    aria-label="TiffinMate Home"
+                >
+
+                    <img
+                        src="images/logo.png"
+                        alt="TiffinMate"
+                        class="footer-logo-image"
+                    >
+
+                </a>
+
+
+                <p class="footer-description">
+
+                    Homemade food and tiffin plans made
+                    simple, convenient, and accessible.
+
+                </p>
+
+
+                <!-- SOCIAL LINKS -->
+
+                <div
+                    class="footer-social"
+                    aria-label="Social media links"
+                >
+
+                    <!-- Facebook -->
+
+                    <a
+                        href="#"
+                        class="footer-social-link"
+                        aria-label="Facebook"
+                        title="Facebook"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+
+                            <path
+                                d="M14 8h3V4h-3c-3.31 0-5 1.69-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.67.33-1 1-1Z"
+                            />
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- Instagram -->
+
+                    <a
+                        href="#"
+                        class="footer-social-link"
+                        aria-label="Instagram"
+                        title="Instagram"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+
+                            <rect
+                                x="3"
+                                y="3"
+                                width="18"
+                                height="18"
+                                rx="5"
+                                ry="5"
+                            />
+
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="4"
+                            />
+
+                            <circle
+                                cx="17.5"
+                                cy="6.5"
+                                r="1"
+                                class="social-dot"
+                            />
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- LinkedIn -->
+
+                    <a
+                        href="#"
+                        class="footer-social-link"
+                        aria-label="LinkedIn"
+                        title="LinkedIn"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+
+                            <path
+                                d="M5 8H2V21H5V8Z"
+                            />
+
+                            <circle
+                                cx="3.5"
+                                cy="4.5"
+                                r="1.5"
+                                class="social-dot"
+                            />
+
+                            <path
+                                d="M9 8H12V9.8C12.8 8.6 14.1 8 15.8 8C19.2 8 21 10.1 21 14V21H18V14.7C18 12.9 17.3 12 15.8 12C14.1 12 13 13.1 13 15V21H9V8Z"
+                            />
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- YouTube -->
+
+                    <a
+                        href="#"
+                        class="footer-social-link"
+                        aria-label="YouTube"
+                        title="YouTube"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+
+                            <path
+                                d="M21.6 7.2A2.9 2.9 0 0 0 19.5 5C17.6 4.5 12 4.5 12 4.5s-5.6 0-7.5.5A2.9 2.9 0 0 0 2.4 7.2 30.2 30.2 0 0 0 2 12a30.2 30.2 0 0 0 .4 4.8A2.9 2.9 0 0 0 4.5 19c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a2.9 2.9 0 0 0 2.1-2.2A30.2 30.2 0 0 0 22 12a30.2 30.2 0 0 0-.4-4.8Z"
+                            />
+
+                            <path
+                                d="M10 9L16 12L10 15V9Z"
+                                class="social-play"
+                            />
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 QUICK LINKS
+            ================================================== -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-column-title">
+                    Quick Links
+                </h3>
+
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="find-chef.html">
+                            Find a Chef
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="how-it-works.html">
+                            How It Works
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tiffin-plans.html">
+                            Tiffin Plans
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- =================================================
+                 CUSTOMER
+            ================================================== -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-column-title">
+                    Customer
+                </h3>
+
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="dashboard.html">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="orders.html">
+                            My Orders
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="subscriptions.html">
+                            My Subscriptions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="register.html">
+                            Create Account
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="support.html">
+                            Help & Support
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- =================================================
+                 FOR HOME CHEFS
+            ================================================== -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-column-title">
+                    For Home Chefs
+                </h3>
+
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="join-chef.html">
+                            Join as a Home Chef
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="chef-login.html">
+                            Chef Login
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="chef-dashboard.html">
+                            Chef Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="chef-orders.html">
+                            Manage Orders
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="chef-subscriptions.html">
+                            Manage Subscriptions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="chef-support.html">
+                            Chef Support
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             FOOTER CONTACT STRIP
+        ================================================== -->
+
+        <div class="footer-contact-strip">
+
+
+            <!-- EMAIL -->
+
+            <a
+                href="mailto:hello@tiffinmate.com"
+                class="footer-contact-item"
+            >
+
+                <span class="footer-contact-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M3 5H21V19H3V5Z"
+                        />
+
+                        <path
+                            d="M3 6L12 13L21 6"
+                        />
+
+                    </svg>
+
+                </span>
+
+
+                <span class="footer-contact-text">
+
+                    hello@tiffinmate.com
+
+                </span>
+
+            </a>
+
+
+            <!-- PHONE -->
+
+            <a
+                href="tel:+910000000000"
+                class="footer-contact-item"
+            >
+
+                <span class="footer-contact-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M7 3H5C3.9 3 3 3.9 3 5C3 13.84 10.16 21 19 21C20.1 21 21 20.1 21 19V17L16 15L14 17C11.24 15.8 8.2 12.76 7 10L9 8L7 3Z"
+                        />
+
+                    </svg>
+
+                </span>
+
+
+                <span class="footer-contact-text">
+
+                    +91 00000 00000
+
+                </span>
+
+            </a>
+
+
+            <!-- LOCATION -->
+
+            <div class="footer-contact-item">
+
+                <span class="footer-contact-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M12 21C12 21 19 14.8 19 9.5C19 5.91 15.87 3 12 3C8.13 3 5 5.91 5 9.5C5 14.8 12 21 12 21Z"
+                        />
+
+                        <circle
+                            cx="12"
+                            cy="9.5"
+                            r="2.5"
+                        />
+
+                    </svg>
+
+                </span>
+
+
+                <span class="footer-contact-text">
+
+                    Chennai, Tamil Nadu
+
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =================================================
+             FOOTER BOTTOM
+        ================================================== -->
+
+        <div class="footer-bottom">
+
+
+            <p class="footer-copyright">
+
+                © 2026 TiffinMate.
+                All rights reserved.
+
+            </p>
+
+
+            <div class="footer-legal">
+
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+                <span
+                    class="footer-legal-divider"
+                    aria-hidden="true"
+                ></span>
+
+                <a href="terms.html">
+                    Terms & Conditions
+                </a>
+
+                <span
+                    class="footer-legal-divider"
+                    aria-hidden="true"
+                ></span>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>

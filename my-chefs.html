@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | TiffinMate</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONT — INTER
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         DASHBOARD CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css"
+    >
+    <link
+        rel="stylesheet"
+        href="css/res-dashboard.css"
+    >
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+<div class="dashboard-app">
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="dashboard-sidebar"
+        id="dashboardSidebar"
+        aria-label="Customer Dashboard Sidebar"
+    >
+
+
+        <!-- =================================================
+             SIDEBAR HEADER
+        ================================================== -->
+
+        <div class="dashboard-sidebar-header">
+
+            <a
+                href="index.html"
+                class="dashboard-logo"
+                aria-label="TiffinMate Home"
+            >
+
+                <img
+                    src="images/logo.png"
+                    alt="TiffinMate"
+                    class="dashboard-logo-image"
+                >
+
+            </a>
+
+
+            <!-- SIDEBAR CLOSE BUTTON
+                 Visible on tablet/mobile -->
+
+            <button
+                type="button"
+                class="dashboard-sidebar-close"
+                id="dashboardSidebarClose"
+                aria-label="Close menu"
+                title="Close menu"
+            >
+
+                <i
+                    class="fa-solid fa-xmark"
+                    aria-hidden="true"
+                ></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             SIDEBAR NAVIGATION
+        ================================================== -->
+
+        <nav
+            class="dashboard-navigation"
+            aria-label="Customer Dashboard Navigation"
+        >
+
+
+            <span class="dashboard-nav-label">
+                MAIN MENU
+            </span>
+
+
+            <!-- DASHBOARD -->
+
+            <a
+                href="dashboard.html"
+                class="dashboard-nav-item"
+                aria-current="page"
+            >
+
+                <i
+                    class="fa-solid fa-table-cells-large dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <!-- FIND A CHEF -->
+
+            <a
+                href="find-achef.html"
+                class="dashboard-nav-item"
+            >
+
+                <i
+                    class="fa-solid fa-user-tie dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    Find a Chef
+                </span>
+
+            </a>
+
+
+            <!-- MY CHEFS -->
+
+            <a
+                href="my-chefs.html"
+                class="dashboard-nav-item active"
+            >
+
+                <i
+                    class="fa-solid fa-users dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    My Chefs
+                </span>
+
+            </a>
+
+
+            <!-- MY ORDERS -->
+
+            <a
+                href="order.html"
+                class="dashboard-nav-item"
+            >
+
+                <i
+                    class="fa-solid fa-bag-shopping dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    My Orders
+                </span>
+
+                <span class="dashboard-nav-count">
+                    3
+                </span>
+
+            </a>
+
+
+            <!-- TIFFIN PLANS -->
+
+            <a
+                href="tiffin-plan.html"
+                class="dashboard-nav-item"
+            >
+
+                <i
+                    class="fa-solid fa-calendar-check dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    Tiffin Plans
+                </span>
+
+            </a>
+
+
+            <!-- ORDER HISTORY -->
+
+            <a
+                href="order-history.html"
+                class="dashboard-nav-item"
+            >
+
+                <i
+                    class="fa-solid fa-clock-rotate-left dashboard-nav-icon"
+                    aria-hidden="true"
+                ></i>
+
+                <span class="dashboard-nav-text">
+                    Order History
+                </span>
+
+            </a>
+
+
+            
+
+        </nav>
+
+
+        <!-- =================================================
+             SIDEBAR BOTTOM
+        ================================================== -->
+
+        <div class="dashboard-sidebar-bottom">
+
+            <button
+                type="button"
+                class="dashboard-logout-button"
+                id="dashboardLogoutButton"
+            >
+
+                <i
+                    class="fa-solid fa-right-from-bracket"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         SIDEBAR OVERLAY
+         Tablet / Mobile
+    ====================================================== -->
+
+    <div
+        class="dashboard-sidebar-overlay"
+        id="dashboardSidebarOverlay"
+    ></div>
+
+
+
+    <!-- =====================================================
+         MAIN AREA
+    ====================================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- =================================================
+             TOP HEADER
+        ================================================== -->
+
+        <header class="dashboard-topbar">
+
+
+            <!-- =============================================
+                 LEFT SIDE
+            ============================================== -->
+
+            <div class="dashboard-topbar-left">
+
+
+                <!-- HAMBURGER -->
+
+                <button
+                    type="button"
+                    class="dashboard-menu-toggle"
+                    id="dashboardMenuToggle"
+                    aria-label="Open menu"
+                    aria-controls="dashboardSidebar"
+                    aria-expanded="false"
+                    title="Open menu"
+                >
+
+                    <i
+                        class="fa-solid fa-bars"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <!-- PAGE TITLE -->
+
+                <div class="dashboard-page-heading">
+
+                    <span class="dashboard-page-eyebrow">
+                        CUSTOMER DASHBOARD
+                    </span>
+
+                    <h1 class="dashboard-page-title">
+                        Dashboard
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 HEADER ACTIONS
+            ============================================== -->
+
+            <div class="dashboard-topbar-actions">
+
+
+                <!-- DARK MODE -->
+
+                <button
+                    type="button"
+                    class="dashboard-topbar-button"
+                    id="dashboardDarkModeToggle"
+                    aria-label="Toggle dark mode"
+                    title="Toggle dark mode"
+                >
+
+                    <i
+                        class="fa-solid fa-moon dashboard-moon-icon"
+                        aria-hidden="true"
+                    ></i>
+
+                    <i
+                        class="fa-solid fa-sun dashboard-sun-icon"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <!-- RTL -->
+
+                <button
+                    type="button"
+                    class="dashboard-topbar-button"
+                    id="dashboardRtlToggle"
+                    aria-label="Toggle RTL"
+                    title="Toggle RTL"
+                >
+
+                    <i
+                        class="fa-solid fa-right-left"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <!-- NOTIFICATIONS -->
+
+                <button
+                    type="button"
+                    class="dashboard-topbar-button dashboard-notification-button"
+                    id="dashboardNotificationButton"
+                    aria-label="Notifications"
+                    title="Notifications"
+                >
+
+                    <i
+                        class="fa-regular fa-bell"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span class="dashboard-notification-badge">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button
+                    type="button"
+                    class="dashboard-topbar-button"
+                    id="dashboardSettingsButton"
+                    aria-label="Settings"
+                    title="Settings"
+                >
+
+                    <i
+                        class="fa-solid fa-gear"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <!-- PROFILE -->
+
+                <button
+                    type="button"
+                    class="dashboard-profile-button"
+                    id="dashboardProfileButton"
+                    aria-label="Open profile"
+                    title="Profile"
+                >
+
+                    <span class="dashboard-profile-avatar">
+                        J
+                    </span>
+
+                    <span class="dashboard-profile-details">
+
+                        <strong class="dashboard-profile-name">
+                            Janani
+                        </strong>
+
+                        <small class="dashboard-profile-role">
+                            Customer
+                        </small>
+
+                    </span>
+
+                    <i
+                        class="fa-solid fa-chevron-down dashboard-profile-arrow"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             DASHBOARD CONTENT
+        ================================================== -->
+
+        <div class="dashboard-content">
+<!-- =========================================================
+     MY CHEFS — PAGE HEADER
+========================================================= -->
+
+<section
+    class="dashboard-my-chefs-page-header"
+    id="dashboardMyChefsHeader"
+>
+
+    <div class="dashboard-my-chefs-header-container">
+
+        <!-- HEADER CONTENT -->
+        <div class="dashboard-my-chefs-header-content">
+
+            <span class="dashboard-my-chefs-eyebrow">
+                MY CHEFS
+            </span>
+
+            <h1 class="dashboard-my-chefs-title">
+                My Home Chefs
+            </h1>
+
+            <p class="dashboard-my-chefs-description">
+                Manage the home chefs you have ordered from and
+                quickly order your favourite homemade meals again.
+            </p>
+
+        </div>
+
+
+        <!-- HEADER ACTION -->
+        <div class="dashboard-my-chefs-header-action">
+
+            <a
+                href="find-chef.html"
+                class="dashboard-my-chefs-find-button"
+            >
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Find New Chef</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     MY CHEFS — SECTION 2
+     MY HOME CHEFS
+========================================================= -->
+
+<section
+    class="dashboard-my-home-chefs-section"
+    id="dashboardMyHomeChefs"
+>
+
+    <div class="dashboard-my-home-chefs-container">
+
+        <!-- =================================================
+             SECTION HEADER
+        ================================================== -->
+
+        <div class="dashboard-my-home-chefs-header">
+
+            <div class="dashboard-my-home-chefs-header-content">
+
+                <span class="dashboard-my-home-chefs-eyebrow">
+                    YOUR CHEFS
+                </span>
+
+                <h2 class="dashboard-my-home-chefs-title">
+                    My Home Chefs
+                </h2>
+
+                <p class="dashboard-my-home-chefs-description">
+                    Your favourite home chefs with the meals you order most often.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             CHEF GRID
+        ================================================== -->
+
+        <div class="dashboard-my-home-chefs-grid">
+
+
+            <!-- =================================================
+                 CHEF 01 — KAVITHA'S KITCHEN
+            ================================================== -->
+
+            <article
+                class="dashboard-my-home-chef-card"
+                data-chef="kavithas-kitchen"
+            >
+
+                <div class="dashboard-my-home-chef-image-wrap">
+
+                    <img
+                        src="images/chef-01.jpg"
+                        alt="Kavitha's Kitchen"
+                        class="dashboard-my-home-chef-image"
+                    >
+
+                    <span class="dashboard-my-home-chef-verified">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Verified
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-my-home-chef-content">
+
+                    <h3 class="dashboard-my-home-chef-name">
+                        Kavitha's Kitchen
+                    </h3>
+
+                    <p class="dashboard-my-home-chef-speciality">
+                        South Indian Specialist
+                    </p>
+
+
+                    <div class="dashboard-my-home-chef-rating">
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <span>4.9</span>
+
+                        <span class="dashboard-my-home-chef-review-count">
+                            (142)
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-my-home-chef-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span>Chennai</span>
+
+                    </div>
+
+
+                    <!-- MOST ORDERED -->
+
+                    <div class="dashboard-my-home-chef-most-ordered">
+
+                        <span class="dashboard-my-home-chef-most-ordered-label">
+                            Most Ordered
+                        </span>
+
+                        <strong>
+                            Traditional South Indian Lunch
+                        </strong>
+
+                    </div>
+
+
+                    <!-- ORDER COUNT -->
+
+                    <div class="dashboard-my-home-chef-order-count">
+
+                        <i class="fa-solid fa-bag-shopping"></i>
+
+                        <span>
+                            Ordered 8 times
+                        </span>
+
+                    </div>
+
+
+                    <!-- ACTIONS -->
+
+                    <div class="dashboard-my-home-chef-actions">
+
+                        <a
+                            href="chef-profile.html?chef=kavithas-kitchen"
+                            class="dashboard-my-home-chef-profile-button"
+                        >
+                            View Profile
+                        </a>
+
+                        <a
+                            href="chef-profile.html?chef=kavithas-kitchen#chefMenu"
+                            class="dashboard-my-home-chef-order-button"
+                        >
+                            Order Again
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 CHEF 02 — ASHA'S HOMESTYLE
+            ================================================== -->
+
+            <article
+                class="dashboard-my-home-chef-card"
+                data-chef="ashas-homestyle"
+            >
+
+                <div class="dashboard-my-home-chef-image-wrap">
+
+                    <img
+                        src="images/chef-02.jpg"
+                        alt="Asha's Homestyle"
+                        class="dashboard-my-home-chef-image"
+                    >
+
+                    <span class="dashboard-my-home-chef-verified">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Verified
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-my-home-chef-content">
+
+                    <h3 class="dashboard-my-home-chef-name">
+                        Asha's Homestyle
+                    </h3>
+
+                    <p class="dashboard-my-home-chef-speciality">
+                        North Indian Specialist
+                    </p>
+
+
+                    <div class="dashboard-my-home-chef-rating">
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <span>4.8</span>
+
+                        <span class="dashboard-my-home-chef-review-count">
+                            (118)
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-my-home-chef-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span>Coimbatore</span>
+
+                    </div>
+
+
+                    <div class="dashboard-my-home-chef-most-ordered">
+
+                        <span class="dashboard-my-home-chef-most-ordered-label">
+                            Most Ordered
+                        </span>
+
+                        <strong>
+                            Homestyle Vegetable Biryani
+                        </strong>
+
+                    </div>
+
+
+                    <div class="dashboard-my-home-chef-order-count">
+
+                        <i class="fa-solid fa-bag-shopping"></i>
+
+                        <span>
+                            Ordered 6 times
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-my-home-chef-actions">
+
+                        <a
+                            href="chef-profile.html?chef=ashas-homestyle"
+                            class="dashboard-my-home-chef-profile-button"
+                        >
+                            View Profile
+                        </a>
+
+                        <a
+                            href="chef-profile.html?chef=ashas-homestyle#chefMenu"
+                            class="dashboard-my-home-chef-order-button"
+                        >
+                            Order Again
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 CHEF 03 — NANDHINI'S KITCHEN
+            ================================================== -->
+
+            <article
+                class="dashboard-my-home-chef-card"
+                data-chef="nandhinis-kitchen"
+            >
+
+                <div class="dashboard-my-home-chef-image-wrap">
+
+                    <img
+                        src="images/chef-03.jpg"
+                        alt="Nandhini's Kitchen"
+                        class="dashboard-my-home-chef-image"
+                    >
+
+                    <span class="dashboard-my-home-chef-verified">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Verified
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-my-home-chef-content">
+
+                    <h3 class="dashboard-my-home-chef-name">
+                        Nandhini's Kitchen
+                    </h3>
+
+                    <p class="dashboard-my-home-chef-speciality">
+                        Healthy Meal Specialist
+                    </p>
+
+
+                    <div class="dashboard-my-home-chef-rating">
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <span>4.9</span>
+
+                        <span class="dashboard-my-home-chef-review-count">
+                            (136)
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-my-home-chef-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span>Madurai</span>
+
+                    </div>
+
+
+                    <div class="dashboard-my-home-chef-most-ordered">
+
+                        <span class="dashboard-my-home-chef-most-ordered-label">
+                            Most Ordered
+                        </span>
+
+                        <strong>
+                            Healthy Millet Meal
+                        </strong>
+
+                    </div>
+
+
+                    <div class="dashboard-my-home-chef-order-count">
+
+                        <i class="fa-solid fa-bag-shopping"></i>
+
+                        <span>
+                            Ordered 5 times
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-my-home-chef-actions">
+
+                        <a
+                            href="chef-profile.html?chef=nandhinis-kitchen"
+                            class="dashboard-my-home-chef-profile-button"
+                        >
+                            View Profile
+                        </a>
+
+                        <a
+                            href="chef-profile.html?chef=nandhinis-kitchen#chefMenu"
+                            class="dashboard-my-home-chef-order-button"
+                        >
+                            Order Again
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     MY CHEFS — SECTION 3
+     QUICK ACTIONS
+========================================================= -->
+
+<section
+    class="dashboard-my-chefs-quick-actions-section"
+    id="dashboardMyChefsQuickActions"
+>
+
+    <div class="dashboard-my-chefs-quick-actions-container">
+
+        <!-- =================================================
+             SECTION HEADER
+        ================================================== -->
+
+        <div class="dashboard-my-chefs-quick-actions-header">
+
+            <span class="dashboard-my-chefs-quick-actions-eyebrow">
+                QUICK ACCESS
+            </span>
+
+            <h2 class="dashboard-my-chefs-quick-actions-title">
+                Quick Actions
+            </h2>
+
+            <p class="dashboard-my-chefs-quick-actions-description">
+                Quickly manage your orders, meals, and tiffin plans.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             QUICK ACTIONS GRID
+        ================================================== -->
+
+        <div class="dashboard-my-chefs-quick-actions-grid">
+
+
+            <!-- =================================================
+                 ACTION 01 — ORDER AGAIN
+            ================================================== -->
+
+            <a
+                href="order.html"
+                class="dashboard-my-chefs-quick-action-card"
+            >
+
+                <div class="dashboard-my-chefs-quick-action-icon">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+
+                <div class="dashboard-my-chefs-quick-action-content">
+
+                    <h3 class="dashboard-my-chefs-quick-action-title">
+                        Order Again
+                    </h3>
+
+                    <p class="dashboard-my-chefs-quick-action-text">
+                        Quickly reorder your favourite homemade meals.
+                    </p>
+
+                </div>
+
+                <span class="dashboard-my-chefs-quick-action-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+
+            </a>
+
+
+
+            <!-- =================================================
+                 ACTION 02 — TIFFIN PLANS
+            ================================================== -->
+
+            <a
+                href="tiffin-plans.html"
+                class="dashboard-my-chefs-quick-action-card"
+            >
+
+                <div class="dashboard-my-chefs-quick-action-icon">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+
+                <div class="dashboard-my-chefs-quick-action-content">
+
+                    <h3 class="dashboard-my-chefs-quick-action-title">
+                        Manage Tiffin Plans
+                    </h3>
+
+                    <p class="dashboard-my-chefs-quick-action-text">
+                        View and manage your daily, weekly, or monthly plans.
+                    </p>
+
+                </div>
+
+                <span class="dashboard-my-chefs-quick-action-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+
+            </a>
+
+
+
+            <!-- =================================================
+                 ACTION 03 — ORDER HISTORY
+            ================================================== -->
+
+            <a
+                href="order-history.html"
+                class="dashboard-my-chefs-quick-action-card"
+            >
+
+                <div class="dashboard-my-chefs-quick-action-icon">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </div>
+
+                <div class="dashboard-my-chefs-quick-action-content">
+
+                    <h3 class="dashboard-my-chefs-quick-action-title">
+                        Order History
+                    </h3>
+
+                    <p class="dashboard-my-chefs-quick-action-text">
+                        View your previous orders and meal details.
+                    </p>
+
+                </div>
+
+                <span class="dashboard-my-chefs-quick-action-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     MY CHEFS — SECTION 4
+     FIND NEW CHEFS CTA
+========================================================= -->
+
+<section
+    class="dashboard-my-chefs-find-new-section"
+    id="dashboardMyChefsFindNew"
+>
+
+    <div class="dashboard-my-chefs-find-new-container">
+
+        <!-- =================================================
+             CTA CONTENT
+        ================================================== -->
+
+        <div class="dashboard-my-chefs-find-new-content">
+
+            <span class="dashboard-my-chefs-find-new-eyebrow">
+                DISCOVER MORE
+            </span>
+
+            <h2 class="dashboard-my-chefs-find-new-title">
+                Looking for More Home Chefs?
+            </h2>
+
+            <p class="dashboard-my-chefs-find-new-description">
+                Explore more trusted home chefs, discover new homemade meals,
+                and find flavours that match your preferences.
+            </p>
+
+
+            <!-- =================================================
+                 CTA ACTIONS
+            ================================================== -->
+
+            <div class="dashboard-my-chefs-find-new-actions">
+
+                <a
+                    href="find-chef.html"
+                    class="dashboard-my-chefs-find-new-primary-button"
+                >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Find New Chefs</span>
+                </a>
+
+                <a
+                    href="order.html"
+                    class="dashboard-my-chefs-find-new-secondary-button"
+                >
+                    <i class="fa-solid fa-utensils"></i>
+                    <span>Browse Meals</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+            </div>
+
+    </main>
+
+</div>
+
+
+<!-- =========================================================
+     DASHBOARD JAVASCRIPT
+========================================================= -->
+<! =========================================================
+   DASHBOARD — LOGOUT CONFIRMATION POPUP
+   PART 1 — HTML
+========================================================= !>
+
+<div
+    class="dashboard-logout-modal"
+    id="dashboardLogoutModal"
+    aria-hidden="true"
+>
+
+    <!-- =====================================================
+         BACKDROP
+    ====================================================== -->
+
+    <div
+        class="dashboard-logout-modal-backdrop"
+        id="dashboardLogoutBackdrop"
+    ></div>
+
+
+    <!-- =====================================================
+         MODAL CARD
+    ====================================================== -->
+
+    <div
+        class="dashboard-logout-modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dashboardLogoutTitle"
+        aria-describedby="dashboardLogoutMessage"
+    >
+
+        <!-- =================================================
+             CLOSE BUTTON
+        ================================================== -->
+
+        <button
+            type="button"
+            class="dashboard-logout-modal-close"
+            id="dashboardLogoutClose"
+            aria-label="Close logout confirmation"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <!-- =================================================
+             LOGOUT ICON
+        ================================================== -->
+
+        <div class="dashboard-logout-modal-icon">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+
+
+        <!-- =================================================
+             CONTENT
+        ================================================== -->
+
+        <div class="dashboard-logout-modal-content">
+
+            <h2
+                class="dashboard-logout-modal-title"
+                id="dashboardLogoutTitle"
+            >
+                Logout?
+            </h2>
+
+            <p
+                class="dashboard-logout-modal-message"
+                id="dashboardLogoutMessage"
+            >
+                Are you sure you want to logout from your
+                TiffinMate account?
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             ACTION BUTTONS
+        ================================================== -->
+
+        <div class="dashboard-logout-modal-actions">
+
+            <!-- CANCEL -->
+            <button
+                type="button"
+                class="dashboard-logout-modal-cancel"
+                id="dashboardLogoutCancel"
+            >
+                No, Stay
+            </button>
+
+
+            <!-- CONFIRM LOGOUT -->
+            <button
+                type="button"
+                class="dashboard-logout-modal-confirm"
+                id="dashboardLogoutConfirm"
+            >
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Yes, Logout</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
