@@ -14826,3 +14826,236 @@ body.dark-mode .dashboard-tiffin-manage-plan-pause-button:hover span,
 body.dark-mode .dashboard-tiffin-manage-plan-pause-button:hover i {
     color: #FFFFFF !important;
 }
+
+
+
+
+/* =========================================================
+   DASHBOARD SIDEBAR — TABLET / IPAD PRO
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .dashboard-sidebar {
+        transform: translateX(-100%);
+        visibility: hidden;
+    }
+
+    .dashboard-sidebar.sidebar-open {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    .dashboard-sidebar-overlay {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .dashboard-sidebar-overlay.overlay-visible {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .dashboard-menu-toggle {
+        display: flex;
+    }
+}
+
+
+
+
+/* =========================================================
+   DASHBOARD — iPAD PRO HAMBURGER OVERRIDE
+   FIX FOR 1024px — 1366px
+========================================================= */
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+
+    /* -----------------------------------------------------
+       HAMBURGER BUTTON
+    ----------------------------------------------------- */
+
+    .dashboard-menu-toggle {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        position: relative !important;
+        z-index: 1102 !important;
+        cursor: pointer !important;
+    }
+
+
+    /* -----------------------------------------------------
+       SIDEBAR — CLOSED
+    ----------------------------------------------------- */
+
+    .dashboard-sidebar {
+        position: fixed !important;
+
+        top: 0 !important;
+        left: 0 !important;
+        bottom: 0 !important;
+
+        width: 250px !important;
+        height: 100vh !important;
+
+        transform: translateX(-100%) !important;
+
+        visibility: hidden !important;
+        opacity: 1 !important;
+
+        z-index: 1100 !important;
+
+        transition:
+            transform 0.3s ease,
+            visibility 0.3s ease !important;
+    }
+
+
+    /* -----------------------------------------------------
+       SIDEBAR — OPEN
+       JS adds .sidebar-open
+    ----------------------------------------------------- */
+
+    .dashboard-sidebar.sidebar-open {
+        transform: translateX(0) !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+
+    /* -----------------------------------------------------
+       OVERLAY — CLOSED
+    ----------------------------------------------------- */
+
+    .dashboard-sidebar-overlay {
+        position: fixed !important;
+
+        inset: 0 !important;
+
+        display: block !important;
+
+        width: 100% !important;
+        height: 100% !important;
+
+        background: rgba(18, 15, 22, 0.45) !important;
+
+        opacity: 0 !important;
+        visibility: hidden !important;
+
+        pointer-events: none !important;
+
+        z-index: 1099 !important;
+
+        transition:
+            opacity 0.3s ease,
+            visibility 0.3s ease !important;
+    }
+
+
+    /* -----------------------------------------------------
+       OVERLAY — OPEN
+       JS adds .overlay-visible
+    ----------------------------------------------------- */
+
+    .dashboard-sidebar-overlay.overlay-visible {
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+    }
+
+
+    /* -----------------------------------------------------
+       MAIN CONTENT
+    ----------------------------------------------------- */
+
+    .dashboard-main {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+
+    /* -----------------------------------------------------
+       BODY WHEN SIDEBAR IS OPEN
+    ----------------------------------------------------- */
+
+    body.dashboard-menu-active {
+        overflow: hidden !important;
+    }
+
+
+    /* -----------------------------------------------------
+       SIDEBAR CLOSE BUTTON
+    ----------------------------------------------------- */
+
+    .dashboard-sidebar-close {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        cursor: pointer !important;
+    }
+}
+
+
+/* =========================================================
+   RTL — iPAD PRO
+========================================================= */
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+
+    html[dir="rtl"] .dashboard-sidebar {
+        left: auto !important;
+        right: 0 !important;
+
+        transform: translateX(100%) !important;
+    }
+
+
+    html[dir="rtl"] .dashboard-sidebar.sidebar-open {
+        transform: translateX(0) !important;
+    }
+}
+
+
+/* =========================================================
+   DESKTOP — 1367px AND ABOVE
+   RESTORE NORMAL SIDEBAR
+========================================================= */
+
+@media only screen and (min-width: 1367px) {
+
+    .dashboard-sidebar {
+        transform: none !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .dashboard-menu-toggle {
+        display: none !important;
+    }
+
+    .dashboard-sidebar-overlay {
+        display: none !important;
+    }
+
+    .dashboard-main {
+        width: auto !important;
+        margin-left: 250px !important;
+    }
+
+    html[dir="rtl"] .dashboard-main {
+        margin-left: 0 !important;
+        margin-right: 250px !important;
+    }
+}

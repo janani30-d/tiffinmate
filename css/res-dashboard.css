@@ -14547,3 +14547,250 @@
     }
 
 }
+
+
+
+
+
+
+
+/* =========================================================
+   iPad Mini ONLY
+   Center the 3rd Tiffin Plan card
+   ========================================================= */
+
+@media only screen and (min-width: 768px) and (max-width: 834px) {
+
+    .dashboard-tiffin-available-plans-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .dashboard-tiffin-available-plan-card:nth-child(3) {
+        grid-column: 1 / 3;
+        justify-self: center;
+        width: calc(
+            (100% - 24px) / 2
+        );
+    }
+
+}
+
+
+
+
+/* =========================================
+   iPad Mini — Center 3rd Home Chef Card
+========================================= */
+@media only screen and (min-width: 768px) and (max-width: 834px) {
+
+    .dashboard-my-home-chefs-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .dashboard-my-home-chef-card:nth-child(3) {
+        grid-column: 1 / 3 !important;
+        justify-self: center !important;
+        width: calc((100% - 24px) / 2) !important;
+    }
+
+}
+
+
+
+
+/* =========================================
+   iPad Mini — Center 3rd Quick Action Card
+========================================= */
+@media only screen and (min-width: 768px) and (max-width: 834px) {
+
+    .dashboard-my-chefs-quick-actions-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .dashboard-my-chefs-quick-action-card:nth-child(3) {
+        grid-column: 1 / 3 !important;
+        justify-self: center !important;
+        width: calc((100% - 24px) / 2) !important;
+    }
+
+}
+
+
+
+/* =========================================
+   iPad Mini — Center 3rd Recent Chef Card
+========================================= */
+@media only screen and (min-width: 768px) and (max-width: 834px) {
+
+    .dashboard-recent-chefs-list {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .dashboard-recent-chef-card:nth-child(3) {
+        grid-column: 1 / 3 !important;
+        justify-self: center !important;
+        width: calc((100% - 24px) / 2) !important;
+    }
+
+}
+
+
+
+
+/* =========================================
+   iPad Mini — Center 3rd Weekly Menu Card
+========================================= */
+@media only screen and (min-width: 768px) and (max-width: 834px) {
+
+    .dashboard-chef-weekly-menus-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .dashboard-chef-weekly-menu-card:nth-child(3) {
+        grid-column: 1 / 3 !important;
+        justify-self: center !important;
+        width: calc((100% - 24px) / 2) !important;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================
+   iPad Pro — Show Hamburger Menu
+   1024px to 1366px
+========================================= */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+
+    .dashboard-menu-toggle {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dashboard-sidebar {
+        transform: translateX(-100%);
+    }
+
+    .dashboard-sidebar.is-open {
+        transform: translateX(0);
+    }
+
+    .dashboard-sidebar-overlay {
+        display: none;
+    }
+
+    .dashboard-sidebar-overlay.is-visible {
+        display: block;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   iPad Pro - Hamburger Menu
+   1024px to 1366px
+   ========================================================= */
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+
+    /* Show hamburger */
+    .dashboard-menu-toggle {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    /* Hide sidebar by default */
+    .dashboard-sidebar {
+        transform: translateX(-100%) !important;
+        transition: transform 0.3s ease !important;
+        z-index: 1000 !important;
+    }
+
+    /* Show sidebar when hamburger is clicked */
+    .dashboard-sidebar.is-open {
+        transform: translateX(0) !important;
+    }
+
+    /* Overlay hidden by default */
+    .dashboard-sidebar-overlay {
+        display: none !important;
+        opacity: 0 !important;
+    }
+
+    /* Overlay visible when menu is open */
+    .dashboard-sidebar-overlay.is-visible {
+        display: block !important;
+        opacity: 1 !important;
+    }
+
+    /* Keep main dashboard full width */
+    .dashboard-main {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   iPAD PRO — CENTER LAST CARD
+   1024px — 1366px ONLY
+========================================================= */
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+
+    /* =====================================================
+       RECENTLY VIEWED CHEFS
+    ===================================================== */
+
+    .dashboard-recent-chefs-list {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 20px !important;
+    }
+
+    .dashboard-recent-chef-card:nth-child(3) {
+        grid-column: 1 / 3 !important;
+
+        justify-self: center !important;
+
+        width: calc((100% - 20px) / 2) !important;
+    }
+
+
+    /* =====================================================
+       CHEF WEEKLY MENUS
+    ===================================================== */
+
+    .dashboard-chef-weekly-menus-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 20px !important;
+    }
+
+    .dashboard-chef-weekly-menu-card:nth-child(3) {
+        grid-column: 1 / 3 !important;
+
+        justify-self: center !important;
+
+        width: calc((100% - 20px) / 2) !important;
+    }
+
+}

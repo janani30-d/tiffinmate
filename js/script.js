@@ -4399,3 +4399,43 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
 })();
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   DASHBOARD — SCROLL TO TOP
+========================================================= */
+
+const dashboardScrollTop =
+    document.getElementById("dashboardScrollTop");
+
+if (dashboardScrollTop) {
+
+    window.addEventListener("scroll", () => {
+
+        if (window.scrollY > 350) {
+            dashboardScrollTop.classList.add("show");
+        } else {
+            dashboardScrollTop.classList.remove("show");
+        }
+
+    }, { passive: true });
+
+
+    dashboardScrollTop.addEventListener("click", () => {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+}

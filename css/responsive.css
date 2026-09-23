@@ -64618,3 +64618,156 @@ html[dir="rtl"] #registerPhone {
         box-sizing: border-box !important;
     }
 }
+
+
+
+
+
+
+/* =========================================================
+   HOME 2 CUISINE
+   iPAD PRO ONLY
+   LAST 2 CARDS CENTERED
+========================================================= */
+
+@media (min-width: 900px) and (max-width: 1199px) {
+
+    .home2-cuisine-grid {
+        display: grid !important;
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 24px !important;
+        width: 100% !important;
+    }
+
+    /* Cards 1–6 */
+    .home2-cuisine-grid .home2-cuisine-card:nth-child(1),
+    .home2-cuisine-grid .home2-cuisine-card:nth-child(2),
+    .home2-cuisine-grid .home2-cuisine-card:nth-child(3),
+    .home2-cuisine-grid .home2-cuisine-card:nth-child(4),
+    .home2-cuisine-grid .home2-cuisine-card:nth-child(5),
+    .home2-cuisine-grid .home2-cuisine-card:nth-child(6) {
+        grid-column: span 2 !important;
+        width: 100% !important;
+    }
+
+    /* Card 7 */
+    .home2-cuisine-grid .home2-cuisine-card:nth-child(7) {
+        grid-column: 2 / span 2 !important;
+        width: 100% !important;
+    }
+
+    /* Card 8 */
+    .home2-cuisine-grid .home2-cuisine-card:nth-child(8) {
+        grid-column: 4 / span 2 !important;
+        width: 100% !important;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   HOME 2 CHEFS - iPAD PRO ONLY
+   LAST CARD CENTERED
+========================================================= */
+
+@media (min-width: 900px) and (max-width: 1199px) {
+
+    .home2-chefs-grid {
+        display: grid !important;
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 24px !important;
+        width: 100% !important;
+    }
+
+    /* Cards 1, 2, 3 */
+    .home2-chefs-grid .home2-chef-card:nth-child(1),
+    .home2-chefs-grid .home2-chef-card:nth-child(2),
+    .home2-chefs-grid .home2-chef-card:nth-child(3) {
+        grid-column: span 2 !important;
+        width: 100% !important;
+    }
+
+    /* Card 4 - centered */
+    .home2-chefs-grid .home2-chef-card:nth-child(4) {
+        grid-column: 3 / span 2 !important;
+        width: 100% !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   HOME 2 MEALS - iPAD PRO ONLY
+   LAST CARD CENTERED
+========================================================= */
+
+@media (min-width: 900px) and (max-width: 1199px) {
+
+    .home2-meals-grid {
+        display: grid !important;
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 24px !important;
+        width: 100% !important;
+    }
+
+    /* Cards 1, 2, 3 */
+    .home2-meals-grid .home2-meal-card:nth-child(1),
+    .home2-meals-grid .home2-meal-card:nth-child(2),
+    .home2-meals-grid .home2-meal-card:nth-child(3) {
+        grid-column: span 2 !important;
+        width: 100% !important;
+    }
+
+    /* Card 4 - CENTER */
+    .home2-meals-grid .home2-meal-card:nth-child(4) {
+        grid-column: 3 / span 2 !important;
+        width: 100% !important;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   iPad Pro — Center the last two chef cards
+   ========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+
+    .find-chef-directory-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Last two cards */
+    .find-chef-directory-card:nth-child(7),
+    .find-chef-directory-card:nth-child(8) {
+        justify-self: center;
+        width: 100%;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   iPad Pro ONLY
+   Center Menu Items 07 & 08
+   ========================================================= */
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+
+    .chef-menu-item:nth-child(7) {
+        transform: translateX(50%) !important;
+    }
+
+    .chef-menu-item:nth-child(8) {
+        transform: translateX(50%) !important;
+    }
+
+}

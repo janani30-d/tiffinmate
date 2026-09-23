@@ -287,13 +287,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 "click",
                 function () {
 
-                    if (
-                        window.innerWidth <= 1023
-                    ) {
-
-                        closeSidebar();
-
-                    }
+                   if (window.innerWidth >= 1200) {
+    closeSidebar();
+}
 
                 }
             );
@@ -340,11 +336,9 @@ document.addEventListener("DOMContentLoaded", function () {
         "resize",
         function () {
 
-            if (window.innerWidth > 1023) {
-
-                closeSidebar();
-
-            }
+            if (window.innerWidth >= 1200) {
+    closeSidebar();
+}
 
         }
     );
