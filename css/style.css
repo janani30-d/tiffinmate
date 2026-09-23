@@ -40308,3 +40308,27 @@ body.dark-mode .dashboard-scroll-top:hover {
         left: 16px;
     }
 }
+
+
+
+/* =========================================================
+   TIFFIN PLAN — PROCESS CONNECTOR ARROW COLOR
+========================================================= */
+
+.tiffin-plan-process-connector {
+    color: #6C4AB6 !important;
+}
+
+.tiffin-plan-process-connector span {
+    border-color: #6C4AB6 !important;
+    background: #6C4AB6 !important;
+}
+
+/* If the arrow is created using pseudo-elements */
+.tiffin-plan-process-connector::before,
+.tiffin-plan-process-connector::after,
+.tiffin-plan-process-connector span::before,
+.tiffin-plan-process-connector span::after {
+    border-color: #6C4AB6 !important;
+    background-color: #6C4AB6 !important;
+}
