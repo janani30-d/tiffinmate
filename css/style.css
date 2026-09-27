@@ -40332,3 +40332,1037 @@ body.dark-mode .dashboard-scroll-top:hover {
     border-color: #6C4AB6 !important;
     background-color: #6C4AB6 !important;
 }
+
+
+
+
+
+
+
+
+
+.home2-plan-badge {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+
+    width: 108px !important;
+    height: 30px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    text-align: center !important;
+
+    background: #6C4AB6 !important;
+    color: #FFFFFF !important;
+
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+
+    border-radius: 0 14px 0 14px !important;
+    box-sizing: border-box !important;
+    z-index: 10 !important;
+}
+
+
+
+
+
+.home2-plan-badge {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+}
+
+
+
+
+
+/* =========================================================
+   DIFFERENCE IMAGE — DARK MODE BORDER FIX
+========================================================= */
+
+body.dark-mode .tiffinmate-difference-image-frame::before {
+    border-color: transparent !important;
+}
+
+
+
+/* =========================================================
+   TIFFIN PLANS — CENTER FEATURED BADGE
+========================================================= */
+
+.tiffin-plan-card-featured {
+    position: relative !important;
+}
+
+.tiffin-plan-featured-badge {
+    position: absolute !important;
+
+    top: 0 !important;
+    left: 50% !important;
+    right: auto !important;
+
+    transform: translateX(-50%) !important;
+
+    width: 120px !important;
+    height: 28px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    background: #6C4AB6 !important;
+    color: #FFFFFF !important;
+
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    text-align: center !important;
+
+    border-radius: 0 0 8px 8px !important;
+    z-index: 20 !important;
+    box-sizing: border-box !important;
+}
+
+
+
+
+
+
+/* =========================================================
+   LOGIN PAGE — CENTER LOGO + RIGHT CONTROLS
+========================================================= */
+
+/* Remove normal header appearance */
+.login-topbar {
+    position: relative !important;
+    width: 100% !important;
+    height: 82px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* =========================================================
+   CENTER LOGO BOX
+========================================================= */
+
+.login-logo {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+
+    transform: translate(-50%, -50%) !important;
+
+    width: 120px !important;
+    height: 58px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 8px 16px !important;
+
+    background: #211B28 !important;
+    border: 1px solid #3A3042 !important;
+    border-radius: 10px !important;
+
+    box-sizing: border-box !important;
+}
+
+/* Logo image */
+.login-logo .site-logo-image {
+    width: 88px !important;
+    height: auto !important;
+    max-width: 100% !important;
+    display: block !important;
+}
+
+/* =========================================================
+   CONTROLS — RIGHT SIDE
+========================================================= */
+
+.login-page-controls {
+    position: absolute !important;
+
+    top: 50% !important;
+    right: 32px !important;
+
+    transform: translateY(-50%) !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+
+    z-index: 20 !important;
+}
+
+/* Buttons */
+.login-control-btn {
+    width: 40px !important;
+    height: 40px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 !important;
+
+    border-radius: 8px !important;
+    border: 1px solid #3A3042 !important;
+
+    background: #211B28 !important;
+    color: #F5F1F8 !important;
+
+    cursor: pointer !important;
+}
+
+/* Hover */
+.login-control-btn:hover {
+    background: #382052 !important;
+    border-color: #6C4AB6 !important;
+    color: #FFFFFF !important;
+}
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .login-topbar {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode .login-logo {
+    background: #211B28 !important;
+    border-color: #3A3042 !important;
+}
+
+body.dark-mode .login-control-btn {
+    background: #211B28 !important;
+    border-color: #3A3042 !important;
+    color: #F5F1F8 !important;
+}
+
+body.dark-mode .login-control-btn:hover {
+    background: #382052 !important;
+    border-color: #6C4AB6 !important;
+    color: #FFFFFF !important;
+}
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .login-page-controls {
+    right: auto !important;
+    left: 32px !important;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .login-topbar {
+        height: 72px !important;
+    }
+
+    .login-logo {
+        width: 105px !important;
+        height: 52px !important;
+        padding: 7px 12px !important;
+    }
+
+    .login-logo .site-logo-image {
+        width: 78px !important;
+    }
+
+    .login-page-controls {
+        right: 16px !important;
+        gap: 6px !important;
+    }
+
+    .login-control-btn {
+        width: 36px !important;
+        height: 36px !important;
+    }
+
+    html[dir="rtl"] .login-page-controls {
+        right: auto !important;
+        left: 16px !important;
+    }
+}
+
+
+
+
+
+/* =========================================================
+   LOGIN — LOGO INSIDE CARD
+========================================================= */
+
+.login-topbar {
+    position: relative !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Hide the logo from the topbar */
+.login-topbar .login-logo {
+    display: none !important;
+}
+
+/* Keep controls on right */
+.login-page-controls {
+    position: fixed !important;
+    top: 24px !important;
+    right: 32px !important;
+    z-index: 100 !important;
+}
+
+/* =========================================================
+   LOGIN CARD
+========================================================= */
+
+.login-card {
+    position: relative !important;
+}
+
+/* Create logo area inside card */
+.login-card::before {
+    content: "" !important;
+
+    display: block !important;
+
+    width: 110px !important;
+    height: 58px !important;
+
+    margin: 0 auto 18px !important;
+
+    background-image: url("../images/logo.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+}
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.login-card-header {
+    text-align: center !important;
+}
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .login-card::before {
+    background-image: url("../images/logo.png") !important;
+}
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .login-page-controls {
+    right: auto !important;
+    left: 32px !important;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .login-card::before {
+        width: 95px !important;
+        height: 52px !important;
+        margin-bottom: 14px !important;
+    }
+
+    .login-page-controls {
+        top: 16px !important;
+        right: 16px !important;
+    }
+
+    html[dir="rtl"] .login-page-controls {
+        right: auto !important;
+        left: 16px !important;
+    }
+}
+
+
+
+
+
+/* =========================================================
+   LOGIN — ABSOLUTE TOP CONTROLS
+========================================================= */
+
+.login-page-controls {
+    position: absolute !important;
+
+    top: 18px !important;
+    right: 32px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+
+    z-index: 9999 !important;
+}
+
+/* Keep buttons fixed size */
+.login-control-btn {
+    width: 40px !important;
+    height: 40px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex-shrink: 0 !important;
+}
+
+/* RTL */
+html[dir="rtl"] .login-page-controls {
+    right: auto !important;
+    left: 32px !important;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .login-page-controls {
+        top: 14px !important;
+        right: 16px !important;
+    }
+
+    html[dir="rtl"] .login-page-controls {
+        right: auto !important;
+        left: 16px !important;
+    }
+}
+
+
+
+
+.login-page-controls {
+    position: absolute !important;
+    top: 35px !important;
+    right: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    z-index: 9999 !important;
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   REGISTER — TOP CONTROLS POSITION
+========================================================= */
+
+.register-page {
+    position: relative !important;
+}
+
+.register-page-controls {
+    position: absolute !important;
+    top: 35px !important;
+    right: 32px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+
+    z-index: 9999 !important;
+}
+
+/* RTL */
+html[dir="rtl"] .register-page-controls {
+    right: auto !important;
+    left: 32px !important;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .register-page-controls {
+        top: 35px !important;
+        right: 16px !important;
+    }
+
+    html[dir="rtl"] .register-page-controls {
+        right: auto !important;
+        left: 16px !important;
+    }
+}
+
+
+
+
+
+/* =========================================================
+   REGISTER PAGE — HEADER OVERRIDE
+========================================================= */
+
+.register-page {
+    position: relative !important;
+}
+
+/* Remove normal header appearance */
+.register-topbar {
+    position: relative !important;
+    width: 100% !important;
+    height: 82px !important;
+
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Center logo box */
+.register-logo {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+
+    transform: translate(-50%, -50%) !important;
+
+    width: 120px !important;
+    height: 58px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #211B28 !important;
+    border: 1px solid #3A3042 !important;
+    border-radius: 10px !important;
+
+    padding: 8px 16px !important;
+    box-sizing: border-box !important;
+}
+
+.register-logo img {
+    width: 88px !important;
+    height: auto !important;
+    display: block !important;
+}
+
+/* =========================================================
+   REGISTER — RIGHT SIDE CONTROLS
+========================================================= */
+
+.register-page-controls {
+    position: absolute !important;
+
+    top: 35px !important;
+    right: 32px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+
+    z-index: 9999 !important;
+}
+
+.register-control-btn {
+    width: 40px !important;
+    height: 40px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex-shrink: 0 !important;
+}
+
+/* RTL */
+html[dir="rtl"] .register-page-controls {
+    right: auto !important;
+    left: 32px !important;
+}
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .register-logo {
+    background: #211B28 !important;
+    border-color: #3A3042 !important;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .register-topbar {
+        height: 72px !important;
+    }
+
+    .register-logo {
+        width: 105px !important;
+        height: 52px !important;
+    }
+
+    .register-logo img {
+        width: 78px !important;
+    }
+
+    .register-page-controls {
+        top: 35px !important;
+        right: 16px !important;
+    }
+
+    html[dir="rtl"] .register-page-controls {
+        right: auto !important;
+        left: 16px !important;
+    }
+}
+
+
+
+
+/* =========================================================
+   REGISTER — LOGO INSIDE CARD
+========================================================= */
+
+.register-logo {
+    display: none !important;
+}
+
+/* Register card */
+.register-card {
+    position: relative !important;
+}
+
+/* Logo inside card */
+.register-card::before {
+    content: "" !important;
+
+    display: block !important;
+
+    width: 110px !important;
+    height: 58px !important;
+
+    margin: 0 auto 16px !important;
+
+    background-image: url("../images/logo.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+}
+
+/* Center card heading */
+.register-card-header {
+    text-align: center !important;
+}
+
+
+
+
+
+/* =========================================================
+   HOME 1 — POPULAR MEALS — MOBILE GAP FIX
+========================================================= */
+
+@media only screen and (max-width: 767px) {
+
+    .home1-popular-meals-section {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+
+    .home1-popular-meals-container {
+        width: calc(100% - 32px) !important;
+        margin: 0 auto !important;
+    }
+
+    .home1-popular-meals-header {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0 !important;
+        margin-bottom: 24px !important;
+    }
+
+    .home1-popular-meals-heading {
+        width: 100% !important;
+    }
+
+    .home1-popular-meals-header-right {
+        width: 100% !important;
+        flex: none !important;
+        margin-top: 20px !important;
+    }
+
+    .home1-popular-meals-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .home1-meal-card {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    .home1-meal-image {
+        height: 245px !important;
+        min-height: 245px !important;
+        flex: 0 0 245px !important;
+    }
+}
+
+
+
+
+
+
+
+/* =========================================================
+   HOME 1 — HOW IT WORKS MOBILE GAP
+========================================================= */
+
+@media only screen and (max-width: 767px) {
+
+    .home1-how-it-works-section {
+        padding-top: 35px !important;
+    }
+
+    .home1-how-it-works-container {
+        padding-top: 0 !important;
+    }
+
+    .home1-how-it-works-header {
+        margin-top: 0 !important;
+    }
+}
+
+
+
+
+
+
+
+/* =========================================================
+   LOGIN — LOGO INSIDE CARD
+========================================================= */
+
+.login-card-logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 90px !important;
+    height: 48px !important;
+
+    margin: 0 auto 16px !important;
+
+    text-decoration: none !important;
+}
+
+.login-card-logo .site-logo-image {
+    width: 65px !important;
+    height: auto !important;
+    display: block !important;
+}
+
+
+
+
+.login-card-logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 90px !important;
+    height: 48px !important;
+
+    margin: 0 auto 16px !important;
+}
+
+.login-card-logo .site-logo-image {
+    width: 65px !important;
+    height: auto !important;
+    display: block !important;
+}
+
+
+
+
+/* Remove duplicate logo from login card */
+.login-card::before {
+    display: none !important;
+    content: none !important;
+}
+
+
+
+
+
+.login-card-logo .site-logo-image {
+    width: 85px !important;
+    height: auto !important;
+}
+
+
+
+
+
+
+
+/* =========================================================
+   REGISTER — LOGO INSIDE CARD
+========================================================= */
+
+.register-card-logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 100px !important;
+    height: 55px !important;
+
+    margin: 0 auto 16px !important;
+
+    text-decoration: none !important;
+}
+
+.register-card-logo .site-logo-image {
+    width: 85px !important;
+    height: auto !important;
+    display: block !important;
+}
+
+
+
+
+.register-topbar .register-logo {
+    display: none !important;
+}
+
+
+
+
+/* Remove duplicate Register card logo */
+.register-card::before {
+    content: none !important;
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   LOGIN + REGISTER — RESPONSIVE CONTROLS
+   OUTSIDE CARD
+========================================================= */
+
+@media only screen and (max-width: 767px) {
+
+    .login-page,
+    .register-page {
+        position: relative !important;
+    }
+
+    /* Keep topbar outside card */
+    .login-topbar,
+    .register-topbar {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+
+        width: 100% !important;
+        height: 0 !important;
+        min-height: 0 !important;
+
+        padding: 0 !important;
+        margin: 0 !important;
+
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+
+        z-index: 9999 !important;
+    }
+
+    /* Login buttons */
+    .login-page-controls {
+        position: absolute !important;
+        top: 25px !important;
+        right: 16px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+
+        z-index: 99999 !important;
+    }
+
+    /* Register buttons */
+    .register-page-controls {
+        position: absolute !important;
+        top: 25px !important;
+        right: 16px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+
+        z-index: 99999 !important;
+    }
+
+    /* RTL */
+    html[dir="rtl"] .login-page-controls,
+    html[dir="rtl"] .register-page-controls {
+        right: auto !important;
+        left: 16px !important;
+    }
+
+    /* Keep buttons outside the card */
+    .login-card,
+    .register-card {
+        position: relative !important;
+    }
+
+    /* Make sure controls never get clipped */
+    .login-content,
+    .register-content {
+        overflow: visible !important;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   LOGIN + REGISTER — MOBILE CONTROLS ABOVE CARD
+========================================================= */
+
+@media only screen and (max-width: 767px) {
+
+    .login-page,
+    .register-page {
+        position: relative !important;
+        overflow: visible !important;
+    }
+
+    /* Controls */
+    .login-page-controls,
+    .register-page-controls {
+        position: absolute !important;
+        top: 16px !important;
+        right: 16px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+
+        z-index: 99999 !important;
+    }
+
+    /* RTL */
+    html[dir="rtl"] .login-page-controls,
+    html[dir="rtl"] .register-page-controls {
+        right: auto !important;
+        left: 16px !important;
+    }
+
+    /* Push card down so controls don't overlap */
+    .login-content,
+    .register-content {
+        padding-top: 80px !important;
+        overflow: visible !important;
+    }
+
+    .login-card,
+    .register-card {
+        position: relative !important;
+        z-index: 1 !important;
+    }
+}
+
+
+
+
+/* =========================================================
+   LOGIN + REGISTER — MOBILE TOP SPACING
+========================================================= */
+
+@media only screen and (max-width: 767px) {
+
+    .login-page,
+    .register-page {
+        position: relative !important;
+        overflow: visible !important;
+    }
+
+    /* Move controls slightly down */
+    .login-page-controls,
+    .register-page-controls {
+        top: 25px !important;
+        right: 16px !important;
+        z-index: 99999 !important;
+    }
+
+    html[dir="rtl"] .login-page-controls,
+    html[dir="rtl"] .register-page-controls {
+        right: auto !important;
+        left: 16px !important;
+    }
+
+    /* Create proper space above the card */
+    .login-content,
+    .register-content {
+        padding-top: 110px !important;
+        overflow: visible !important;
+    }
+
+    .login-card,
+    .register-card {
+        position: relative !important;
+        z-index: 1 !important;
+    }
+}

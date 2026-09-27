@@ -15059,3 +15059,16 @@ body.dark-mode .dashboard-tiffin-manage-plan-pause-button:hover i {
         margin-right: 250px !important;
     }
 }
+
+
+
+
+
+
+
+/* Dashboard logo size */
+.dashboard-logo-image {
+    width: 100px !important;
+    height: auto !important;
+    max-width: 100% !important;
+}
