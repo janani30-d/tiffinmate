@@ -41366,3 +41366,800 @@ body.dark-mode .register-logo {
         z-index: 1 !important;
     }
 }
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   HOME 1 HERO — BUTTON TEXT NO WRAP
+========================================================= */
+
+.home1-hero-button {
+    white-space: nowrap !important;
+    flex-wrap: nowrap !important;
+}
+
+.home1-hero-button span {
+    white-space: nowrap !important;
+}
+
+.home1-hero-button-primary,
+.home1-hero-button-secondary {
+    white-space: nowrap !important;
+}
+
+/* Button text + arrow stay on one line */
+.home1-hero-button-primary .home1-hero-button-icon,
+.home1-hero-button-secondary .home1-hero-button-icon {
+    flex-shrink: 0 !important;
+}
+
+
+
+
+
+
+
+/* Remove all connector lines between comfort steps */
+
+.home1-comfort-step:not(:last-child)::after,
+.home1-comfort-step:not(:last-child)::before {
+    content: none !important;
+    display: none !important;
+}
+
+
+
+
+
+/* =========================================================
+   HOME 2 — CUISINE SECTION
+   REDUCE TOP SPACE
+========================================================= */
+
+.home2-cuisine-section {
+    padding-top: 40px !important;
+}
+
+.home2-cuisine-container {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+
+
+
+
+
+.home2-cuisine-section {
+    padding-top: 20px !important;
+}
+
+
+
+
+
+/* =========================================================
+   HOME 2 — CUISINE
+   REDUCE GAP ABOVE VIEW ALL BUTTON
+========================================================= */
+
+.home2-cuisine-footer {
+    margin-top: 20px !important;
+    padding-top: 0 !important;
+}
+
+.home2-cuisine-view-all {
+    margin-top: 0 !important;
+}
+
+
+
+
+/* =========================================================
+   HOME 2 — CUISINE CARDS
+   REDUCE GAP ABOVE EXPLORE MEALS
+========================================================= */
+
+.home2-cuisine-content {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+}
+
+.home2-cuisine-card-description {
+    margin-bottom: 20px !important;
+}
+
+.home2-cuisine-link {
+    margin-top: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   HOME 2 — WHY TIFFINMATE TABS
+========================================================= */
+
+.home2-why-tabs {
+    display: flex !important;
+    align-items: center !important;
+    gap: 32px !important;
+    margin: 30px 0 28px !important;
+    padding: 0 !important;
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+.home2-why-tab {
+    position: relative !important;
+
+    padding: 0 0 12px !important;
+    margin: 0 !important;
+
+    border: 0 !important;
+    background: transparent !important;
+
+    color: var(--muted-text) !important;
+
+    font-family: var(--font-family) !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+
+    cursor: pointer !important;
+    white-space: nowrap !important;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease !important;
+}
+
+/* Underline */
+.home2-why-tab::after {
+    content: "" !important;
+
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: -1px !important;
+
+    height: 2px !important;
+
+    background: var(--primary-color) !important;
+
+    transform: scaleX(0) !important;
+    transform-origin: center !important;
+
+    transition: transform 0.25s ease !important;
+}
+
+/* Hover */
+.home2-why-tab:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Active */
+.home2-why-tab.active {
+    color: var(--primary-color) !important;
+}
+
+.home2-why-tab.active::after {
+    transform: scaleX(1) !important;
+}
+
+
+/* =========================================================
+   TAB CONTENT
+========================================================= */
+
+.home2-why-panel {
+    display: none !important;
+}
+
+.home2-why-panel.active {
+    display: grid !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media only screen and (max-width: 767px) {
+
+    .home2-why-tabs {
+        gap: 20px !important;
+        margin: 24px 0 22px !important;
+        overflow-x: auto !important;
+        scrollbar-width: none !important;
+    }
+
+    .home2-why-tabs::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .home2-why-tab {
+        flex: 0 0 auto !important;
+        font-size: 13px !important;
+        padding-bottom: 10px !important;
+    }
+}
+
+
+
+
+
+
+
+/* =========================================================
+   HOME 2 — WHY TIFFINMATE
+   TABS + SPACING + BUTTON FIX
+========================================================= */
+
+
+/* =========================================================
+   1. PROPER TABS
+========================================================= */
+
+.home2-why-tabs {
+    display: flex !important;
+    align-items: center !important;
+    gap: 32px !important;
+    margin: 28px 0 24px !important;
+    padding: 0 !important;
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+.home2-why-tab {
+    position: relative !important;
+
+    padding: 0 0 12px !important;
+    margin: 0 !important;
+
+    border: 0 !important;
+    background: transparent !important;
+
+    color: var(--muted-text) !important;
+
+    font-family: var(--font-family) !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+
+    white-space: nowrap !important;
+    cursor: pointer !important;
+
+    transition: color 0.25s ease !important;
+}
+
+/* Active underline */
+.home2-why-tab::after {
+    content: "" !important;
+
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: -1px !important;
+
+    width: 100% !important;
+    height: 2px !important;
+
+    background: var(--primary-color) !important;
+
+    transform: scaleX(0) !important;
+    transform-origin: center !important;
+
+    transition: transform 0.25s ease !important;
+}
+
+/* Hover */
+.home2-why-tab:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Active */
+.home2-why-tab.active {
+    color: var(--primary-color) !important;
+}
+
+.home2-why-tab.active::after {
+    transform: scaleX(1) !important;
+}
+
+
+/* =========================================================
+   2. TAB CONTENT
+========================================================= */
+
+.home2-why-panel {
+    display: none !important;
+}
+
+.home2-why-panel.active {
+    display: grid !important;
+}
+
+
+/* =========================================================
+   3. REDUCE SPACE BELOW INGREDIENT IMAGE
+========================================================= */
+
+.home2-why-tab-content {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.home2-why-panel {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.home2-why-panel-image {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.home2-why-panel-image img {
+    display: block !important;
+    margin-bottom: 0 !important;
+}
+
+
+/* Reduce gap before bottom description */
+.home2-why-bottom-text {
+    margin-top: 22px !important;
+}
+
+
+/* =========================================================
+   4. BUTTON — KEEP TEXT IN ONE LINE
+========================================================= */
+
+.home2-why-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: auto !important;
+    min-width: 208px !important;
+
+    white-space: nowrap !important;
+    flex-wrap: nowrap !important;
+
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.home2-why-button span {
+    white-space: nowrap !important;
+}
+
+.home2-why-button-icon {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+}
+
+
+/* =========================================================
+   5. DARK MODE
+========================================================= */
+
+body.dark-mode .home2-why-tab {
+    color: var(--muted-text) !important;
+}
+
+body.dark-mode .home2-why-tab:hover,
+body.dark-mode .home2-why-tab.active {
+    color: var(--primary-color) !important;
+}
+
+
+/* =========================================================
+   HOME 2 — STATS BOTTOM TRUST MESSAGE
+========================================================= */
+
+.home2-stats-bottom {
+    margin-top: 20px !important;
+    padding-top: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 18px !important;
+}
+
+.home2-stats-bottom p {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.5 !important;
+}
+
+.home2-stats-bottom-line {
+    width: 45px !important;
+    height: 2px !important;
+    margin: 0 !important;
+    background: var(--primary-color) !important;
+    flex-shrink: 0 !important;
+}
+
+
+
+/* Reduce gap above bottom paragraph */
+.home2-why-bottom-text {
+    margin-top: 5px !important;
+}
+
+
+
+
+
+
+
+/* =========================================================
+   HOME 2 — FAQ LEFT IMAGE
+========================================================= */
+
+.home2-faq-intro {
+    display: flex !important;
+    flex-direction: column !important;
+    min-width: 0 !important;
+}
+
+.home2-faq-image {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 520px !important;
+    margin-bottom: 28px !important;
+
+    overflow: hidden !important;
+    border-radius: 16px !important;
+}
+
+.home2-faq-image img {
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    border-radius: 16px !important;
+
+    transition: transform 0.35s ease !important;
+}
+
+.home2-faq-image:hover img {
+    transform: scale(1.03) !important;
+}
+
+
+
+.home2-faq-container {
+    align-items: stretch !important;
+}
+
+.home2-faq-intro {
+    height: 100% !important;
+}
+
+.home2-faq-image {
+    flex: 1 !important;
+    min-height: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   FOOTER — FACEBOOK + YOUTUBE ICON FIX
+========================================================= */
+
+/* Facebook */
+.footer-social-link[aria-label="Facebook"] .social-dot {
+    display: none !important;
+}
+
+/* YouTube */
+.footer-social-link[aria-label="YouTube"] .social-dot {
+    display: none !important;
+}
+
+
+
+
+/* =========================================================
+   FOOTER — FACEBOOK + YOUTUBE ICON FIX
+========================================================= */
+
+/* Facebook */
+.footer-social-link[aria-label="Facebook"] svg {
+    width: 20px !important;
+    height: 20px !important;
+    fill: currentColor !important;
+}
+
+.footer-social-link[aria-label="Facebook"] svg path {
+    fill: currentColor !important;
+}
+
+
+/* YouTube */
+.footer-social-link[aria-label="YouTube"] svg {
+    width: 20px !important;
+    height: 20px !important;
+    fill: currentColor !important;
+}
+
+/* YouTube play button */
+.footer-social-link[aria-label="YouTube"] .social-play {
+    fill: #ffffff !important;
+    stroke: none !important;
+}
+
+/* Remove the unwanted YouTube dot */
+.footer-social-link[aria-label="YouTube"] .social-dot {
+    display: none !important;
+}
+
+
+
+
+
+/* =========================================================
+   YOUTUBE — HOVER PLAY COLOR
+========================================================= */
+
+.footer-social-link[aria-label="YouTube"]:hover .social-play {
+    fill: #6C4AB6 !important;
+    stroke: none !important;
+}
+
+
+
+
+
+.footer-social-link[aria-label="Facebook"] svg {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+
+
+
+/* =========================================================
+   FOOTER — FACEBOOK ICON
+========================================================= */
+
+.footer-social-link[aria-label="Facebook"] {
+    width: 48px !important;
+    height: 48px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: visible !important;
+    line-height: 1 !important;
+}
+
+.footer-social-link[aria-label="Facebook"] svg {
+    width: 18px !important;
+    height: 18px !important;
+    display: block !important;
+    overflow: visible !important;
+    flex-shrink: 0 !important;
+}
+
+.footer-social-link[aria-label="Facebook"] svg path {
+    fill: currentColor !important;
+    stroke: none !important;
+}
+
+
+
+
+
+.footer-social-link[aria-label="Facebook"] svg {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+
+
+
+
+.footer-social-link[aria-label="Facebook"] i {
+    font-size: 18px !important;
+    line-height: 1 !important;
+}
+
+
+
+
+
+
+/* =========================================================
+   FOOTER — EQUAL SOCIAL ICON BOXES
+========================================================= */
+
+.footer-social-link {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    box-sizing: border-box !important;
+    border-radius: 10px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   LOGIN — LEFT ALIGN FIELDS
+========================================================= */
+
+.login-field {
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.login-field-label {
+    display: block !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.login-input-wrapper {
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.login-input {
+    text-align: left !important;
+}
+
+
+
+
+
+
+
+/* =========================================================
+   LOGIN — LIGHT MODE BUTTON BACKGROUND
+========================================================= */
+
+.login-control-btn {
+    background: #ffffff !important;
+    color: #29252D !important;
+    border: 1px solid #E5DFEC !important;
+}
+
+.login-control-btn i,
+.login-control-btn .control-icon {
+    color: #29252D !important;
+}
+
+/* Hover */
+.login-control-btn:hover {
+    background: #EEE7F8 !important;
+    color: #6C4AB6 !important;
+}
+
+.login-control-btn:hover i,
+.login-control-btn:hover .control-icon {
+    color: #6C4AB6 !important;
+}
+
+
+
+
+
+
+
+/* =========================================================
+   LOGIN — RTL MODE
+========================================================= */
+
+html[dir="rtl"] .login-field {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .login-field-label {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .login-input-wrapper {
+    direction: rtl !important;
+}
+
+html[dir="rtl"] .login-input {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+/* Input icon */
+html[dir="rtl"] .login-input-icon {
+    left: auto !important;
+    right: 18px !important;
+}
+
+/* Give input space for right-side icon */
+html[dir="rtl"] .login-input {
+    padding-left: 18px !important;
+    padding-right: 52px !important;
+}
+
+/* Password toggle */
+html[dir="rtl"] .login-password-toggle {
+    right: auto !important;
+    left: 14px !important;
+}
+
+/* Forgot password + remember row */
+html[dir="rtl"] .login-options {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .login-forgot-password {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .login-remember {
+    flex-direction: row-reverse !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   HOME 1 — COMFORT STEPS
+   REMOVE CONNECTING LINES
+========================================================= */
+
+.home1-comfort-steps::before,
+.home1-comfort-steps::after,
+.home1-comfort-step::before,
+.home1-comfort-step::after {
+    content: none !important;
+    display: none !important;
+}

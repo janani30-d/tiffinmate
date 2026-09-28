@@ -64777,3 +64777,173 @@ html[dir="rtl"] #registerPhone {
 
 
 
+/* =========================================================
+   HOME 1 — REDUCE SPACE AFTER COMFORT STEPS
+   DESKTOP
+========================================================= */
+
+.home1-comfort-section {
+    min-height: auto !important;
+    height: auto !important;
+    padding-bottom: 40px !important;
+    margin-bottom: 0 !important;
+}
+
+.home1-comfort-container {
+    min-height: auto !important;
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   HOME 2 FAQ — RESPONSIVE IMAGE
+========================================================= */
+
+
+/* =========================================================
+   TABLET — 768px to 1199px
+========================================================= */
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .home2-faq-container {
+        grid-template-columns: 1fr !important;
+        gap: 35px !important;
+    }
+
+    .home2-faq-image {
+        width: 100% !important;
+        height: 380px !important;
+        min-height: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .home2-faq-image img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE — UP TO 767px
+========================================================= */
+
+@media only screen and (max-width: 767px) {
+
+    .home2-faq-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 25px !important;
+    }
+
+    /* FAQ image */
+    .home2-faq-image {
+        width: 100% !important;
+        height: 250px !important;
+        min-height: 0 !important;
+        margin: 0 0 5px !important;
+
+        border-radius: 12px !important;
+        overflow: hidden !important;
+    }
+
+    .home2-faq-image img {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+
+    /* FAQ content */
+    .home2-faq-intro {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .home2-faq-list {
+        width: 100% !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE — UP TO 480px
+========================================================= */
+
+@media only screen and (max-width: 480px) {
+
+    .home2-faq-image {
+        height: 210px !important;
+        border-radius: 10px !important;
+    }
+
+    .home2-faq-container {
+        gap: 20px !important;
+    }
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+   HOME 1 — STATS COUNTER SIZE
+   MOBILE / TABLET
+========================================================= */
+
+@media only screen and (max-width: 767px) {
+
+    .home1-stat-counter {
+        font-size: 30px !important;
+        line-height: 1 !important;
+    }
+
+    .home1-stat-suffix {
+        font-size: 20px !important;
+        line-height: 1 !important;
+    }
+
+    .home1-stat-value {
+        line-height: 1 !important;
+    }
+}
+
+
+
+
+
+/* =========================================================
+   HOME 1 — iPAD MINI COUNTER SIZE
+========================================================= */
+
+@media only screen and (min-width: 768px) and (max-width: 819px) {
+
+    .home1-stat-counter {
+        font-size: 28px !important;
+        line-height: 1 !important;
+    }
+
+    .home1-stat-suffix {
+        font-size: 18px !important;
+        line-height: 1 !important;
+    }
+
+    .home1-stat-value {
+        font-size: 28px !important;
+        line-height: 1 !important;
+    }
+
+}
