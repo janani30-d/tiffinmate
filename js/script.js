@@ -4439,3 +4439,60 @@ if (dashboardScrollTop) {
     });
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   HOME 2 — WHY TIFFINMATE TABS
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const tabs = document.querySelectorAll(".home2-why-tab");
+    const panels = document.querySelectorAll(".home2-why-panel");
+
+    tabs.forEach(function (tab) {
+
+        tab.addEventListener("click", function () {
+
+            const target = tab.getAttribute("data-why-tab");
+
+            /* Remove active from all tabs */
+            tabs.forEach(function (item) {
+                item.classList.remove("active");
+            });
+
+            /* Hide all panels */
+            panels.forEach(function (panel) {
+                panel.classList.remove("active");
+            });
+
+            /* Activate clicked tab */
+            tab.classList.add("active");
+
+            /* Show matching content */
+            const targetPanel = document.querySelector(
+                '.home2-why-panel[data-why-panel="' + target + '"]'
+            );
+
+            if (targetPanel) {
+                targetPanel.classList.add("active");
+            }
+
+        });
+
+    });
+
+});
