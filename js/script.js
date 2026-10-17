@@ -4496,3 +4496,117 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const section = document.querySelector("#chefCuisine");
+
+    if (!section) return;
+
+    const tabs = section.querySelectorAll(
+        ".find-chef-cuisine-pills .find-chef-cuisine-pill"
+    );
+
+    const cards = section.querySelectorAll(
+        ".find-chef-cuisine-item"
+    );
+
+    const searchInput = section.querySelector("#cuisineSearchInput");
+    const searchButton = section.querySelector("#cuisineSearchButton");
+    const suggestions = section.querySelectorAll(
+        ".find-chef-cuisine-suggestion"
+    );
+
+    let selectedCuisine = "all";
+
+    function normalize(value) {
+        return (value || "").trim().toLowerCase();
+    }
+
+    function filterCards() {
+        const query = normalize(searchInput?.value);
+
+        cards.forEach(function (card) {
+            const cuisine = normalize(card.dataset.cuisineName);
+            const text = normalize(card.textContent);
+
+            const matchesCuisine =
+                selectedCuisine === "all" ||
+                cuisine === selectedCuisine;
+
+            const matchesSearch =
+                query === "" || text.includes(query);
+
+            card.hidden = !(matchesCuisine && matchesSearch);
+        });
+    }
+
+    function selectCuisine(cuisine, clearSearch = true) {
+        selectedCuisine = normalize(cuisine) || "all";
+
+        tabs.forEach(function (tab) {
+            const active =
+                normalize(tab.dataset.cuisine) === selectedCuisine;
+
+            tab.classList.toggle("is-active", active);
+            tab.setAttribute("aria-pressed", String(active));
+        });
+
+        if (clearSearch && searchInput) {
+            searchInput.value = "";
+        }
+
+        filterCards();
+    }
+
+    // Cuisine tabs: All and individual cuisines
+    tabs.forEach(function (tab) {
+        tab.addEventListener("click", function () {
+            selectCuisine(tab.dataset.cuisine);
+        });
+    });
+
+    // Search button
+    if (searchButton) {
+        searchButton.addEventListener("click", filterCards);
+    }
+
+    // Search by typing or pressing Enter
+    if (searchInput) {
+        searchInput.addEventListener("input", filterCards);
+
+        searchInput.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                filterCards();
+            }
+        });
+    }
+
+    // Search suggestions
+    suggestions.forEach(function (suggestion) {
+        suggestion.addEventListener("click", function () {
+            const cuisine = suggestion.dataset.cuisine || "all";
+
+            if (searchInput) {
+                searchInput.value = "";
+            }
+
+            selectCuisine(cuisine, false);
+
+            const suggestionBox = suggestion.closest(
+                ".find-chef-cuisine-suggestions"
+            );
+
+            if (suggestionBox) {
+                suggestionBox.setAttribute("aria-hidden", "true");
+            }
+        });
+    });
+
+    // Show every cuisine when the page loads
+    selectCuisine("all");
+});
