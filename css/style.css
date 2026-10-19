@@ -45225,3 +45225,711 @@ body.dark-mode .about-cta-image-badge strong {
 body.dark-mode .about-cta-image-badge span {
     color: #B8AFBF;
 }
+
+/* TIFFINMATE MOBILE MENU — MATCH EXISTING JAVASCRIPT */
+
+@media (max-width: 1199px) {
+    #headerMenu {
+        display: none !important;
+    }
+
+    #headerMenu.mobile-menu-open {
+        display: flex !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 8px !important;
+        right: 8px !important;
+        width: auto !important;
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: calc(100dvh - 100px) !important;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+        gap: 0 !important;
+        padding: 14px 16px !important;
+        box-sizing: border-box !important;
+        background: #FFFFFF !important;
+        border: 1px solid #E5DFEC !important;
+        border-radius: 14px !important;
+        box-shadow: 0 12px 30px rgba(56, 32, 82, 0.14) !important;
+        z-index: 1001 !important;
+    }
+
+    #mobileMenuToggle {
+        position: relative !important;
+        z-index: 1002 !important;
+        cursor: pointer;
+    }
+
+    #headerMenu .main-navigation {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100% !important;
+        gap: 2px !important;
+    }
+
+    #headerMenu .header-actions {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        margin-top: 14px !important;
+        padding-top: 14px !important;
+        border-top: 1px solid #E5DFEC !important;
+        box-sizing: border-box !important;
+    }
+
+    #headerMenu .header-button {
+        flex: 1 1 100px !important;
+        width: auto !important;
+        min-width: 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #headerMenu.mobile-menu-open {
+        left: 5px !important;
+        right: 5px !important;
+        padding: 12px !important;
+    }
+}
+
+/* =========================================================
+   TIFFINMATE HOME 1 HERO
+   RESPONSIVE CONTENT CENTER ALIGNMENT
+   Mobile + iPad Mini + iPad Pro
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    #home1Hero {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #home1Hero .home1-hero-slide {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Center the complete content area */
+    #home1Hero .home1-hero-container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        min-height: inherit;
+        padding: 90px 28px 110px !important;
+        box-sizing: border-box;
+    }
+
+    #home1Hero .home1-hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 760px;
+        margin: 0 auto !important;
+        text-align: center !important;
+        transform: none !important;
+    }
+
+    /* Eyebrow */
+    #home1Hero .home1-hero-eyebrow {
+        display: block;
+        width: 100%;
+        margin: 0 auto 18px !important;
+        text-align: center !important;
+        line-height: 1.7;
+    }
+
+    /* Heading */
+    #home1Hero .home1-hero-title {
+        width: 100%;
+        max-width: 760px;
+        margin: 0 auto 20px !important;
+        text-align: center !important;
+        overflow-wrap: break-word;
+    }
+
+    #home1Hero .home1-hero-title span {
+        display: block;
+    }
+
+    /* Description */
+    #home1Hero .home1-hero-description {
+        width: 100%;
+        max-width: 620px;
+        margin: 0 auto 26px !important;
+        text-align: center !important;
+    }
+
+    /* Buttons */
+    #home1Hero .home1-hero-actions {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center !important;
+        width: 100%;
+        gap: 14px;
+        margin: 0 auto 24px !important;
+    }
+
+    #home1Hero .home1-hero-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 !important;
+        box-sizing: border-box;
+    }
+
+    /* Trust features — slide 1 */
+    #home1Hero .home1-hero-trust {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center !important;
+        width: 100%;
+        gap: 12px 18px;
+        margin: 0 auto !important;
+        text-align: center;
+    }
+
+    #home1Hero .home1-hero-trust-item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin: 0 !important;
+        text-align: center;
+    }
+
+    /* Highlight — slide 2 */
+    #home1Hero .home1-hero-highlight {
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+        width: 100%;
+        gap: 10px;
+        margin: 0 auto !important;
+        text-align: center;
+    }
+
+    #home1Hero .home1-hero-highlight p {
+        margin: 0;
+        text-align: center;
+    }
+
+    /* Mini features — slide 3 */
+    #home1Hero .home1-hero-mini-features {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center !important;
+        width: 100%;
+        gap: 12px 20px;
+        margin: 0 auto !important;
+        text-align: center;
+    }
+
+    /* Keep slider controls at the bottom */
+    #home1Hero .home1-hero-navigation {
+        left: 50%;
+        right: auto;
+        bottom: 22px;
+        transform: translateX(-50%);
+        z-index: 5;
+    }
+}
+
+/* =========================================================
+   IPAD PRO — UP TO 1199px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    #home1Hero .home1-hero-container {
+        padding: 100px 40px 120px !important;
+    }
+
+    #home1Hero .home1-hero-content {
+        max-width: 760px;
+    }
+
+    #home1Hero .home1-hero-title {
+        font-size: clamp(38px, 5vw, 58px);
+        line-height: 1.15;
+    }
+
+    #home1Hero .home1-hero-description {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+}
+
+/* =========================================================
+   MOBILE + IPAD MINI PORTRAIT
+========================================================= */
+
+@media (max-width: 767px) {
+
+    #home1Hero .home1-hero-container {
+        padding: 95px 20px 105px !important;
+    }
+
+    #home1Hero .home1-hero-content {
+        max-width: 480px;
+    }
+
+    #home1Hero .home1-hero-eyebrow {
+        margin-bottom: 14px !important;
+        font-size: 10px;
+        line-height: 1.8;
+        letter-spacing: 0.8px;
+    }
+
+    #home1Hero .home1-hero-title {
+        margin-bottom: 16px !important;
+        font-size: clamp(28px, 6.5vw, 40px);
+        line-height: 1.2;
+        letter-spacing: -0.5px;
+    }
+
+    #home1Hero .home1-hero-description {
+        max-width: 420px;
+        margin-bottom: 22px !important;
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    #home1Hero .home1-hero-actions {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 22px !important;
+    }
+
+    #home1Hero .home1-hero-button {
+        width: 100%;
+        max-width: 255px;
+        min-height: 48px;
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    #home1Hero .home1-hero-trust {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #home1Hero .home1-hero-trust-divider {
+        display: none;
+    }
+
+    #home1Hero .home1-hero-trust-item {
+        font-size: 12px;
+    }
+
+    #home1Hero .home1-hero-highlight {
+        gap: 8px;
+    }
+
+    #home1Hero .home1-hero-highlight p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    #home1Hero .home1-hero-mini-features {
+        gap: 10px 14px;
+        font-size: 12px;
+    }
+
+    #home1Hero .home1-hero-navigation {
+        bottom: 18px;
+    }
+
+    #home1Hero .home1-hero-counter,
+    #home1Hero .home1-hero-scroll {
+        display: none !important;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    #home1Hero .home1-hero-container {
+        padding: 90px 16px 95px !important;
+    }
+
+    #home1Hero .home1-hero-title {
+        font-size: 28px;
+        line-height: 1.22;
+    }
+
+    #home1Hero .home1-hero-description {
+        font-size: 13px;
+    }
+
+    #home1Hero .home1-hero-button {
+        max-width: 240px;
+    }
+
+    #home1Hero .home1-hero-mini-features {
+        gap: 8px 12px;
+        font-size: 11px;
+    }
+}
+
+/* =========================================================
+   TIFFINMATE HOME 1 HERO — ALL SCREEN SIZES
+   Center content horizontally and vertically
+========================================================= */
+
+/* DESKTOP + ALL DEVICES */
+#home1Hero .home1-hero-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#home1Hero .home1-hero-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: inherit;
+    padding: 60px 24px 90px !important;
+    box-sizing: border-box;
+}
+
+#home1Hero .home1-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto !important;
+    text-align: center !important;
+    transform: none !important;
+}
+
+/* EYEBROW */
+#home1Hero .home1-hero-eyebrow {
+    display: block;
+    width: 100%;
+    margin: 0 auto 22px !important;
+    text-align: center !important;
+    line-height: 1.7;
+}
+
+/* HEADING */
+#home1Hero .home1-hero-title {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 22px !important;
+    text-align: center !important;
+    line-height: 1.15;
+    overflow-wrap: break-word;
+}
+
+#home1Hero .home1-hero-title span {
+    display: block;
+}
+
+/* DESCRIPTION */
+#home1Hero .home1-hero-description {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 30px !important;
+    text-align: center !important;
+    line-height: 1.8;
+}
+
+/* BUTTONS */
+#home1Hero .home1-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center !important;
+    width: 100%;
+    gap: 14px;
+    margin: 0 auto 28px !important;
+}
+
+#home1Hero .home1-hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+    box-sizing: border-box;
+}
+
+/* TRUST FEATURES — SLIDE 1 */
+#home1Hero .home1-hero-trust {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center !important;
+    width: 100%;
+    gap: 12px 20px;
+    margin: 0 auto !important;
+    text-align: center;
+}
+
+#home1Hero .home1-hero-trust-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 !important;
+    text-align: center;
+}
+
+/* HIGHLIGHT — SLIDE 2 */
+#home1Hero .home1-hero-highlight {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    width: 100%;
+    gap: 12px;
+    margin: 0 auto !important;
+    text-align: center;
+}
+
+#home1Hero .home1-hero-highlight p {
+    margin: 0;
+    text-align: center;
+}
+
+/* MINI FEATURES — SLIDE 3 */
+#home1Hero .home1-hero-mini-features {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center !important;
+    width: 100%;
+    gap: 12px 22px;
+    margin: 0 auto !important;
+    text-align: center;
+}
+
+/* KEEP SLIDER CONTROLS AT THE BOTTOM */
+#home1Hero .home1-hero-navigation {
+    z-index: 5;
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1200px) {
+    #home1Hero .home1-hero-container {
+        padding: 60px 50px 90px !important;
+    }
+
+    #home1Hero .home1-hero-content {
+        max-width: 900px;
+    }
+
+    #home1Hero .home1-hero-title {
+        max-width: 900px;
+    }
+
+    #home1Hero .home1-hero-description {
+        max-width: 800px;
+        font-size: 17px;
+    }
+}
+
+/* =========================================================
+   TABLETS
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    #home1Hero .home1-hero-container {
+        padding: 90px 30px 110px !important;
+    }
+
+    #home1Hero .home1-hero-content {
+        max-width: 760px;
+    }
+
+    #home1Hero .home1-hero-title {
+        font-size: clamp(38px, 5vw, 58px);
+    }
+
+    #home1Hero .home1-hero-actions {
+        gap: 12px;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+    #home1Hero .home1-hero-container {
+        padding: 90px 20px 100px !important;
+    }
+
+    #home1Hero .home1-hero-content {
+        max-width: 480px;
+    }
+
+    #home1Hero .home1-hero-eyebrow {
+        margin-bottom: 14px !important;
+        font-size: 10px;
+        letter-spacing: 0.8px;
+    }
+
+    #home1Hero .home1-hero-title {
+        margin-bottom: 16px !important;
+        font-size: clamp(28px, 6.5vw, 40px);
+        line-height: 1.22;
+    }
+
+    #home1Hero .home1-hero-description {
+        margin-bottom: 22px !important;
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    #home1Hero .home1-hero-actions {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 22px !important;
+    }
+
+    #home1Hero .home1-hero-button {
+        width: 100%;
+        max-width: 255px;
+        min-height: 48px;
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    #home1Hero .home1-hero-trust {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #home1Hero .home1-hero-trust-divider {
+        display: none;
+    }
+
+    #home1Hero .home1-hero-highlight p {
+        font-size: 12px;
+    }
+
+    #home1Hero .home1-hero-mini-features {
+        gap: 10px 14px;
+        font-size: 12px;
+    }
+
+    #home1Hero .home1-hero-counter,
+    #home1Hero .home1-hero-scroll {
+        display: none !important;
+    }
+
+    #home1Hero .home1-hero-navigation {
+        left: 50%;
+        right: auto;
+        bottom: 18px;
+        transform: translateX(-50%);
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 380px) {
+    #home1Hero .home1-hero-container {
+        padding: 90px 16px 95px !important;
+    }
+
+    #home1Hero .home1-hero-title {
+        font-size: 28px;
+    }
+
+    #home1Hero .home1-hero-description {
+        font-size: 13px;
+    }
+
+    #home1Hero .home1-hero-button {
+        max-width: 240px;
+    }
+}
+
+/* =========================================
+   TIFFINMATE HEADER - FIXED ON RESPONSIVE
+========================================= */
+
+@media (max-width: 1199px) {
+
+    .site-header {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        height: 76px !important;
+        min-height: 76px !important;
+        z-index: 9999 !important;
+        background: #FFFFFF !important;
+        box-sizing: border-box !important;
+        box-shadow: 0 2px 12px rgba(56, 32, 82, 0.08);
+    }
+
+    .header-container {
+        height: 76px !important;
+        min-height: 76px !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Keep dropdown attached below fixed header */
+    #headerMenu {
+        position: absolute !important;
+        top: 100% !important;
+        z-index: 9998 !important;
+    }
+
+    /* Prevent page content from hiding behind header */
+    body {
+        padding-top: 76px !important;
+    }
+
+    /* Dark mode */
+    body.dark-mode .site-header {
+        background: #211B28 !important;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Avoid adding duplicate top spacing on nested pages
+   if the page already reserves space for the fixed header. */
+@media (max-width: 480px) {
+    .site-header,
+    .header-container {
+        height: 76px !important;
+        min-height: 76px !important;
+    }
+}

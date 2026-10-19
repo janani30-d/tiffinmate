@@ -240,6 +240,55 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateRTLButton();
 
+/* =========================================
+   TIFFINMATE MOBILE MENU TOGGLE
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("mobileMenuToggle");
+    const headerMenu = document.getElementById("headerMenu");
+
+    if (!menuToggle || !headerMenu) {
+        console.error("Mobile menu button or header menu not found.");
+        return;
+    }
+
+    function closeMenu() {
+        headerMenu.classList.remove("active");
+        menuToggle.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+    }
+
+    menuToggle.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const isOpen = headerMenu.classList.toggle("active");
+
+        menuToggle.classList.toggle("active", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    document.addEventListener("click", function (event) {
+        if (
+            !headerMenu.contains(event.target) &&
+            !menuToggle.contains(event.target)
+        ) {
+            closeMenu();
+        }
+    });
+
+    headerMenu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", closeMenu);
+    });
+
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 1199) {
+            closeMenu();
+        }
+    });
+});
+
 
     /* =====================================================
        MOBILE MENU
