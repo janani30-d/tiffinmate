@@ -45933,3 +45933,443 @@ body.dark-mode .about-cta-image-badge span {
         min-height: 76px !important;
     }
 }
+
+/* =========================================
+   TIFFINMATE HEADER - LEFT & RIGHT SPACING
+========================================= */
+
+.site-header {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-container {
+    width: 100% !important;
+    max-width: 1600px !important;
+    margin: 0 auto !important;
+    padding: 0 40px !important;
+    box-sizing: border-box !important;
+    gap: 28px !important;
+}
+
+/* Logo on the left */
+.site-logo {
+    margin-left: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+/* Navigation stays in the middle */
+.header-menu {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+}
+
+/* Action buttons on the right */
+.header-actions {
+    margin-right: 0 !important;
+    flex-shrink: 0 !important;
+    gap: 10px !important;
+}
+
+/* =========================================
+   TABLET & IPAD PRO
+========================================= */
+
+@media (max-width: 1199px) {
+    .header-container {
+        padding: 0 24px !important;
+        gap: 16px !important;
+    }
+
+    .site-logo-image {
+        width: 82px !important;
+    }
+
+    .mobile-menu-toggle {
+        margin-right: 0 !important;
+        flex-shrink: 0 !important;
+    }
+}
+
+/* =========================================
+   MOBILE & IPAD MINI
+========================================= */
+
+@media (max-width: 767px) {
+    .header-container {
+        padding: 0 18px !important;
+        gap: 12px !important;
+    }
+
+    .site-logo-image {
+        width: 82px !important;
+    }
+
+    .mobile-menu-toggle {
+        margin-left: auto !important;
+        margin-right: 0 !important;
+    }
+}
+
+/* EXTRA SMALL MOBILE */
+@media (max-width: 380px) {
+    .header-container {
+        padding: 0 12px !important;
+    }
+}
+
+
+/* =========================================================
+   TIFFINMATE — RTL DESKTOP HEADER CORRECTION
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    html[dir="rtl"] .site-header .header-container {
+        position: relative !important;
+        display: block !important;
+        width: 94% !important;
+        max-width: 1440px !important;
+        height: 82px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Logo: fixed at the right */
+    html[dir="rtl"] .site-header .site-logo {
+        position: absolute !important;
+        top: 50% !important;
+        right: 0 !important;
+        left: auto !important;
+        width: 120px !important;
+        height: 60px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+        transform: translateY(-50%) !important;
+        z-index: 10 !important;
+    }
+
+    html[dir="rtl"] .site-header .site-logo-image {
+        display: block !important;
+        width: 100px !important;
+        max-width: 100% !important;
+        max-height: 56px !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+
+    /* Menu spans the header */
+    html[dir="rtl"] .site-header #headerMenu {
+        position: static !important;
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: visible !important;
+    }
+
+    /* Navigation: centered in the header */
+    html[dir="rtl"] .site-header .main-navigation {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        right: auto !important;
+        width: max-content !important;
+        max-width: calc(100% - 420px) !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 22px !important;
+        direction: rtl !important;
+        white-space: nowrap !important;
+        transform: translate(-50%, -50%) !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Action buttons: fixed at the left with spacing */
+    html[dir="rtl"] .site-header .header-actions {
+        position: absolute !important;
+        top: 50% !important;
+        left: 0 !important;
+        right: auto !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 8px !important;
+        width: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        direction: ltr !important;
+        transform: translateY(-50%) !important;
+        z-index: 11 !important;
+    }
+
+    html[dir="rtl"] .site-header .header-actions .header-control {
+        width: 40px !important;
+        min-width: 40px !important;
+        height: 40px !important;
+        flex: 0 0 40px !important;
+        margin: 0 !important;
+    }
+
+    html[dir="rtl"] .site-header .header-actions .login-button {
+        width: auto !important;
+        min-width: 76px !important;
+        max-width: 84px !important;
+        height: 42px !important;
+        padding: 0 14px !important;
+        margin: 0 !important;
+        flex: 0 0 auto !important;
+    }
+
+    html[dir="rtl"] .site-header .mobile-menu-toggle {
+        display: none !important;
+    }
+}
+
+/* =========================================
+   TIFFINMATE — DARK MODE RESPONSIVE MENU
+========================================= */
+
+@media (max-width: 1199px) {
+
+    /* Menu panel */
+    body.dark-mode .site-header .header-menu {
+        background: #211B28 !important;
+        border: 1px solid #3A3042 !important;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    /* Navigation text */
+    body.dark-mode .site-header .nav-link,
+    body.dark-mode .site-header .nav-dropdown-toggle,
+    body.dark-mode .site-header .dropdown-item {
+        color: #F5F1F8 !important;
+    }
+
+    /* Hover and active links */
+    body.dark-mode .site-header .nav-link:hover,
+    body.dark-mode .site-header .nav-dropdown-toggle:hover,
+    body.dark-mode .site-header .dropdown-item:hover,
+    body.dark-mode .site-header .nav-link.active {
+        color: #FFFFFF !important;
+        background: #382052 !important;
+    }
+
+    /* Dropdown */
+    body.dark-mode .site-header .nav-dropdown-menu {
+        background: #211B28 !important;
+        border-color: #3A3042 !important;
+    }
+
+    /* Divider above action buttons */
+    body.dark-mode .site-header .header-actions {
+        border-top: 1px solid #3A3042 !important;
+    }
+
+    /* Dark mode and RTL icon buttons */
+    body.dark-mode .site-header .header-control {
+        color: #F5F1F8 !important;
+        background: #211B28 !important;
+        border: 1px solid #3A3042 !important;
+    }
+
+    /* Login button */
+    body.dark-mode .site-header .login-button {
+        color: #FFFFFF !important;
+        background: #6C4AB6 !important;
+        border-color: #6C4AB6 !important;
+    }
+
+    /* Hamburger button */
+    body.dark-mode .site-header .mobile-menu-toggle {
+        color: #F5F1F8 !important;
+        background: #211B28 !important;
+        border: 1px solid #3A3042 !important;
+    }
+
+    body.dark-mode .site-header .mobile-menu-toggle span {
+        background: #F5F1F8 !important;
+    }
+}
+
+/* =========================================
+   TIFFINMATE — RESPONSIVE DARK MENU FIX
+========================================= */
+
+@media (max-width: 1199px) {
+
+    /* Main dropdown panel */
+    body.dark-mode #headerMenu,
+    body.dark-mode #headerMenu.mobile-menu-open {
+        background: #211B28 !important;
+        background-color: #211B28 !important;
+        border-color: #3A3042 !important;
+        color: #F5F1F8 !important;
+    }
+
+    /* All navigation links */
+    body.dark-mode #headerMenu .nav-link,
+    body.dark-mode #headerMenu .nav-dropdown-toggle,
+    body.dark-mode #headerMenu .nav-link-text,
+    body.dark-mode #headerMenu .dropdown-item {
+        color: #F5F1F8 !important;
+        background-color: transparent !important;
+        opacity: 1 !important;
+    }
+
+    /* Hover and active navigation links */
+    body.dark-mode #headerMenu .nav-link:hover,
+    body.dark-mode #headerMenu .nav-dropdown-toggle:hover,
+    body.dark-mode #headerMenu .dropdown-item:hover,
+    body.dark-mode #headerMenu .nav-link.active,
+    body.dark-mode #headerMenu .nav-dropdown-toggle.active,
+    body.dark-mode #headerMenu .dropdown-item.active {
+        color: #FFFFFF !important;
+        background: #382052 !important;
+        background-color: #382052 !important;
+    }
+
+    /* Home dropdown arrow */
+    body.dark-mode #headerMenu .dropdown-arrow {
+        color: #F5F1F8 !important;
+    }
+
+    /* Home dropdown submenu */
+    body.dark-mode #headerMenu .nav-dropdown-menu {
+        background: #211B28 !important;
+        border-color: #3A3042 !important;
+        box-shadow: none !important;
+    }
+
+    /* Divider above buttons */
+    body.dark-mode #headerMenu .header-actions {
+        border-top-color: #3A3042 !important;
+    }
+
+    /* RTL and dark-mode controls */
+    body.dark-mode #headerMenu .header-control {
+        color: #F5F1F8 !important;
+        background: #211B28 !important;
+        border-color: #3A3042 !important;
+    }
+
+    /* Login button */
+    body.dark-mode #headerMenu .login-button {
+        color: #FFFFFF !important;
+        background: #6C4AB6 !important;
+        border-color: #6C4AB6 !important;
+    }
+}
+
+/* =========================================
+   TIFFINMATE — DESKTOP DARK MODE ACTIVE MENU
+========================================= */
+
+@media (min-width: 1200px) {
+
+    /* Active navigation link */
+    body.dark-mode .site-header .main-navigation > .nav-link.active,
+    body.dark-mode .site-header .main-navigation .nav-link.active,
+    body.dark-mode .site-header .main-navigation .nav-dropdown-toggle.active {
+        color: #A98BE8 !important;
+        background: transparent !important;
+    }
+
+    /* Active link text */
+    body.dark-mode .site-header .nav-link.active .nav-link-text,
+    body.dark-mode .site-header .nav-dropdown-toggle.active .nav-link-text {
+        color: #A98BE8 !important;
+    }
+
+    /* Active dropdown arrow */
+    body.dark-mode .site-header .nav-dropdown-toggle.active .dropdown-arrow {
+        color: #A98BE8 !important;
+    }
+
+    /* Hover state */
+    body.dark-mode .site-header .main-navigation .nav-link:hover,
+    body.dark-mode .site-header .main-navigation .nav-dropdown-toggle:hover {
+        color: #A98BE8 !important;
+    }
+
+    body.dark-mode .site-header .main-navigation .nav-link:hover .nav-link-text,
+    body.dark-mode .site-header .main-navigation .nav-dropdown-toggle:hover .nav-link-text {
+        color: #A98BE8 !important;
+    }
+
+    /* Active dropdown item */
+    body.dark-mode .site-header .nav-dropdown-menu .dropdown-item.active {
+        color: #FFFFFF !important;
+        background: #382052 !important;
+    }
+}
+
+/* =========================================
+   TIFFINMATE ABOUT PAGE — DARK MODE CTA
+========================================= */
+
+/* HOW IT WORKS CTA */
+body.dark-mode .about-how-bottom {
+    background: #211B28 !important;
+    border: 1px solid #3A3042 !important;
+    color: #F5F1F8 !important;
+}
+
+body.dark-mode .about-how-bottom-text {
+    color: #F5F1F8 !important;
+}
+
+/* WHY CHOOSE TIFFINMATE CTA */
+body.dark-mode .about-why-bottom {
+    background: #211B28 !important;
+    border: 1px solid #3A3042 !important;
+    color: #F5F1F8 !important;
+}
+
+body.dark-mode .about-why-bottom-title {
+    color: #F5F1F8 !important;
+}
+
+body.dark-mode .about-why-bottom-description {
+    color: #B8AFBF !important;
+}
+
+/* CTA BUTTONS */
+body.dark-mode .about-how-button,
+body.dark-mode .about-why-button {
+    background: #6C4AB6 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #6C4AB6 !important;
+}
+
+body.dark-mode .about-how-button span,
+body.dark-mode .about-why-button span {
+    color: #FFFFFF !important;
+}
+
+/* BUTTON HOVER */
+body.dark-mode .about-how-button:hover,
+body.dark-mode .about-why-button:hover {
+    background: #805FC7 !important;
+    border-color: #805FC7 !important;
+    color: #FFFFFF !important;
+}
+
+/* RESPONSIVE DARK MODE */
+@media (max-width: 767px) {
+    body.dark-mode .about-how-bottom,
+    body.dark-mode .about-why-bottom {
+        background: #211B28 !important;
+        border-color: #3A3042 !important;
+    }
+}
