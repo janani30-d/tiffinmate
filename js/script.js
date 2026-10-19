@@ -4610,3 +4610,87 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show every cuisine when the page loads
     selectCuisine("all");
 });
+
+/* =========================================================
+   TIFFINMATE ABOUT — ANIMATED STATS COUNTER
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const statsSection = document.querySelector("#aboutStats");
+
+    if (!statsSection) return;
+
+    const counters = statsSection.querySelectorAll(
+        ".about-stats-counter"
+    );
+
+    if (!counters.length) return;
+
+    let hasCounted = false;
+
+    function animateCounter(counter) {
+        const target = Number(counter.dataset.target);
+        const suffix = counter.dataset.suffix || "";
+        const duration = 1800;
+
+        if (!Number.isFinite(target) || target < 0) return;
+
+        const startTime = performance.now();
+
+        function updateCounter(currentTime) {
+            const progress = Math.min(
+                (currentTime - startTime) / duration,
+                1
+            );
+
+            // Smooth ease-out animation
+            const easedProgress = 1 - Math.pow(1 - progress, 3);
+
+            const currentValue = Math.floor(
+                easedProgress * target
+            );
+
+            counter.textContent = currentValue + suffix;
+
+            if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+            } else {
+                counter.textContent = target + suffix;
+            }
+        }
+
+        requestAnimationFrame(updateCounter);
+    }
+
+    function startCounting() {
+        if (hasCounted) return;
+
+        hasCounted = true;
+
+        counters.forEach(function (counter) {
+            animateCounter(counter);
+        });
+    }
+
+    // Start animation when stats section enters the viewport
+    if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+            function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        startCounting();
+                        observer.disconnect();
+                    }
+                });
+            },
+            {
+                threshold: 0.2
+            }
+        );
+
+        observer.observe(statsSection);
+    } else {
+        // Fallback for older browsers
+        startCounting();
+    }
+});

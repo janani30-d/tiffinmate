@@ -67381,3 +67381,904 @@ html[dir="rtl"] .about-cta-image-badge {
         max-width: 100% !important;
     }
 }
+
+/* =========================================================
+   ABOUT HISTORY — RESPONSIVE CSS
+========================================================= */
+
+/* TABLET & SMALL DESKTOP — iPad Pro */
+@media (max-width: 1199px) {
+
+    .about-history-section {
+        padding: 80px 24px;
+    }
+
+    .about-history-header {
+        margin-bottom: 55px;
+    }
+
+    .about-history-timeline {
+        max-width: 850px;
+        gap: 28px;
+    }
+
+    .about-history-item {
+        gap: 54px;
+    }
+
+    .about-history-card {
+        padding: 25px;
+    }
+
+    .about-history-card-title {
+        font-size: 20px;
+    }
+
+    .about-history-bottom {
+        margin-top: 55px;
+    }
+}
+
+/* iPad Mini & TABLET */
+@media (max-width: 991px) {
+
+    .about-history-section {
+        padding: 70px 22px;
+    }
+
+    .about-history-title {
+        font-size: 38px;
+        letter-spacing: -0.8px;
+    }
+
+    .about-history-description {
+        font-size: 14px;
+    }
+
+    .about-history-timeline {
+        max-width: 720px;
+        gap: 24px;
+    }
+
+    .about-history-item {
+        gap: 42px;
+    }
+
+    .about-history-marker {
+        width: 48px;
+        height: 48px;
+        font-size: 12px;
+        border-width: 4px;
+    }
+
+    .about-history-card {
+        padding: 22px;
+        border-radius: 15px;
+    }
+
+    .about-history-card-title {
+        font-size: 18px;
+    }
+
+    .about-history-card-description {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .about-history-bottom {
+        margin-top: 45px;
+        padding: 24px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+
+    .about-history-section {
+        padding: 60px 18px;
+    }
+
+    .about-history-header {
+        margin-bottom: 38px;
+        text-align: center;
+    }
+
+    .about-history-eyebrow {
+        margin-bottom: 12px;
+        font-size: 10px;
+        letter-spacing: 1.6px;
+    }
+
+    .about-history-title {
+        font-size: clamp(28px, 7vw, 34px);
+        line-height: 1.25;
+        letter-spacing: -0.6px;
+    }
+
+    .about-history-description {
+        margin-top: 14px;
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    /* Vertical timeline */
+    .about-history-timeline {
+        gap: 22px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about-history-timeline::before {
+        top: 20px;
+        bottom: 20px;
+        left: 23px;
+        right: auto;
+        transform: none;
+    }
+
+    .about-history-item {
+        display: block;
+        padding-left: 64px;
+        padding-right: 0;
+    }
+
+    .about-history-marker {
+        top: 24px;
+        left: 23px;
+        width: 46px;
+        height: 46px;
+        border-width: 4px;
+        transform: translate(-50%, -50%);
+    }
+
+    .about-history-item:nth-child(odd) .about-history-card,
+    .about-history-item:nth-child(even) .about-history-card {
+        width: 100%;
+        grid-column: auto;
+        grid-row: auto;
+        text-align: left;
+    }
+
+    .about-history-card {
+        padding: 22px 20px;
+        border-radius: 15px;
+    }
+
+    .about-history-label {
+        margin-bottom: 9px;
+        font-size: 9px;
+        letter-spacing: 1.2px;
+    }
+
+    .about-history-card-title {
+        margin-bottom: 9px;
+        font-size: 18px;
+    }
+
+    .about-history-card-description {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .about-history-bottom {
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 15px;
+        margin-top: 35px;
+        padding: 20px 18px;
+        border-radius: 15px;
+    }
+
+    .about-history-bottom-icon {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        border-radius: 12px;
+        font-size: 16px;
+    }
+
+    .about-history-bottom-title {
+        font-size: 16px;
+    }
+
+    .about-history-bottom-description {
+        font-size: 12px;
+        line-height: 1.75;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 380px) {
+
+    .about-history-section {
+        padding: 48px 14px;
+    }
+
+    .about-history-title {
+        font-size: 27px;
+    }
+
+    .about-history-description {
+        font-size: 12px;
+    }
+
+    .about-history-timeline {
+        gap: 18px;
+    }
+
+    .about-history-timeline::before {
+        left: 19px;
+    }
+
+    .about-history-item {
+        padding-left: 52px;
+    }
+
+    .about-history-marker {
+        left: 19px;
+        width: 40px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .about-history-card {
+        padding: 18px 15px;
+    }
+
+    .about-history-card-title {
+        font-size: 16px;
+    }
+
+    .about-history-card-description {
+        font-size: 11px;
+    }
+
+    .about-history-bottom {
+        gap: 12px;
+        padding: 17px 14px;
+    }
+}
+
+/* =========================================================
+   RTL — DESKTOP & TABLET
+========================================================= */
+
+html[dir="rtl"] .about-history-section {
+    direction: rtl;
+}
+
+html[dir="rtl"] .about-history-header {
+    text-align: center;
+}
+
+html[dir="rtl"] .about-history-item:nth-child(odd) .about-history-card {
+    text-align: left;
+}
+
+html[dir="rtl"] .about-history-item:nth-child(even) .about-history-card {
+    text-align: right;
+}
+
+html[dir="rtl"] .about-history-bottom {
+    direction: rtl;
+    text-align: right;
+}
+
+/* RTL MOBILE — move timeline to the right */
+@media (max-width: 767px) {
+
+    html[dir="rtl"] .about-history-timeline::before {
+        left: auto;
+        right: 23px;
+    }
+
+    html[dir="rtl"] .about-history-item {
+        padding-left: 0;
+        padding-right: 64px;
+    }
+
+    html[dir="rtl"] .about-history-marker {
+        left: auto;
+        right: 23px;
+    }
+
+    html[dir="rtl"] .about-history-item:nth-child(odd) .about-history-card,
+    html[dir="rtl"] .about-history-item:nth-child(even) .about-history-card {
+        text-align: right;
+    }
+}
+
+/* RTL SMALL MOBILE */
+@media (max-width: 380px) {
+
+    html[dir="rtl"] .about-history-timeline::before {
+        right: 19px;
+    }
+
+    html[dir="rtl"] .about-history-item {
+        padding-right: 52px;
+    }
+
+    html[dir="rtl"] .about-history-marker {
+        right: 19px;
+    }
+}
+
+/* =========================================================
+   DARK MODE — RESPONSIVE BACKGROUND SAFETY
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    body.dark-mode .about-history-section {
+        background: #120F16;
+    }
+
+    body.dark-mode .about-history-card {
+        background: #211B28;
+        border-color: #3A3042;
+    }
+
+    body.dark-mode .about-history-bottom {
+        background: #211B28;
+        border-color: #3A3042;
+    }
+}
+
+/* =========================================================
+   ABOUT MANAGEMENT PROCESS — RESPONSIVE CSS
+========================================================= */
+
+/* TABLET & IPAD PRO — 768px TO 1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .about-process-section {
+        padding: 80px 24px;
+    }
+
+    .about-process-header {
+        max-width: 700px;
+        margin-bottom: 45px;
+    }
+
+    .about-process-title {
+        font-size: 38px;
+    }
+
+    .about-process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .about-process-card {
+        min-height: 285px;
+        padding: 25px;
+    }
+
+    .about-process-card-top {
+        margin-bottom: 22px;
+    }
+
+    .about-process-card-title {
+        font-size: 18px;
+    }
+
+    .about-process-card-description {
+        font-size: 13px;
+    }
+
+    .about-process-bottom {
+        margin-top: 35px;
+        padding: 27px;
+        gap: 22px;
+    }
+
+    .about-process-bottom-title {
+        font-size: 21px;
+    }
+
+    .about-process-bottom-description {
+        font-size: 14px;
+    }
+}
+
+
+/* IPAD MINI & SMALL TABLETS */
+@media (min-width: 768px) and (max-width: 900px) {
+
+    .about-process-section {
+        padding: 70px 20px;
+    }
+
+    .about-process-grid {
+        gap: 18px;
+    }
+
+    .about-process-card {
+        padding: 22px;
+    }
+
+    .about-process-bottom {
+        align-items: flex-start;
+    }
+
+    .about-process-button {
+        padding: 0 17px;
+    }
+}
+
+
+/* MOBILE — UP TO 767px */
+@media (max-width: 767px) {
+
+    .about-process-section {
+        padding: 60px 18px;
+    }
+
+    .about-process-header {
+        margin-bottom: 35px;
+    }
+
+    .about-process-eyebrow {
+        margin-bottom: 12px;
+        font-size: 11px;
+        letter-spacing: 1.6px;
+    }
+
+    .about-process-title {
+        font-size: 30px;
+        line-height: 1.3;
+        letter-spacing: -0.6px;
+    }
+
+    .about-process-description {
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .about-process-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .about-process-card {
+        min-height: auto;
+        padding: 23px;
+        border-radius: 16px;
+    }
+
+    .about-process-card-top {
+        margin-bottom: 22px;
+    }
+
+    .about-process-icon {
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
+        font-size: 19px;
+    }
+
+    .about-process-step {
+        font-size: 10px;
+    }
+
+    .about-process-card-title {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .about-process-card-description {
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+    .about-process-card-footer {
+        padding-top: 18px;
+        font-size: 11px;
+    }
+
+    .about-process-bottom {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 22px;
+        margin-top: 28px;
+        padding: 24px 21px;
+        border-radius: 16px;
+    }
+
+    .about-process-bottom-title {
+        font-size: 20px;
+        line-height: 1.45;
+    }
+
+    .about-process-bottom-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .about-process-button {
+        width: 100%;
+        min-height: 48px;
+        justify-content: center;
+    }
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 380px) {
+
+    .about-process-section {
+        padding: 48px 14px;
+    }
+
+    .about-process-title {
+        font-size: 27px;
+    }
+
+    .about-process-card {
+        padding: 19px;
+    }
+
+    .about-process-card-title {
+        font-size: 17px;
+    }
+
+    .about-process-bottom {
+        padding: 21px 17px;
+    }
+
+    .about-process-bottom-title {
+        font-size: 19px;
+    }
+}
+
+
+/* =========================================================
+   ABOUT MANAGEMENT PROCESS — RTL SUPPORT
+========================================================= */
+
+html[dir="rtl"] .about-process-section {
+    direction: rtl;
+}
+
+html[dir="rtl"] .about-process-header {
+    text-align: center;
+}
+
+html[dir="rtl"] .about-process-card {
+    text-align: right;
+}
+
+html[dir="rtl"] .about-process-card-top {
+    flex-direction: row;
+}
+
+html[dir="rtl"] .about-process-card-footer {
+    flex-direction: row;
+}
+
+html[dir="rtl"] .about-process-bottom {
+    flex-direction: row;
+    text-align: right;
+}
+
+html[dir="rtl"] .about-process-button {
+    flex-direction: row;
+}
+
+/* RTL — MOBILE CTA */
+@media (max-width: 767px) {
+
+    html[dir="rtl"] .about-process-bottom {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    html[dir="rtl"] .about-process-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* =========================================================
+   ABOUT STATS — RESPONSIVE CSS
+========================================================= */
+
+/* TABLET & IPAD PRO — 768px TO 1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .about-stats-section {
+        padding: 80px 24px;
+    }
+
+    .about-stats-header {
+        margin-bottom: 42px;
+    }
+
+    .about-stats-title {
+        font-size: 38px;
+    }
+
+    .about-stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .about-stats-card {
+        min-height: 275px;
+        padding: 25px;
+    }
+
+    .about-stats-counter {
+        font-size: 38px;
+    }
+
+    .about-stats-bottom {
+        margin-top: 32px;
+        padding: 27px;
+    }
+
+    .about-stats-bottom-title {
+        font-size: 21px;
+    }
+}
+
+
+/* IPAD MINI & SMALL TABLETS */
+@media (min-width: 768px) and (max-width: 900px) {
+
+    .about-stats-section {
+        padding: 70px 20px;
+    }
+
+    .about-stats-grid {
+        gap: 18px;
+    }
+
+    .about-stats-card {
+        padding: 22px;
+    }
+
+    .about-stats-label {
+        font-size: 10px;
+        letter-spacing: 0.7px;
+    }
+
+    .about-stats-card-description {
+        font-size: 13px;
+    }
+
+    .about-stats-bottom {
+        gap: 18px;
+        padding: 24px;
+    }
+}
+
+
+/* MOBILE — UP TO 767px */
+@media (max-width: 767px) {
+
+    .about-stats-section {
+        padding: 60px 18px;
+    }
+
+    .about-stats-header {
+        margin-bottom: 34px;
+    }
+
+    .about-stats-eyebrow {
+        margin-bottom: 12px;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .about-stats-title {
+        font-size: 30px;
+        line-height: 1.3;
+        letter-spacing: -0.5px;
+    }
+
+    .about-stats-description {
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .about-stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .about-stats-card {
+        min-height: 270px;
+        padding: 19px 16px;
+        border-radius: 15px;
+    }
+
+    .about-stats-icon {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        margin-bottom: 19px;
+        border-radius: 13px;
+        font-size: 18px;
+    }
+
+    .about-stats-counter {
+        margin-bottom: 8px;
+        font-size: 32px;
+        letter-spacing: -0.5px;
+    }
+
+    .about-stats-label {
+        margin-bottom: 10px;
+        font-size: 10px;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+    }
+
+    .about-stats-card-description {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .about-stats-card-bottom {
+        gap: 7px;
+        padding-top: 17px;
+        font-size: 10px;
+    }
+
+    .about-stats-dot {
+        width: 6px;
+        height: 6px;
+        min-width: 6px;
+    }
+
+    .about-stats-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 17px;
+        margin-top: 25px;
+        padding: 23px 20px;
+        border-radius: 16px;
+    }
+
+    .about-stats-bottom-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        border-radius: 14px;
+        font-size: 20px;
+    }
+
+    .about-stats-bottom-title {
+        margin-bottom: 9px;
+        font-size: 20px;
+        line-height: 1.45;
+    }
+
+    .about-stats-bottom-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 380px) {
+
+    .about-stats-section {
+        padding: 48px 14px;
+    }
+
+    .about-stats-title {
+        font-size: 27px;
+    }
+
+    .about-stats-grid {
+        gap: 11px;
+    }
+
+    .about-stats-card {
+        min-height: 275px;
+        padding: 16px 12px;
+    }
+
+    .about-stats-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        font-size: 16px;
+    }
+
+    .about-stats-counter {
+        font-size: 28px;
+    }
+
+    .about-stats-label {
+        font-size: 9px;
+        letter-spacing: 0.3px;
+    }
+
+    .about-stats-card-description {
+        font-size: 12px;
+    }
+
+    .about-stats-card-bottom {
+        font-size: 9px;
+    }
+
+    .about-stats-bottom {
+        padding: 20px 16px;
+    }
+
+    .about-stats-bottom-title {
+        font-size: 18px;
+    }
+}
+
+
+/* EXTRA SMALL MOBILE — SINGLE COLUMN */
+@media (max-width: 340px) {
+
+    .about-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats-card {
+        min-height: 245px;
+        padding: 22px;
+    }
+
+    .about-stats-counter {
+        font-size: 34px;
+    }
+
+    .about-stats-label {
+        font-size: 10px;
+    }
+
+    .about-stats-card-description {
+        font-size: 13px;
+    }
+
+    .about-stats-card-bottom {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================================
+   ABOUT STATS — RTL SUPPORT
+========================================================= */
+
+html[dir="rtl"] .about-stats-section {
+    direction: rtl;
+}
+
+html[dir="rtl"] .about-stats-header {
+    text-align: center;
+}
+
+html[dir="rtl"] .about-stats-card {
+    align-items: flex-start;
+    text-align: right;
+}
+
+html[dir="rtl"] .about-stats-card-bottom {
+    flex-direction: row;
+}
+
+html[dir="rtl"] .about-stats-bottom {
+    flex-direction: row;
+    text-align: right;
+}
+
+@media (max-width: 767px) {
+
+    html[dir="rtl"] .about-stats-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -46466,3 +46466,1123 @@ body.dark-mode .about-why-button:hover {
     transform: translate(-50%, -50%) !important;
     box-sizing: border-box !important;
 }
+
+/* =========================================
+   POPULAR MEALS — CARD DESCRIPTIONS
+========================================= */
+
+.home1-meal-description {
+    min-height: 48px;
+    margin: 10px 0 16px !important;
+    color: #716B78;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+/* Dark mode */
+body.dark-mode .home1-meal-description {
+    color: #B8AFBF;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .home1-meal-description {
+        min-height: auto;
+        margin: 8px 0 14px !important;
+        font-size: 13px;
+        line-height: 1.65;
+    }
+}
+
+/* =========================================
+   HOME 1 POPULAR MEALS — CARD ALIGNMENT
+========================================= */
+
+.home1-meal-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+
+.home1-meal-content {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 1 auto !important;
+}
+
+/* Keep meal titles aligned */
+.home1-meal-content h3 {
+    min-height: 48px !important;
+    margin-bottom: 0 !important;
+    line-height: 1.4 !important;
+}
+
+/* Equal description area */
+.home1-meal-description {
+    min-height: 66px !important;
+    height: 66px !important;
+    margin: 12px 0 16px !important;
+    overflow: hidden !important;
+    line-height: 1.7 !important;
+}
+
+/* Chef information — consistent position */
+.home1-meal-chef {
+    min-height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+    margin-top: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Rating and delivery row */
+.home1-meal-card-info {
+    min-height: 34px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-shrink: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Fresh today row */
+.home1-meal-meta {
+    min-height: 28px !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+}
+
+/* Price and button aligned at bottom */
+.home1-meal-bottom {
+    min-height: 64px !important;
+    margin-top: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+    flex-shrink: 0 !important;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 767px) {
+    .home1-meal-content h3 {
+        min-height: auto !important;
+    }
+
+    .home1-meal-description {
+        height: auto !important;
+        min-height: 66px !important;
+        margin: 10px 0 14px !important;
+    }
+}
+
+/* REDUCE GAP BETWEEN MEAL TITLE AND DESCRIPTION */
+
+.home1-meal-content h3 {
+    min-height: 0 !important;
+    margin-bottom: 6px !important;
+    line-height: 1.4 !important;
+}
+
+.home1-meal-description {
+    margin-top: 4px !important;
+    margin-bottom: 12px !important;
+    height: 66px !important;
+    min-height: 66px !important;
+    line-height: 1.7 !important;
+}
+
+/* Keep spacing compact on mobile */
+@media (max-width: 767px) {
+    .home1-meal-content h3 {
+        margin-bottom: 6px !important;
+    }
+
+    .home1-meal-description {
+        margin-top: 4px !important;
+        margin-bottom: 12px !important;
+        height: auto !important;
+        min-height: 0 !important;
+    }
+}
+
+/* =========================================================
+   ABOUT HISTORY — MAIN CSS
+========================================================= */
+
+.about-history-section {
+    position: relative;
+    padding: 100px 24px;
+    background: #F7F3FC;
+    color: #29252D;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.about-history-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* SECTION HEADER */
+
+.about-history-header {
+    max-width: 760px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.about-history-eyebrow {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #6C4AB6;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about-history-title {
+    margin: 0;
+    color: #29252D;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1.4px;
+}
+
+.about-history-title span {
+    display: block;
+    color: #6C4AB6;
+}
+
+.about-history-description {
+    max-width: 680px;
+    margin: 20px auto 0;
+    color: #716B78;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* TIMELINE */
+
+.about-history-timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Vertical timeline line */
+
+.about-history-timeline::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    bottom: 28px;
+    left: 50%;
+    width: 2px;
+    background: #D9C9F1;
+    transform: translateX(-50%);
+}
+
+/* TIMELINE ITEM */
+
+.about-history-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Alternate card positions */
+
+.about-history-item:nth-child(odd) .about-history-card {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+}
+
+.about-history-item:nth-child(even) .about-history-card {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+}
+
+/* TIMELINE NUMBER */
+
+.about-history-marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border: 5px solid #F7F3FC;
+    border-radius: 50%;
+    background: #6C4AB6;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 800;
+    box-shadow: 0 0 0 1px #D9C9F1;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+/* HISTORY CARD */
+
+.about-history-card {
+    position: relative;
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E5DFEC;
+    border-radius: 18px;
+    box-shadow: 0 8px 28px rgba(56, 32, 82, 0.045);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.about-history-card:hover {
+    transform: translateY(-5px);
+    border-color: #C7B2E9;
+    box-shadow: 0 14px 32px rgba(56, 32, 82, 0.09);
+}
+
+.about-history-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #6C4AB6;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+.about-history-card-title {
+    margin: 0 0 12px;
+    color: #29252D;
+    font-size: 22px;
+    font-weight: 750;
+    line-height: 1.4;
+}
+
+.about-history-card-description {
+    margin: 0;
+    color: #716B78;
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+/* BOTTOM MESSAGE */
+
+.about-history-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    max-width: 850px;
+    margin: 70px auto 0;
+    padding: 28px 32px;
+    background: #EEE7F8;
+    border: 1px solid #E0D4F1;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+.about-history-bottom-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+    border-radius: 15px;
+    background: #6C4AB6;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.about-history-bottom-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-history-bottom-title {
+    margin: 0 0 7px;
+    color: #382052;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.about-history-bottom-description {
+    margin: 0;
+    color: #716B78;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   ABOUT HISTORY — DARK MODE
+========================================================= */
+
+body.dark-mode .about-history-section {
+    background: #120F16;
+    color: #F5F1F8;
+}
+
+body.dark-mode .about-history-title {
+    color: #F5F1F8;
+}
+
+body.dark-mode .about-history-title span,
+body.dark-mode .about-history-eyebrow,
+body.dark-mode .about-history-label {
+    color: #B99BEF;
+}
+
+body.dark-mode .about-history-description {
+    color: #B8AFBF;
+}
+
+body.dark-mode .about-history-timeline::before {
+    background: #49365C;
+}
+
+body.dark-mode .about-history-marker {
+    background: #6C4AB6;
+    border-color: #120F16;
+    color: #FFFFFF;
+    box-shadow: 0 0 0 1px #49365C;
+}
+
+body.dark-mode .about-history-card {
+    background: #211B28;
+    border-color: #3A3042;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+body.dark-mode .about-history-card:hover {
+    border-color: #6C4AB6;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+}
+
+body.dark-mode .about-history-card-title {
+    color: #F5F1F8;
+}
+
+body.dark-mode .about-history-card-description {
+    color: #B8AFBF;
+}
+
+body.dark-mode .about-history-bottom {
+    background: #211B28;
+    border-color: #3A3042;
+}
+
+body.dark-mode .about-history-bottom-icon {
+    background: #6C4AB6;
+    color: #FFFFFF;
+}
+
+body.dark-mode .about-history-bottom-title {
+    color: #F5F1F8;
+}
+
+body.dark-mode .about-history-bottom-description {
+    color: #B8AFBF;
+}
+
+/* =========================================================
+   ABOUT MANAGEMENT PROCESS — MAIN CSS
+========================================================= */
+
+.about-process-section {
+    position: relative;
+    padding: 100px 24px;
+    background: #FFFFFF;
+    color: #29252D;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.about-process-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* SECTION HEADER */
+
+.about-process-header {
+    max-width: 760px;
+    margin: 0 auto 58px;
+    text-align: center;
+}
+
+.about-process-eyebrow {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #6C4AB6;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about-process-title {
+    margin: 0;
+    color: #29252D;
+    font-size: clamp(32px, 4vw, 46px);
+    font-weight: 800;
+    line-height: 1.22;
+    letter-spacing: -1.2px;
+}
+
+.about-process-title span {
+    display: block;
+    color: #6C4AB6;
+}
+
+.about-process-description {
+    max-width: 680px;
+    margin: 18px auto 0;
+    color: #716B78;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+/* PROCESS GRID */
+
+.about-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+/* PROCESS CARD */
+
+.about-process-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 310px;
+    padding: 25px 22px 21px;
+    background: #F7F3FC;
+    border: 1px solid #E5DFEC;
+    border-radius: 18px;
+    box-sizing: border-box;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-process-card:hover {
+    transform: translateY(-5px);
+    border-color: #C7B2E9;
+    box-shadow: 0 14px 30px rgba(56, 32, 82, 0.09);
+}
+
+/* CARD TOP */
+
+.about-process-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.about-process-number {
+    color: #6C4AB6;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.about-process-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 15px;
+    background: #EEE7F8;
+    color: #6C4AB6;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+/* CARD CONTENT */
+
+.about-process-step {
+    display: block;
+    margin-bottom: 9px;
+    color: #8A70BC;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.about-process-card-title {
+    margin: 0 0 12px;
+    color: #29252D;
+    font-size: 18px;
+    font-weight: 750;
+    line-height: 1.45;
+}
+
+.about-process-card-description {
+    margin: 0;
+    color: #716B78;
+    font-size: 12px;
+    line-height: 1.85;
+}
+
+/* CARD FOOTER */
+
+.about-process-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: auto;
+    padding-top: 22px;
+    color: #51475E;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.about-process-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    min-width: 7px;
+    border-radius: 50%;
+    background: #6C4AB6;
+}
+
+/* BOTTOM CTA */
+
+.about-process-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    margin-top: 45px;
+    padding: 30px 34px;
+    background: #EEE7F8;
+    border: 1px solid #E0D4F1;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.about-process-bottom-content {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.about-process-bottom-label {
+    display: block;
+    margin-bottom: 10px;
+    color: #6C4AB6;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+}
+
+.about-process-bottom-title {
+    margin: 0 0 9px;
+    color: #382052;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.about-process-bottom-description {
+    margin: 0;
+    color: #716B78;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* CTA BUTTON */
+
+.about-process-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 48px;
+    padding: 0 22px;
+    flex: 0 0 auto;
+    background: #6C4AB6;
+    border: 1px solid #6C4AB6;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    box-sizing: border-box;
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.about-process-button:hover {
+    background: #382052;
+    border-color: #382052;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.about-process-button i {
+    font-size: 12px;
+}
+
+/* =========================================================
+   ABOUT MANAGEMENT PROCESS — DARK MODE
+========================================================= */
+
+body.dark-mode .about-process-section {
+    background: #120F16;
+    color: #F5F1F8;
+}
+
+body.dark-mode .about-process-title {
+    color: #F5F1F8;
+}
+
+body.dark-mode .about-process-eyebrow,
+body.dark-mode .about-process-title span {
+    color: #B99BEF;
+}
+
+body.dark-mode .about-process-description {
+    color: #B8AFBF;
+}
+
+body.dark-mode .about-process-card {
+    background: #211B28;
+    border-color: #3A3042;
+    box-shadow: none;
+}
+
+body.dark-mode .about-process-card:hover {
+    border-color: #6C4AB6;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+}
+
+body.dark-mode .about-process-number,
+body.dark-mode .about-process-step {
+    color: #B99BEF;
+}
+
+body.dark-mode .about-process-icon {
+    background: #382052;
+    color: #D8C6FF;
+}
+
+body.dark-mode .about-process-card-title {
+    color: #F5F1F8;
+}
+
+body.dark-mode .about-process-card-description {
+    color: #B8AFBF;
+}
+
+body.dark-mode .about-process-card-footer {
+    color: #D8D0E0;
+}
+
+body.dark-mode .about-process-dot {
+    background: #B99BEF;
+}
+
+body.dark-mode .about-process-bottom {
+    background: #211B28;
+    border-color: #3A3042;
+}
+
+body.dark-mode .about-process-bottom-label {
+    color: #B99BEF;
+}
+
+body.dark-mode .about-process-bottom-title {
+    color: #F5F1F8;
+}
+
+body.dark-mode .about-process-bottom-description {
+    color: #B8AFBF;
+}
+
+body.dark-mode .about-process-button {
+    background: #6C4AB6;
+    border-color: #6C4AB6;
+    color: #FFFFFF;
+}
+
+body.dark-mode .about-process-button:hover {
+    background: #805FC7;
+    border-color: #805FC7;
+}
+/* Management Process — Description Font Size */
+.about-process-description {
+    font-size: 15px;
+}
+
+.about-process-card-description {
+    font-size: 13px;
+}
+
+.about-process-bottom-description {
+    font-size: 14px;
+}
+
+/* =========================================================
+   ABOUT STATS — MAIN CSS
+========================================================= */
+
+.about-stats-section {
+    position: relative;
+    padding: 100px 24px;
+    background: #F7F3FC;
+    color: #29252D;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.about-stats-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* SECTION HEADER */
+
+.about-stats-header {
+    max-width: 760px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.about-stats-eyebrow {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #6C4AB6;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about-stats-title {
+    margin: 0;
+    color: #29252D;
+    font-size: clamp(32px, 4vw, 46px);
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -1px;
+}
+
+.about-stats-title span {
+    display: block;
+    color: #6C4AB6;
+}
+
+.about-stats-description {
+    max-width: 680px;
+    margin: 18px auto 0;
+    color: #716B78;
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+/* STATS GRID */
+
+.about-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+/* STAT CARD */
+
+.about-stats-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    min-height: 300px;
+    padding: 27px 23px 22px;
+    background: #FFFFFF;
+    border: 1px solid #E5DFEC;
+    border-radius: 18px;
+    box-sizing: border-box;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-stats-card:hover {
+    transform: translateY(-5px);
+    border-color: #C7B2E9;
+    box-shadow: 0 14px 32px rgba(56, 32, 82, 0.09);
+}
+
+/* ICON */
+
+.about-stats-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    margin-bottom: 24px;
+    background: #EEE7F8;
+    border-radius: 15px;
+    color: #6C4AB6;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+/* ANIMATED COUNTER */
+
+.about-stats-counter {
+    display: block;
+    margin: 0 0 9px;
+    color: #6C4AB6;
+    font-size: clamp(34px, 3vw, 42px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    font-variant-numeric: tabular-nums;
+}
+
+/* LABEL */
+
+.about-stats-label {
+    display: block;
+    margin-bottom: 13px;
+    color: #382052;
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+/* CARD DESCRIPTION */
+
+.about-stats-card-description {
+    margin: 0;
+    color: #716B78;
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+/* CARD FOOTER */
+
+.about-stats-card-bottom {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: auto;
+    padding-top: 21px;
+    color: #51475E;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.about-stats-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    min-width: 7px;
+    background: #6C4AB6;
+    border-radius: 50%;
+}
+
+/* BOTTOM HIGHLIGHT */
+
+.about-stats-bottom {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin-top: 38px;
+    padding: 30px 34px;
+    background: #EEE7F8;
+    border: 1px solid #E0D4F1;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.about-stats-bottom-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    background: #6C4AB6;
+    border-radius: 17px;
+    color: #FFFFFF;
+    font-size: 23px;
+}
+
+.about-stats-bottom-content {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.about-stats-bottom-label {
+    display: block;
+    margin-bottom: 9px;
+    color: #6C4AB6;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+}
+
+.about-stats-bottom-title {
+    margin: 0 0 9px;
+    color: #382052;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.45;
+}
+
+.about-stats-bottom-description {
+    margin: 0;
+    color: #716B78;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+/* =========================================================
+   ABOUT STATS — DARK MODE
+========================================================= */
+
+body.dark-mode .about-stats-section {
+    background: #120F16;
+    color: #F5F1F8;
+}
+
+body.dark-mode .about-stats-title {
+    color: #F5F1F8;
+}
+
+body.dark-mode .about-stats-eyebrow,
+body.dark-mode .about-stats-title span {
+    color: #B99BEF;
+}
+
+body.dark-mode .about-stats-description {
+    color: #B8AFBF;
+}
+
+/* DARK STAT CARDS */
+
+body.dark-mode .about-stats-card {
+    background: #211B28;
+    border-color: #3A3042;
+    box-shadow: none;
+}
+
+body.dark-mode .about-stats-card:hover {
+    border-color: #6C4AB6;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+}
+
+body.dark-mode .about-stats-icon {
+    background: #382052;
+    color: #D8C6FF;
+}
+
+body.dark-mode .about-stats-counter {
+    color: #B99BEF;
+}
+
+body.dark-mode .about-stats-label {
+    color: #F5F1F8;
+}
+
+body.dark-mode .about-stats-card-description {
+    color: #B8AFBF;
+}
+
+body.dark-mode .about-stats-card-bottom {
+    color: #D8D0E0;
+}
+
+body.dark-mode .about-stats-dot {
+    background: #B99BEF;
+}
+
+/* DARK BOTTOM HIGHLIGHT */
+
+body.dark-mode .about-stats-bottom {
+    background: #211B28;
+    border-color: #3A3042;
+}
+
+body.dark-mode .about-stats-bottom-icon {
+    background: #6C4AB6;
+    color: #FFFFFF;
+}
+
+body.dark-mode .about-stats-bottom-label {
+    color: #B99BEF;
+}
+
+body.dark-mode .about-stats-bottom-title {
+    color: #F5F1F8;
+}
+
+body.dark-mode .about-stats-bottom-description {
+    color: #B8AFBF;
+}
+
+/* REDUCE MOTION FOR ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .about-stats-card {
+        transition: none;
+    }
+
+    .about-stats-card:hover {
+        transform: none;
+    }
+}
