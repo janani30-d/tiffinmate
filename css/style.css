@@ -46403,3 +46403,66 @@ body.dark-mode .about-why-button:hover {
         padding-bottom: 25px !important;
     }
 }
+/* CUSTOMER JOURNEY — CENTER HUMAN ICON INSIDE BORDER */
+
+.customer-journey-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customer-journey-icon {
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+    overflow: hidden;
+}
+
+.customer-journey-icon svg {
+    display: block !important;
+    width: 25px !important;
+    height: 25px !important;
+    flex-shrink: 0 !important;
+    margin: 0 auto !important;
+}
+/* FORCE CENTER — CUSTOMER JOURNEY ICON */
+
+.customer-journey-card .customer-journey-card-top .customer-journey-icon {
+    position: relative !important;
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    display: grid !important;
+    place-items: center !important;
+
+    box-sizing: border-box !important;
+    line-height: 0 !important;
+}
+
+.customer-journey-card .customer-journey-card-top .customer-journey-icon svg {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    display: block !important;
+    width: 25px !important;
+    height: 25px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: translate(-50%, -50%) !important;
+    box-sizing: border-box !important;
+}
